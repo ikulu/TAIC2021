@@ -53,7 +53,7 @@
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
           <!-- <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li> -->
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> -->
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
@@ -121,10 +121,11 @@ and innovations.</span></p>
           <div class="col-lg-3">
             <h3>Where</h3>
             <p>Zanzibar, Tanzania</p>
-          </div>
-          <div class="col-lg-3">
             <h3>When</h3>
             <p>Wednesday to Friday<br>26-28 October</p>
+          </div>
+          <div class="col-lg-3">
+            <img src="{{ asset('siteimg/taic1.jpeg') }}" alt="Speaker 3" class="img-fluid">
           </div>
         </div>
       </div>
@@ -665,7 +666,7 @@ and innovations.</span></p>
     <!--</section> End Hotels Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery">
+    <!-- <section id="gallery">
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -686,9 +687,9 @@ and innovations.</span></p>
           <div class="swiper-slide"><a href="{{ asset('siteimg/gallery/8.jpg') }}" class="gallery-lightbox"><img src="{{ asset('siteimg/gallery/8.jpg') }}" class="img-fluid" alt=""></a></div>
         </div>
         <div class="swiper-pagination"></div>
-      </div>
+      </div> -->
 
-    </section><!-- End Gallery Section -->
+    <!--</section> End Gallery Section -->
 
     <!-- ======= Analytics Section ======= -->
     <section id="supporters" class="section-with-bg">
@@ -700,53 +701,83 @@ and innovations.</span></p>
           
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <p style="text-align:center">To be confirmed</p>
-          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/1.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/1.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/2.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/2.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/3.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/3.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/4.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/4.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/5.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/5.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/6.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/6.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/7.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/7.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/8.png') }}" class="img-fluid" alt="">
+              <img src="{{ asset('siteimg/analytics/8.jpg') }}" class="img-fluid" alt="">
             </div>
-          </div> -->
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/analytics/9.jpg') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/analytics/10.jpg') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/analytics/11.jpg') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/analytics/12.jpg') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/analytics/13.jpg') }}" class="img-fluid" alt="">
+            </div>
+          </div>
 
         </div>
 
@@ -759,36 +790,36 @@ and innovations.</span></p>
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Supporters</h2>
+          <h2>Sponsors</h2>
         </div>
 
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <p style="text-align:center">To be confirmed</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/11.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/22.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
           <!-- <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/1.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/2.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/3.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/4.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/5.png') }}" class="img-fluid" alt="">
             </div>
@@ -828,31 +859,31 @@ and innovations.</span></p>
 
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <p style="text-align:center">To be confirmed</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/11.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/22.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
           <!-- <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/1.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/2.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/3.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/4.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/5.png') }}" class="img-fluid" alt="">
             </div>
@@ -892,31 +923,31 @@ and innovations.</span></p>
 
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <p style="text-align:center">To be confirmed</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/11.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/22.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
+            </div>
+          </div>
+
           <!-- <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/1.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/2.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/3.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/4.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/5.png') }}" class="img-fluid" alt="">
             </div>
