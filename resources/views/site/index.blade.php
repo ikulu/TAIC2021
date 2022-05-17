@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ asset('siteimg/favicon.png') }}" rel="icon">
-  <link href="{{ asset('siteimg/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('siteimg/ict.jpg') }}" rel="icon">
+  <!-- <link href="{{ asset('siteimg/apple-touch-icon.png') }}" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -87,7 +87,7 @@
       <h1 class="mb-4 pb-0">Tanzania Annual<br><span>ICT</span> Conference</h1>
       <p class="mb-4 pb-0">26-28 October, Zanzibar, Tanzania</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
-      <a href="https://www.youtube.com/watch?v=EGmwziFP7cY" class="glightbox play-btn mb-4"></a>
+      <a href="" class="glightbox play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">About The Event</a>
     </div>
   </section><!-- End Hero Section -->
@@ -700,7 +700,6 @@ and innovations.</span></p>
         </div>
           
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <p style="text-align:center">To be confirmed</p>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/analytics/1.jpg') }}" class="img-fluid" alt="">
