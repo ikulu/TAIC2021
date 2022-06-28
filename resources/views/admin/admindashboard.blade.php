@@ -21,18 +21,14 @@
           <div class="card info-card revenue-card">
 
             <div class="card-body">
-              <h5 class="card-title">Users <span>| Total</span></h5>
+              <h5 class="card-title">Speakers <span>| Total</span></h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  <?php 
-                    $usersCount = DB::table('users')->count();
-                  ?>
-                  <h6>{{$usersCount}}</h6>
-
+                  
                 </div>
               </div>
             </div>
@@ -45,18 +41,14 @@
           <div class="card info-card revenue-card">
 
           <div class="card-body">
-              <h5 class="card-title">Active Users <span>| Total</span></h5>
+              <h5 class="card-title">Sponsors <span>| Total</span></h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  <?php 
-                    $usersCount = DB::table('users')->count();
-                  ?>
-                  <h6>{{$usersCount}}</h6>
-
+                  
                 </div>
               </div>
             </div>
@@ -69,18 +61,14 @@
 
           <div class="card info-card revenue-card">
             <div class="card-body">
-              <h5 class="card-title">Suspanded Users <span>| Total</span></h5>
+              <h5 class="card-title">Partners <span>| Total</span></h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  <?php 
-                    $usersCount = DB::table('users')->count();
-                  ?>
-                  <h6>0</h6>
-
+                  
                 </div>
               </div>
             </div>
@@ -93,66 +81,14 @@
 
           <div class="card info-card customers-card">
             <div class="card-body">
-              <h5 class="card-title">Departments <span>| Total</span></h5>
+              <h5 class="card-title">Exhibitors <span>| Total</span></h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-bricks"></i>
+                  <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  <?php 
-                    $dpt = DB::table('departments')->count();
-                  ?>
-                  <h6>{{$dpt}}</h6>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- End Customers Card -->
-
-        <!-- Customers Card -->
-        <div class="col-xxl-4 col-xl-12">
-
-          <div class="card info-card customers-card">
-            <div class="card-body">
-              <h5 class="card-title">Active Departments <span>| Total</span></h5>
-
-              <div class="d-flex align-items-center">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-bricks"></i>
-                </div>
-                <div class="ps-3">
-                  <?php 
-                    $dptCount = DB::table('departments')->count();
-                  ?>
-                  <h6>{{$dptCount}}</h6>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- End Customers Card -->
-
-        <!-- Customers Card -->
-        <div class="col-xxl-4 col-xl-12">
-
-          <div class="card info-card customers-card">
-            <div class="card-body">
-              <h5 class="card-title">De-active Departments <span>| Total</span></h5>
-
-              <div class="d-flex align-items-center">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-bricks"></i>
-                </div>
-                <div class="ps-3">
-                  <?php 
-                    $dptCount = DB::table('departments')->count();
-                  ?>
-                  <h6>0</h6>
-
+                  
                 </div>
               </div>
             </div>

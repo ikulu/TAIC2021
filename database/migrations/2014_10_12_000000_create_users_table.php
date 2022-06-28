@@ -21,8 +21,6 @@ class CreateUsersTable extends Migration
             $table->string('password')->default('ICTC123');
             $table->rememberToken();
             $table->timestamps();
-            $table->bigInteger('dpt_id')->unsigned()->nullable();
-            $table->foreign('dpt_id')->references('id')->on('departments')->onDelete('cascade');
         });
     }
 

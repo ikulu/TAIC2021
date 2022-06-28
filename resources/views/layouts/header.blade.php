@@ -4,11 +4,11 @@
 <div class="d-flex align-items-center justify-content-between">
   <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center">
     <img src="{{ asset('assets/img/logo.png') }}" alt="">
-    <span class="d-none d-lg-block">ICTC Reporter</span>
+    <span class="d-none d-lg-block">TANZANIA ANNUAL ICT CONFERENCE</span>
   </a>
   <i class="bi bi-list toggle-sidebar-btn"></i>
 </div><!-- End Logo -->
-@if (Auth::user()->hasRole('dg'))
+@if (Auth::user()->hasRole('superadmin'))
   <div class="search-bar">
     <form class="search-form d-flex align-items-center" method="POST" action="#">
       <input type="text" name="query" placeholder="Search" title="Enter search keyword">
@@ -25,27 +25,6 @@
             </a>
           </li><!-- End Search Icon-->
         
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number">0</span>
-          </a><!-- End Messages Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 1 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li>
-
-          </ul><!-- End Messages Dropdown Items -->
-
-        </li><!-- End Messages Nav -->
-
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
@@ -59,17 +38,14 @@
               <?php 
                 $role = '';
                 $id = Auth::user()->id;
-                $dpts = DB::select("SELECT departments.name AS dptss,roles.name AS rolee FROM departments,users,role_user,roles WHERE departments.id = users.dpt_id AND users.id = role_user.user_id AND role_user.role_id = roles.id AND users.id = $id");
+                $dpts = DB::select("SELECT roles.name AS rolee FROM users,role_user,roles WHERE users.id = role_user.user_id AND role_user.role_id = roles.id AND users.id = $id");
               
                 foreach($dpts as $dpt){
-                  if($dpt->rolee == 'dg'){
-                      $role = 'Director General';
+                  if($dpt->rolee == 'superadmin'){
+                      $role = 'Super Administrator';
                   }
-                  if($dpt->rolee == 'director'){
-                    $role = 'Director';
-                  }
-                  if($dpt->rolee == 'user'){
-                    $role = 'User';
+                  if($dpt->rolee == 'admin'){
+                    $role = 'Administrator';
                   }
                   echo "<span>$role</span>";
                 }

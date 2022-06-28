@@ -5,7 +5,7 @@
       <h1>Profile</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
           <li class="breadcrumb-item active">Profile</li>
         </ol>
       </nav>
@@ -23,27 +23,18 @@
               <?php 
                 $role = '';
                 $id = Auth::user()->id;
-                $dpts = DB::select("SELECT departments.name AS dptss,roles.name AS rolee FROM departments,users,role_user,roles WHERE departments.id = users.dpt_id AND users.id = role_user.user_id AND role_user.role_id = roles.id AND users.id = $id");
+                $dpts = DB::select("SELECT roles.name AS rolee FROM users,role_user,roles WHERE users.id = role_user.user_id AND role_user.role_id = roles.id AND users.id = $id");
 
                 foreach($dpts as $dpt){
-                    if($dpt->rolee == 'dg'){
-                        $role = 'Director General';
-                    }elseif($dpt->rolee == 'Director'){
-                        ($dpt->rolee == 'Director');
-                    }elseif($dpt->rolee == 'User'){
-                        ($dpt->rolee == 'User');
+                    if($dpt->rolee == 'superadmin'){
+                        $role = 'super Administrator';
+                    }elseif($dpt->rolee == 'admin'){
+                        ($dpt->rolee == 'Administrator');
                     }
                     echo "<h3>$role</h3>";
                 }
               
               ?>
-              
-              <div class="social-links mt-2">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
           </div>
 

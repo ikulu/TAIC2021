@@ -16,7 +16,7 @@ class RegisterUserController extends Controller
 {
     public function create()
     {
-        return view('admin.newuser');
+        return view('superadmin.newuser');
     }
 
     public function store(Request $request)
@@ -24,7 +24,7 @@ class RegisterUserController extends Controller
         $name = $request->name;
         $email = $request->email;
 
-        $password = "ICTC123";
+        $password = "TAIC2022";
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users']
@@ -34,7 +34,6 @@ class RegisterUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($password),
-            'dpt_id' => $request->dpt_id,
         ]);
         $user->attachRole($request->role_id);
         event(new Registered($user));
@@ -42,11 +41,11 @@ class RegisterUserController extends Controller
         $data = array('name'=>$name, 'email' => $email);
         Mail::send(['text'=>'mail'], $data, function($message)use ($request) {
 
-            $message->to($request->email, $request->name)->subject('ICT Commisiion Reporter Login credentials');
+            $message->to($request->email, $request->name)->subject('TAIC MS Login credentials');
             $message->from('info@ictc.go.tz','ICTC');
         });
         
-        return view('admin.newuser');
+        return view('superadmin.newuser');
     }
     
     public function editprofile(Request $request){

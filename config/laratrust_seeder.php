@@ -12,20 +12,14 @@ return [
     'truncate_tables' => true,
 
     'roles_structure' => [
-        'admin' => [
+        'superadmin' => [
             'users' => 'c,r,u,d',
             'payments' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
-        'dg' => [
+        'admin' => [
             'users' => 'c,r,u,d',
             'profile' => 'r,u'
-        ],
-        'director' => [
-            'profile' => 'r,u',
-        ],
-        'user' => [
-            'profile' => 'c,r,u,d',
         ]
     ],
 

@@ -41,7 +41,7 @@
 
       <div id="logo" class="me-auto">
         <!-- Uncomment below if you prefer to use a text logo -->
-        <h1><a href="index.html">TAIC<span>2022</span></a></h1>
+        <h1><a href="/">TAIC<span>2022</span></a></h1>
         <!-- <a href="index.html" class="scrollto"><img src="{{ asset('siteimg/logo.png') }}" alt="" title=""></a> -->
       </div>
 
@@ -55,23 +55,20 @@
           <!-- <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li> -->
           <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> -->
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+            <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2021</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
+                <li><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank">Final Report</a></li>
               </ul>
             </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
+            <li class="dropdown"><a href="#"><span>TAIC 2020</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Final Report</a></li>
+              </ul>
+            </li>
           </ul>
-        </li> -->
+        </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -88,7 +85,7 @@
       <p class="mb-4 pb-0">26-28 October, Zanzibar, Tanzania</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
-      <a href="#about" class="about-btn scrollto">About The Event</a>
+      <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
     </div>
   </section><!-- End Hero Section -->
 
@@ -115,14 +112,15 @@ The conference discussions focus on a wide range of topics emphasizing on the ro
 social-economic development and the role of ICT as an important tool for attainment of
 Tanzania Development Vision and Sustainable Development Goals. The conference will be
 featured with exhibitions from various ICT stakeholders showcasing their products, services
-and innovations.</span></p>
+and innovations. For more information read <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a></span></p>
 <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
-            <p>Zanzibar, Tanzania</p>
+            <p>Golden Tulip, Zanzibar, Tanzania</p>
             <h3>When</h3>
             <p>Wednesday to Friday<br>26-28 October</p>
+            <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a>
           </div>
           <div class="col-lg-3">
             <img src="{{ asset('siteimg/taic1.jpeg') }}" alt="Speaker 3" class="img-fluid">
@@ -237,7 +235,7 @@ and innovations.</span></p>
             <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Thurthday</a>
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Thursday</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Friday</a>
@@ -518,7 +516,7 @@ and innovations.</span></p>
           <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8 position-relative">
-                <h3>Zanzibar, Tanzania</h3>
+                <h3>Golden Tulip, Zanzibar, Tanzania</h3>
                 <p>Zanzibar is a fantastic beach holiday destination. It is also an excellent value-for-money destination with lots of character and rich history. The culture is colourful and interesting. The old architecture is unique and the beaches are beautiful.</p>
               </div>
             </div>
