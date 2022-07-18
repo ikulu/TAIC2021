@@ -37,7 +37,7 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('tmp/css/style.css') }}" rel="stylesheet">
 
-  <script>
+  <script type="text/javascript">
     $(document).ready(function(){
       $(".allall").hide();
       $(".thisall").hide();
@@ -60,6 +60,7 @@
       });
     });
   </script>
+
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">

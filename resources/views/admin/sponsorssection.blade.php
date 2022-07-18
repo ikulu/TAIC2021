@@ -62,15 +62,13 @@
                           $id = $sponsor->id;
                       echo "
                       <div class='col-lg-3 col-md-4 label'>
-                        <div style='text-align:center' class='speaker; data-aos='fade-up' data-aos-delay='300'>
-                          <img src='siteimg/speakers/person.png' alt='Speaker 3' class='img-fluid'>
-                          <div class='pt-2'>
-                            <a href='#' class='btn btn-primary btn-sm' title='Upload new profile image'><i class='bi bi-upload'></i></a>
+                        <div style='text-align:center' class='speaker; data-aos='fade-up' data-aos-delay='300'>";?>
+                          <img src="{{asset('sponsors/'.$picture)}}" alt='' class='img-fluid'>
+                          <?php echo "<div class='pt-2'>
                           </div>
                           <br />
                           <div class='details'>
                             <h6><a href='speaker-details.html'>$sponsorsname</a></h6>
-                            <input name='fullname' type='text' class='form-control' id='fullName' value='$sponsorsname'>
                             ";?>
                             <a href="{{ asset('/' . $id . '/deletesponsorssection') }}" class="btn btn-danger btn-sm" title="Delete Sponsour"><i class="bi bi-trash"></i></a>
                           <?php echo "</div>
@@ -85,7 +83,7 @@
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
                 
                   <!-- Profile Edit Form -->
-                  <form action="addsponsorssection" method="POST">
+                  <form action="addsponsorssection" method="POST" enctype="multipart/form-data">
                     @csrf
                   
                     <div class="row mb-3">
@@ -98,7 +96,7 @@
                     <div class="row mb-3">
                       <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Sponsour Logo</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="picture" type="text" class="form-control" id="fullName" value="">
+                        <input name="picture" type="file" class="form-control" id="fullName" value="">
                       </div>
                     </div>
 

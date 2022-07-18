@@ -57,7 +57,7 @@
         </div><!-- End Revenue Card -->
 
         <!-- Customers Card -->
-        <div class="col-xxl-4 col-xl-12">
+        <div class="col-xxl-4 col-md-6">
 
           <div class="card info-card revenue-card">
             <div class="card-body">
@@ -77,7 +77,7 @@
         </div><!-- End Customers Card -->
 
         <!-- Customers Card -->
-        <div class="col-xxl-4 col-xl-12">
+        <div class="col-xxl-4 col-md-6">
 
           <div class="card info-card customers-card">
             <div class="card-body">

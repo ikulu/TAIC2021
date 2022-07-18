@@ -62,24 +62,24 @@ class RegisterUserController extends Controller
         $request->validate([
             'password' => 'required',
             'newpassword' => 'required',
-            'renewpassword' => 'required',
         ]);
-        $reqPass = Hash::make($request->password);
-        $userspss = DB::select("SELECT * FROM users WHERE password = $reqPass");
-        foreach($userspss AS $pass){
-            $dbpassword = $pass->password;
-        }
-        if($request->password = $dbpassword){
-            if($request->renewpassword == $request->newpassword){
 
-            }else{
-                return redirect('/profile')->with('success', "Passwords isatch password!");
-            }
-        }else{
-            return redirect('/profile')->with('success', "You entered invalid password!");
+        if (!(Hash::check($request->get('password'), Auth::user()->password))) {
+            // The passwords matches
+            return redirect('/profile')->with('success', "Your current password does not matches with the password.");
+            // return redirect()->back()->with("error","Your current password does not matches with the password.");
         }
-        $updateuDetails = User::find($request->id);
-        $updateuDetails->update(['name' => $request->name,'email' => $request->email]);
-        return redirect('/profile')->with('success', "Your details Updated successfully!");
+
+        if(strcmp($request->get('password'), $request->get('newpassword')) == 0){
+            // Current password and new password same
+            return redirect()->back()->with("success","New Password cannot be same as your current password.");
+        }
+
+        //Change Password
+        $user = Auth::user();
+        $user->password = bcrypt($request->get('newpassword'));
+        $user->save();
+
+        return redirect()->back()->with("success","Password successfully changed!");
     }
 }

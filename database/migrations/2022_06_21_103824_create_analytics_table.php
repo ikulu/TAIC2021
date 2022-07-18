@@ -16,7 +16,7 @@ class CreateAnalyticsTable extends Migration
         Schema::create('analytics', function (Blueprint $table) {
             $table->id();
             $table->string('analyticsname');
-            $table->string('picture');
+            $table->binary('picture');
             $table->timestamps();
         });
     }

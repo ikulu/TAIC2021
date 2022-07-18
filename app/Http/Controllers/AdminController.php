@@ -12,6 +12,10 @@ use App\Models\Analytics;
 use App\Models\Sponsors;
 use App\Models\Partners;
 use App\Models\Exhibitors;
+use App\Models\Gallery;
+use App\Models\Mails;
+use App\Models\Message;
+use App\Models\VenueGallery;
 use App\Models\Speakers;
 use App\Models\Venue;
 use App\Models\Contacts;
@@ -52,9 +56,10 @@ class AdminController extends Controller
             'title' => 'required',
             'location' => 'required',
             'timmer' => 'required',
-            'dates' => 'required'
+            'dates1' => 'required',
+            'dates2' => 'required'
         ]);
-        $addfrontpage = Frontpage::create(['title' => $request->title,'fromdate' => $request->dates,'todate' => $request->dates,'timmer' => $request->timmer,'location' => $request->location]);
+        $addfrontpage = Frontpage::create(['title' => $request->title,'fromdate' => $request->dates1,'todate' => $request->dates2,'timmer' => $request->timmer,'location' => $request->location]);
         return redirect('/frontpage')->with('success', "Application Frontpage Added successfully!");
     }
     public function editfrontpage(Request $request){
@@ -62,15 +67,16 @@ class AdminController extends Controller
             'title' => 'required',
             'location' => 'required',
             'timmer' => 'required',
-            'dates' => 'required'
+            'dates1' => 'required',
+            'dates2' => 'required'
         ]);
         $apID = DB::select("SELECT MAX(id) AS id FROM frontpages");
         foreach($apID AS $id){
             $apID = $id->id;
         }
         $updatefrontpage = Frontpage::find($apID);
-        $updatefrontpage->update(['title' => $request->title,'fromdate' => $request->dates,'todate' => $request->dates,'timmer' => $request->timmer,'location' => $request->location]);
-        return redirect('/frontpage')->with('success', "Application Name Updated successfully!");
+        $updatefrontpage->update(['title' => $request->title,'fromdate' => $request->dates1,'todate' => $request->dates2,'timmer' => $request->timmer,'location' => $request->location]);
+        return redirect('/frontpage')->with('success', "Application Front Page Updated successfully!");
     }
 
     public function aboutsection(){
@@ -145,11 +151,15 @@ class AdminController extends Controller
     }
     public function addanalyticssection(Request $request){
         $request->validate([
-            'picture' => 'required',
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048',
             'analyticsname' => 'required'
         ]);
-        $analytics = Analytics::create(['analyticsname' => $request->analyticsname,'picture' => $request->picture]);
-        return redirect('/analyticssection')->with('success', "Speaker added successfully!");
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('analytics'),$newIMGname);
+
+        $analytics = Analytics::create(['analyticsname' => $request->analyticsname,'picture' => $newIMGname]);
+        return redirect('/analyticssection')->with('success', "Analytic added successfully!");
     }
     public function deleteanalyticssection($id){
         $deleteanalytics = Analytics::find($id);
@@ -162,10 +172,14 @@ class AdminController extends Controller
     }
     public function addsponsorssection(Request $request){
         $request->validate([
-            'picture' => 'required',
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048',
             'sponsorsname' => 'required'
         ]);
-        $sponsors = Sponsors::create(['sponsorsname' => $request->sponsorsname,'picture' => $request->picture]);
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('sponsors'),$newIMGname);
+
+        $sponsors = Sponsors::create(['sponsorsname' => $request->sponsorsname,'picture' => $newIMGname]);
         return redirect('/sponsorssection')->with('success', "Sponsor added successfully!");
     }
     public function deletesponsorssection($id){
@@ -179,10 +193,14 @@ class AdminController extends Controller
     }
     public function addpartnerssection(Request $request){
         $request->validate([
-            'picture' => 'required',
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048',
             'partnersname' => 'required'
         ]);
-        $partners = Partners::create(['partnersname' => $request->partnersname,'picture' => $request->picture]);
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('partners'),$newIMGname);
+
+        $partners = Partners::create(['partnersname' => $request->partnersname,'picture' => $newIMGname]);
         return redirect('/partnerssection')->with('success', "Partner added successfully!");
     }
     public function deletepartnerssection($id){
@@ -191,15 +209,59 @@ class AdminController extends Controller
         return redirect('/partnerssection')->with('success', "Partner deleted Successfully!");
     }
 
+    public function venuegallerysection(){
+        return view('admin.venuegallerysection');
+    }
+    public function addvenuegallerysection(Request $request){
+        $request->validate([
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048'
+        ]);
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('venuegallery'),$newIMGname);
+
+        $gallery = VenueGallery::create(['picture' => $newIMGname]);
+        return redirect('/venuegallerysection')->with('success', "Venue Gallery added successfully!");
+    }
+    public function deletevenuegallerysection($id){
+        $deletegallery = VenueGallery::find($id);
+        $deletegallery->delete();
+        return redirect('/venuegallerysection')->with('success', "Venue Gallery deleted Successfully!");
+    }
+
+    public function gallerysection(){
+        return view('admin.gallerysection');
+    }
+    public function addgallerysection(Request $request){
+        $request->validate([
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048'
+        ]);
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('gallery'),$newIMGname);
+
+        $gallery = Gallery::create(['picture' => $newIMGname]);
+        return redirect('/gallerysection')->with('success', "Gallery added successfully!");
+    }
+    public function deletegallerysection($id){
+        $deletegallery = Gallery::find($id);
+        $deletegallery->delete();
+        return redirect('/gallerysection')->with('success', "Gallery deleted Successfully!");
+    }
+
     public function exhibitorssection(){
         return view('admin.exhibitorssection');
     }
     public function addexhibitorssection(Request $request){
         $request->validate([
-            'picture' => 'required',
+            'picture' => 'required|mimes:jpg,png,jpeg|max:5048',
             'exhibitorsname' => 'required'
         ]);
-        $exhibitors = Exhibitors::create(['exhibitorsname' => $request->exhibitorsname,'picture' => $request->picture]);
+
+        $newIMGname = time().'_'.$request->name . '.' . $request->picture->extension();
+        $request->picture->move(public_path('exhibitors'),$newIMGname);
+
+        $exhibitors = Exhibitors::create(['exhibitorsname' => $request->exhibitorsname,'picture' => $newIMGname]);
         return redirect('/exhibitorssection')->with('success', "Exhibitor added successfully!");
     }
     public function deleteexhibitorssection($id){
@@ -269,40 +331,47 @@ class AdminController extends Controller
         $request->validate([
             'day' => 'required',
             'action' => 'required',
-            'fromtotime' => 'required',
+            'fromtotime1' => 'required',
+            'fromtotime2' => 'required',
             'venue' => 'required'
         ]);
         $apID = DB::select("SELECT MAX(id) AS id FROM schedules");
-        $addschedule = Schedule::create(['day' => $request->day,'action' => $request->action,'timefrom' => $request->fromtotime,'timeto' => $request->fromtotime,'venue' => $request->venue,]);
+        $addschedule = Schedule::create(['day' => $request->day,'action' => $request->action,'timefrom' => $request->fromtotime1,'timeto' => $request->fromtotime2,'venue' => $request->venue,]);
         return redirect('/schedule')->with('success', "Schedule Added successfully!");
     }
     public function deleteschedule($id){
-        if($id == "1"){
-            $apID = DB::select("SELECT id FROM schedules WHERE day = 'Wednesday'");
-            foreach($apID AS $id){
-                $apID = $id->id;
-            }
-            $deleteschedule = Schedule::find($apID);
-            $deleteschedule->delete();
+        $apID = DB::select("SELECT id FROM schedules WHERE id = '$id'");
+        foreach($apID AS $id){
+            $apID = $id->id;
         }
-        if($id == "2"){
-            $apID = DB::select("SELECT id FROM schedules WHERE day = 'Thursday'");
-            foreach($apID AS $id){
-                $apID = $id->id;
-            }
-            $deleteschedule = Schedule::find($apID);
-            // return $apID;
-            $deleteschedule->delete();
-        }
-        if($id == "3"){
-            $apID = DB::select("SELECT id FROM schedules WHERE day = 'Friday'");
-            foreach($apID AS $id){
-                $apID = $id->id;
-            }
-            $deleteschedule = Schedule::find($apID);
-            $deleteschedule->delete();
-        }
+        $deleteschedule = Schedule::find($apID);
+        $deleteschedule->delete();
         
         return redirect('/schedule')->with('success', "Schedule deleted Successfully!");
+    }
+
+    public function mail(){
+        return view('admin.mail');
+    }
+    public function addmail(Request $request){
+        $request->validate([
+            'email' => 'required'
+        ]);
+        $addmail = Mails::create(['email' => $request->email]);
+        return redirect('/')->with('success', "Email Added successfully!");
+    }
+
+    public function messages(){
+        return view('admin.messages');
+    }
+    public function addmessage(Request $request){
+        $request->validate([
+            'email' => 'required',
+            'name' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+        ]);
+        $addmessage = Message::create(['name' => $request->name,'email' => $request->email,'subject' => $request->subject,'message' => $request->message]);
+        return redirect('/')->with('success', "Massage Added successfully!");
     }
 }

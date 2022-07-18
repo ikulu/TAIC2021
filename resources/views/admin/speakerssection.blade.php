@@ -79,7 +79,7 @@
                         ?>
                           <div class='col-lg-3 col-md-4 label'>
                           <div style='text-align:center' class='speaker' data-aos='fade-up' data-aos-delay='300'>
-                            <img src="{{asset('profiles/'.$profileM)}}" alt='Speaker 3' class='img-fluid'>
+                            <img src="{{asset('profiles/'.$profileM)}}" alt='' class='img-fluid'>
                             <div class='pt-2'>
                               <a href='#' class='btn btn-primary btn-sm' title='Upload new profile image'><i class='bi bi-upload'></i></a>
                             </div>
@@ -122,25 +122,30 @@
                           $occupation = $speaker->occupation;
                           $profile = $speaker->profile;
                           $facebook = $speaker->facebook;
+                          $instagram = $speaker->instagram;
                           $twitter = $speaker->tweeter;
                           $ini = $speaker->ini;
                           $id = $speaker->id;
+
+                          $facebook = "https://www.facebook.com/".$facebook;
+                          $twitter = "https://www.twitter.com/".$twitter;
+                          $ini = "https://www.linkedin.com/".$ini;
+                          $instagram = "https://www.instagram.com/".$instagram;
                       echo "
                       <div class='col-lg-3 col-md-4 label'>
                         <div style='text-align:center' class='speaker; data-aos='fade-up' data-aos-delay='300'>";?>
-                          <img src="{{asset('profiles/'.$profile)}}" alt='Speaker 3' class='img-fluid'>
-                          <?php echo "    <div class='pt-2'>
-                            <a href='#' class='btn btn-primary btn-sm' title='Upload new profile image'><i class='bi bi-upload'></i></a>
+                          <img src="{{asset('profiles/'.$profile)}}" alt='' class='img-fluid'>
+                          <?php echo "<div class='pt-2'>
                           </div>
                           <br />
                           <div class='details'>
-                            <h6><a href='speaker-details.html'>$fullname</a></h6>
+                            <h6><a href=''>$fullname</a></h6>
                             <p>$occupation</p>
                             <div class='social'>
-                              <a href=''><i class='bi bi-twitter'></i></a>
-                              <a href=''><i class='bi bi-facebook'></i></a>
-                              <a href=''><i class='bi bi-instagram'></i></a>
-                              <a href=''><i class='bi bi-linkedin'></i></a>
+                              <a href='$twitter'><i class='bi bi-twitter'></i></a>
+                              <a href='$facebook'><i class='bi bi-facebook'></i></a>
+                              <a href='$instagram'><i class='bi bi-instagram'></i></a>
+                              <a href='$ini'><i class='bi bi-linkedin'></i></a>
                             </div>
                             ";?>
                             <a href="{{ asset('/' . $id . '/deletespeakerssection') }}" class="btn btn-danger btn-sm" title="Delete Guest Of Honour"><i class="bi bi-trash"></i></a>

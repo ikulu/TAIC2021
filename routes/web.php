@@ -45,6 +45,12 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
     Route::get('/partnerssection', 'App\Http\Controllers\AdminController@partnerssection')->name('partnerssection');
     Route::post('/addpartnerssection', 'App\Http\Controllers\AdminController@addpartnerssection')->name('addpartnerssection'); 
     Route::get('/{id}/deletepartnerssection', 'App\Http\Controllers\AdminController@deletepartnerssection')->name('deletepartnerssection');
+    Route::get('/gallerysection', 'App\Http\Controllers\AdminController@gallerysection')->name('gallerysection');
+    Route::post('/addgallerysection', 'App\Http\Controllers\AdminController@addgallerysection')->name('addgallerysection'); 
+    Route::get('/{id}/deletegallerysection', 'App\Http\Controllers\AdminController@deletegallerysection')->name('deletegallerysection');
+    Route::get('/venuegallerysection', 'App\Http\Controllers\AdminController@venuegallerysection')->name('venuegallerysection');
+    Route::post('/addvenuegallerysection', 'App\Http\Controllers\AdminController@addvenuegallerysection')->name('addvenuegallerysection'); 
+    Route::get('/{id}/deletevenuegallerysection', 'App\Http\Controllers\AdminController@deletevenuegallerysection')->name('deletevenuegallerysection');
     Route::get('/exhibitorssection', 'App\Http\Controllers\AdminController@exhibitorssection')->name('exhibitorssection');
     Route::post('/addexhibitorssection', 'App\Http\Controllers\AdminController@addexhibitorssection')->name('addexhibitorssection'); 
     Route::get('/{id}/deleteexhibitorssection', 'App\Http\Controllers\AdminController@deleteexhibitorssection')->name('deleteexhibitorssection');
@@ -57,7 +63,12 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
     Route::get('/schedule', 'App\Http\Controllers\AdminController@schedule')->name('schedule');
     Route::post('/addschedule', 'App\Http\Controllers\AdminController@addschedule')->name('addschedule');
     Route::get('/{id}/deleteschedule', 'App\Http\Controllers\AdminController@deleteschedule')->name('deleteschedule');
+    Route::get('/mail', 'App\Http\Controllers\AdminController@mail')->name('mail');
+    Route::get('/messages', 'App\Http\Controllers\AdminController@messages')->name('messages');
 });
+
+    Route::post('/addmail', 'App\Http\Controllers\AdminController@addmail')->name('addmail');
+    Route::post('/addmessage', 'App\Http\Controllers\AdminController@addmessage')->name('addmessage');
 
 // all admins
 Route::get('/profile', 'App\Http\Controllers\RouteController@profile')->name('profile');

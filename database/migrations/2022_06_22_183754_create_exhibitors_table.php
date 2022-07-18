@@ -16,7 +16,7 @@ class CreateExhibitorsTable extends Migration
         Schema::create('exhibitors', function (Blueprint $table) {
             $table->id();
             $table->string('exhibitorsname');
-            $table->string('picture');
+            $table->binary('picture');
             $table->timestamps();
         });
     }

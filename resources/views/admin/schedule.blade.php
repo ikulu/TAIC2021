@@ -96,17 +96,10 @@
                             <h4>{{$venue}}</h4>
                           </div>
                           <div class="col-md-2">
-                            <a href="{{ asset('/' . $id1 . '/editschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
+                            <a href="{{ asset('/' . $id1 . '/deleteschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
                           </div>
                         </div>
                         <?php } ?>
-                        <?php 
-                        $id = 1;
-                        if($action != ''){
-                        ?>
-                          <a href="{{ asset('/' . $id . '/deleteschedule') }}" class="btn btn-danger btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
-                        <?php }
-                        ?>
                       </div>
                       
                       <div role="tabpane1" class="col-lg-12 tab-pane fade show active" id="day-2">
@@ -128,17 +121,10 @@
                             <h4>{{$venue2}}</h4>
                           </div>
                           <div class="col-md-2">
-                            <a href="{{ asset('/' . $id2 . '/editschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
+                            <a href="{{ asset('/' . $id2 . '/deleteschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
                           </div>
                         </div>
                         <?php } ?>
-                        <?php 
-                        $id = 2;
-                        if($action2 != ''){
-                        ?>
-                          <a href="{{ asset('/' . $id . '/deleteschedule') }}" class="btn btn-danger btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
-                        <?php }
-                        ?>
                       </div>
 
                       <div role="tabpane1" class="col-lg-12 tab-pane fade show active" id="day-3">
@@ -160,17 +146,10 @@
                             <h4>{{$venue3}}</h4>
                           </div>
                           <div class="col-md-2">
-                            <a href="{{ asset('/' . $id3 . '/editschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
+                            <a href="{{ asset('/' . $id3 . '/deleteschedule') }}" class="btn btn-warning btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
                           </div>
                         </div>
                         <?php } ?>
-                        <?php 
-                        $id = 3;
-                        if($action3 != ''){
-                        ?>
-                          <a href="{{ asset('/' . $id . '/deleteschedule') }}" class="btn btn-danger btn-sm" title="Delete Schedule"><i class="bi bi-trash"></i></a>
-                        <?php }
-                        ?>
                       </div>
 
                     </div>
@@ -201,9 +180,16 @@
                     </div>
 
                     <div class="row mb-3">
-                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">From To Time</label>
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">From Time</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="fromtotime" type="text" class="form-control" id="fullName">
+                        <input name="fromtotime1" type="time" class="form-control" id="fullName">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">To Time</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="fromtotime2" type="time" class="form-control" id="fullName">
                       </div>
                     </div>
 

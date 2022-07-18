@@ -31,116 +31,63 @@
   
   @if (Auth::user()->hasRole('admin'))
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav0" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('mail') }}">
+      <i class="bi bi-app-indicator"></i><span>Emails</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+  </li><!-- End Forms Nav -->
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="{{ route('messages') }}">
+      <i class="bi bi-app-indicator"></i><span>Messages</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+  </li><!-- End Forms Nav -->
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="{{ route('header') }}">
       <i class="bi bi-app-indicator"></i><span>Header</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav0" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('header') }}">
-          <i class="bi bi-circle"></i><span>App Name</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav1" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('frontpage') }}">
       <i class="bi bi-app-indicator"></i><span>Front Page</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav1" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('frontpage') }}">
-          <i class="bi bi-circle"></i><span>Title</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('frontpage') }}">
-          <i class="bi bi-circle"></i><span>Dates Timer and Location</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav2" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('aboutsection')}}">
       <i class="bi bi-app-indicator"></i><span>About</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('aboutsection')}}">
-          <i class="bi bi-circle"></i><span>Title</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('aboutsection')}}">
-          <i class="bi bi-circle"></i><span>About Text</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('aboutsection')}}">
-          <i class="bi bi-circle"></i><span>Where And When</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav3" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('speakerssection')}}">
       <i class="bi bi-app-indicator"></i><span>Speakers</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav3" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('speakerssection')}}">
-          <i class="bi bi-circle"></i><span>Guest Of Honour</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('speakerssection')}}">
-          <i class="bi bi-circle"></i><span>Speakers</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav4" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('schedule') }}">
       <i class="bi bi-app-indicator"></i><span>Schedule</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav4" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('schedule') }}">
-          <i class="bi bi-circle"></i><span>Day One</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('schedule') }}">
-          <i class="bi bi-circle"></i><span>Day Two</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('schedule') }}">
-          <i class="bi bi-circle"></i><span>Day Three</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav5" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('eventvenuesection') }}">
       <i class="bi bi-app-indicator"></i><span>Event Venue</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav5" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('eventvenuesection') }}">
-          <i class="bi bi-circle"></i><span>Title</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('eventvenuesection') }}">
-          <i class="bi bi-circle"></i><span>Content</span>
-        </a>
-      </li>
-    </ul>
+  </li><!-- End Forms Nav -->
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="{{ route('venuegallerysection') }}">
+      <i class="bi bi-app-indicator"></i><span>Venue Gallery</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+  </li><!-- End Forms Nav -->
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="{{ route('gallerysection') }}">
+      <i class="bi bi-app-indicator"></i><span>Gallery</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
@@ -172,16 +119,9 @@
   </li><!-- End Forms Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav8" data-bs-toggle="collapse" href="#">
+    <a class="nav-link collapsed" href="{{ route('contactssection') }}">
       <i class="bi bi-app-indicator"></i><span>Contacts</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="forms-nav8" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="{{ route('contactssection') }}">
-          <i class="bi bi-circle"></i><span>Address Phone Email</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Forms Nav -->
   @endif
 

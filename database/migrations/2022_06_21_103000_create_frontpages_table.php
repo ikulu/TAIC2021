@@ -18,7 +18,7 @@ class CreateFrontpagesTable extends Migration
             $table->string('title');
             $table->date('fromdate');
             $table->date('todate');
-            $table->timestamp('timmer');
+            $table->date('timmer');
             $table->string('location');
             $table->timestamps();
         });
