@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Department;
 
-class AdminController extends Controller
+class SAdminController extends Controller
 {
     public function index(){
         return view('auth.login');

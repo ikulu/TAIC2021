@@ -110,14 +110,15 @@
     $todate = date_create($todate);
     $presentedFromdate = date_format($fromdate,"d");
     $presentedTodate = date_format($todate,"d");
-    $presentedMonthDate = date_format($fromdate,"M"); 
+    $presentedMonthDate = date_format($fromdate,"F");
+    $presentedYearDate = date_format($fromdate,"Y"); 
   ?>
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">{{$title}}</h1>
       <!-- Tanzania Annual<br><span>ICT</span> Conference -->
-      <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}}, {{$location}}</p>
+      <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
       <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
@@ -144,12 +145,12 @@
       dialogues, business investors networking, professional discussion, experience and knowledge
       sharing on the global ICT issues, business opportunities, knowledge and skills needs to cope
       with the dynamic digital ecosystem. The Conference also serves as a platform for participants to
-      discuss enabling environment for ICT growth towards socio-econo<span id="dots">...</span><span id="more">mic development in Tanzania.
+      discuss enabling environment for ICT growth towards socio-economic development in Tanzania.
       The 5 th TAIC 2019 succeeds two TAICs and two Annual ICT Professionals Conferences
       (AIPC) that the Information and Communication Technologies (ICT) Commission has been
       organizing since 2017 bringing together more than 800 ICT stakeholders from both Government
       and Private Sector, Small Medium Enterprises, Academia, researchers, startups, ICT
-      Entrepreneurs and the business industry. organized by the Tanzania ICT Commission.<br><br>
+      Entrepreneurs and the business industry. organized by the Tanzania ICT Commission.
       The conference discussions focus on a wide range of topics emphasizing on the role of ICT in
       social-economic development and the role of ICT as an important tool for attainment of
       Tanzania Development Vision and Sustainable Development Goals. The conference will be
@@ -163,21 +164,22 @@
       <div class="row">
         <div class="col-lg-6">
           <h2>{{$title}}</h2>
-          <p>{{$about}} For more information read <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a></span></p>
+          <p style="text-align: justify;">{{$about}} For more information read <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a></span></p>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
             <p>{{$location}}</p>
             <h3>When</h3>
-            <p>{{$when}}<br>{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}}</p>
-            <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a>
+            <p>{{$when}}<br>{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}</p>
+            <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a><br /><br />
+            <a href="sitedocuments/workshopSummary2022.pdf" target="blank">WORKSHOP SUMMARY</a>
           </div>
           <div class="col-lg-3">
             <img src="{{ asset('siteimg/taic1.jpeg') }}" alt="Speaker 3" class="img-fluid">
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+  </section><!-- End About Section -->
     
     <?php 
       $fullname = '';
@@ -554,7 +556,9 @@
 
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507805.24791743327!2d39.1001373338375!3d-6.099898206507772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185d29602a2909e5%3A0xa035af4aad9b7d5f!2sUnguja!5e0!3m2!1sen!2stz!4v1652091771928!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507805.24791743327!2d39.1001373338375!3d-6.099898206507772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185d29602a2909e5%3A0xa035af4aad9b7d5f!2sUnguja!5e0!3m2!1sen!2stz!4v1652091771928!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126947.85811237132!2d39.080924362499985!3d-6.114467200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd3df5d859047%3A0x62612435cf1c0707!2sGolden%20Tulip%20Zanzibar%20Resort!5e0!3m2!1sen!2sde!4v1658319766553!5m2!1sen!2sde" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126947.85811237132!2d39.080924362499985!3d-6.114467200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cdb24b2ae2fff%3A0xc86d9f3a80d72083!2sGolden%20Tulip%20Zanzibar%20Airport!5e0!3m2!1sen!2sde!4v1658322818379!5m2!1sen!2sde" frameborder="0" style="border:0" allowfullscreen></iframe>
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe> -->
           </div>
 
@@ -673,13 +677,10 @@
       $picture = '';
       
       $gallery = DB::select("SELECT * FROM galleries");
-      foreach($gallery AS $gallerys){
-        $picture = $gallerys->picture;
-      }
     ?>
     <!-- ======= Gallery Section ======= -->
+    <?php if($picture != ''){?>
     <section id="gallery">
-      <?php if($picture != ''){?>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Gallery</h2>
@@ -689,17 +690,18 @@
       <div class="gallery-slider swiper">
       <div class="swiper-wrapper align-items-center">
       <?php
-      }
+      
         foreach($gallery AS $gallerys){
           $picture = $gallerys->picture;           
           ?>
           <div class="swiper-slide"><a href="{{asset('gallery/'.$picture)}}" class="gallery-lightbox"><img src="{{asset('gallery/'.$picture)}}" class="img-fluid" alt=""></a></div>
-        <?php }?>
+        <?php }
+      ?>
         </div>
         <div class="swiper-pagination"></div>
         </div>
     </section> <!-- End Gallery Section -->
-
+    <?php }?>
     <?php 
       $analyticsname = '';
       $picture = '';
@@ -716,95 +718,13 @@
     <section id="supporters" class="section-with-bg">
 
       <div class="container" data-aos="fade-up">
-        <div class="section-header">
+        <?php if($analyticsname == ''){?>
+        
+        <?php }else{?>
+          <div class="section-header">
           <h2>Analytics</h2>
         </div>
-        <?php if($analyticsname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <!-- <p style="text-align:center">GOVERNMENT MINISTRIES</p> -->
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/1.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <!-- <p style="text-align:center">HEALTH</p> -->
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/2.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <!-- <p style="text-align:center">INTERNATIONAL ORGANISATIONS</p> -->
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/3.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-          <!-- <p style="text-align:center">ADVOCACY,ASSOCIATIONS & NGO's</p>   -->
-          <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/4.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/5.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/6.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/7.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/8.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/9.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/10.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/11.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/12.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/analytics/13.jpg') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-        <?php }else{
+        <?php
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
           foreach($analytics AS $analytic){
             $picture = $analytic->picture;

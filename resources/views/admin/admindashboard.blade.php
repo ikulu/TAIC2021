@@ -28,7 +28,10 @@
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  
+                  <?php 
+                    $speakersCount = DB::table('speakers')->count();
+                  ?>
+                  <h6>{{$speakersCount}}</h6>
                 </div>
               </div>
             </div>
@@ -48,7 +51,10 @@
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  
+                  <?php 
+                    $sponsorsCount = DB::table('sponsors')->count();
+                  ?>
+                  <h6>{{$sponsorsCount}}</h6>
                 </div>
               </div>
             </div>
@@ -68,7 +74,10 @@
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  
+                  <?php 
+                    $patnersCount = DB::table('partners')->count();
+                  ?>
+                  <h6>{{$patnersCount}}</h6>
                 </div>
               </div>
             </div>
@@ -88,7 +97,10 @@
                   <i class="bi bi-people"></i>
                 </div>
                 <div class="ps-3">
-                  
+                  <?php 
+                    $exhibitorsCount = DB::table('exhibitors')->count();
+                  ?>
+                  <h6>{{$exhibitorsCount}}</h6>
                 </div>
               </div>
             </div>

@@ -19,6 +19,11 @@ class RegisterUserController extends Controller
         return view('superadmin.newuser');
     }
 
+    public function createback()
+    {
+        return view('superadmin.newuserback');
+    }
+
     public function store(Request $request)
     {
         $name = $request->name;
@@ -46,6 +51,35 @@ class RegisterUserController extends Controller
         });
         
         return view('superadmin.newuser');
+    }
+
+    public function storeback(Request $request)
+    {
+        $name = $request->name;
+        $email = $request->email;
+
+        $password = "TAIC2022";
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users']
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($password),
+        ]);
+        $user->attachRole($request->role_id);
+        event(new Registered($user));
+
+        $data = array('name'=>$name, 'email' => $email);
+        Mail::send(['text'=>'mail'], $data, function($message)use ($request) {
+
+            $message->to($request->email, $request->name)->subject('TAIC Management System Login credentials');
+            $message->from('info@ictc.go.tz','ICTC');
+        });
+        
+        return redirect('/login');
     }
     
     public function editprofile(Request $request){

@@ -18,8 +18,11 @@ Route::get('/admin', 'App\Http\Controllers\SAdminController@index')->name('dashb
 Route::group(['middleware' => ['auth', 'role:superadmin']], function () {
     Route::get('/dashboard/userlist', 'App\Http\Controllers\SAdminController@userlist')->name('dashboard.userlist');
     Route::get('/registerr', 'App\Http\Controllers\RegisterUserController@create')->name('registerr');
-    Route::post('/registerr', 'App\Http\Controllers\RegisterUserController@store')->name('registerr');    
-});
+    Route::post('/registerr', 'App\Http\Controllers\RegisterUserController@store')->name('registerr');   
+});  
+
+Route::get('/backregisterr', 'App\Http\Controllers\RegisterUserController@createback')->name('backregisterr');
+Route::post('/backregisterr', 'App\Http\Controllers\RegisterUserController@storeback')->name('backregisterr');
 
 // routes for admin only
 Route::group(['middleware' => ['auth', 'role:admin']], function () {
