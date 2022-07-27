@@ -155,7 +155,7 @@
       social-economic development and the role of ICT as an important tool for attainment of
       Tanzania Development Vision and Sustainable Development Goals. The conference will be
       featured with exhibitions from various ICT stakeholders showcasing their products, services
-      and innovations.';}
+      and innovations. ';}
       if($when == ''){$when = 'Wednesday to Friday';}
   ?>
   <!-- ======= About Section ======= -->
