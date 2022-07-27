@@ -139,7 +139,7 @@
         $where = $aboutsections->where;
         $when = $aboutsections->when;
     }
-    if($title == ''){$title = 'About The Conferencee';}
+    if($title == ''){$title = 'About The Conference';}
     if($about == ''){$about = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
       ICT industry players in Tanzania that offers a unique platform for capacity building, policy
       dialogues, business investors networking, professional discussion, experience and knowledge
