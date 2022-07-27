@@ -139,7 +139,7 @@
         $where = $aboutsections->where;
         $when = $aboutsections->when;
     }
-    if($title == ''){$title = 'About The Conference';}
+    if($title == ''){$title = 'About The Conferencee';}
     if($about == ''){$about = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
       ICT industry players in Tanzania that offers a unique platform for capacity building, policy
       dialogues, business investors networking, professional discussion, experience and knowledge
@@ -155,7 +155,7 @@
       social-economic development and the role of ICT as an important tool for attainment of
       Tanzania Development Vision and Sustainable Development Goals. The conference will be
       featured with exhibitions from various ICT stakeholders showcasing their products, services
-      and innovations. ';}
+      and innovations.';}
       if($when == ''){$when = 'Wednesday to Friday';}
   ?>
   <!-- ======= About Section ======= -->
