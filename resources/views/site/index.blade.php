@@ -172,7 +172,7 @@
             <h3>When</h3>
             <p>{{$when}}<br>{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}</p>
             <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a><br /><br />
-            <a href="sitedocuments/workshopSummary2022.pdf" target="blank">WORKSHOP SUMMARY</a>
+            <a href="sitedocuments/workshopSummary2022.pdf" target="blank">INTERNATIONAL WORKSHOP TO ENHANCE ICT INTEGRATION FOR SUSTAINABLE TOURISM DEVELOPMENT IN TANZANIA</a>
           </div>
           <div class="col-lg-3">
             <img src="{{ asset('siteimg/taic1.jpeg') }}" alt="Speaker 3" class="img-fluid">
