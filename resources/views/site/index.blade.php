@@ -118,6 +118,7 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">{{$title}}</h1>
       <!-- Tanzania Annual<br><span>ICT</span> Conference -->
+      <p>THEME : Leveraging Digital Transformation In The Blue Economy For Social-Economic Development.</p>
       <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
