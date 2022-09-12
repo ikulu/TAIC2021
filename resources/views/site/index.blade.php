@@ -388,10 +388,10 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/fredrick.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <img src="{{ asset('siteimg/speakers/fredrick.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Fredrick Mtenzi</a></h3>
-                <p>{{$occupationM}}</p>
+                <!-- <p>{{$occupationM}}</p> -->
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -404,10 +404,10 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/tereza.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <img src="{{ asset('siteimg/speakers/tereza.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Thereza Israel Mugobi</a></h3>
-                <p>{{$occupationM}}</p>
+                <!-- <p>{{$occupationM}}</p> -->
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -420,10 +420,10 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/DRlupiana.jpeg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <img src="{{ asset('siteimg/speakers/DRlupiana.jpeg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Dennis Lupiana</a></h3>
-                <p>{{$occupationM}}</p>
+                <!-- <p>{{$occupationM}}</p> -->
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
