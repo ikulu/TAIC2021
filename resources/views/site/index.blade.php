@@ -267,6 +267,178 @@
 
     </section><!-- End Speakers Section -->
 
+     <!-- ======= Chairs Section ======= -->
+     <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Conference Chairs</h2>
+          <!-- <p>Here are some of our speakers</p> -->
+        </div>
+
+        <div class="row">
+        <?php
+          foreach($speakers AS $speaker){
+              $fullname = $speaker->fullname;
+              $occupation = $speaker->occupation;
+              $profile = $speaker->profile;
+              $facebook = $speaker->facebook;
+              $instagram = $speaker->instagram;
+              $twitter = $speaker->tweeter;
+              $ini = $speaker->ini;
+              $id = $speaker->id;
+
+              if($fullname == ''){$fullname = 'Full Name';}
+              if($occupation == ''){$occupation = 'Occupation';}
+              if($profile == ''){$profile = 'default.png';}
+              if($facebook == ''){
+                $facebook = '#';
+              }else{
+                $facebook = "https://www.facebook.com/".$facebook;
+              }
+              if($twitter == ''){
+                $twitter = '#';
+              }else{
+                $twitter = "https://www.twitter.com/".$twitter;
+              }
+              if($ini == ''){
+                $ini = '#';
+              }else{
+                $ini = "https://www.linkedin.com/".$ini;
+              }
+              if($instagram == ''){
+                $instagram = '#';
+              }else{
+                $instagram = "https://www.instagram.com/".$instagram;
+              }
+        ?>
+              <div class="col-lg-4 col-md-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="{{asset('profiles/'.$profile)}}" alt='' class='img-fluid'>
+              <div class='details'>
+                <h6><a href='speaker-details.html'>{{$fullname}}</a></h6>
+                <p>{{$occupation}}</p>
+                <div class='social'>
+                  <a href='{{$twitter}}'><i class='bi bi-twitter'></i></a>
+                  <a href='{{$facebook}}'><i class='bi bi-facebook'></i></a>
+                  <a href='{{$instagram}}'><i class='bi bi-instagram'></i></a>
+                  <a href='{{$ini}}'><i class='bi bi-linkedin'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php
+          }
+          if($fullname == ''){?>
+            <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
+              <div class="details">
+                <p>To be Comfirmed</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
+              <div class="details">
+                <p>To be Comfirmed</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
+              <div class="details">
+                <p>To be Comfirmed</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php }
+          ?>
+        </div>
+      </div>
+
+    </section><!-- End Speakers Section -->
+
+    <!-- ======= Guest Of Honour Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Conference Papers Reviewer</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/fredrick.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <div class="details">
+                <h3><a href="">Fredrick Mtenzi</a></h3>
+                <p>{{$occupationM}}</p>
+                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
+                <div class="social">
+                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
+                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
+                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/tereza.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <div class="details">
+                <h3><a href="">Thereza Israel Mugobi</a></h3>
+                <p>{{$occupationM}}</p>
+                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
+                <div class="social">
+                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
+                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
+                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/DRlupiana.jpeg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:400px;min-width:400px">
+              <div class="details">
+                <h3><a href="">Dennis Lupiana</a></h3>
+                <p>{{$occupationM}}</p>
+                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
+                <div class="social">
+                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
+                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
+                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Speakers Section -->
+
     <!-- ======= Speakers Section ======= -->
     <section id="speakers">
       <div class="container" data-aos="fade-up">
@@ -594,15 +766,22 @@
             $picture = $gallerys->picture;
         ?>
 
-          <div class="col-lg-3 col-md-4">
+<!-- this is the original one dynamic -->
+          <!-- <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
               <a href="{{asset('venuegallery/'.$picture)}}" class="glightbox" data-gall="venue-gallery">
                 <img src="{{asset('venuegallery/'.$picture)}}" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
-
+          </div> -->
         <?php } ?>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="{{asset('venuegallery/tmarathon.jpg')}}" class="glightbox" data-gall="venue-gallery">
+                <img src="{{asset('venuegallery/tmarathon.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
