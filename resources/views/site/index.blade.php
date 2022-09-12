@@ -249,7 +249,7 @@
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('profiles/'.$profileM) }}" alt="Image of the guest of honor" class="img-fluid">
               <div class="details">
-                <h3><a href="speaker-details.html">{{$fullnameM}}</a></h3>
+                <h3><a href="">{{$fullnameM}}</a></h3>
                 <p>{{$occupationM}}</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
@@ -775,13 +775,13 @@
             </div>
           </div> -->
         <?php } ?>
-          <div class="col-lg-3 col-md-4">
+          <!-- <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
               <a href="{{asset('venuegallery/tmarathon.jpg')}}" class="glightbox" data-gall="venue-gallery">
                 <img src="{{asset('venuegallery/tmarathon.jpg')}}" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
