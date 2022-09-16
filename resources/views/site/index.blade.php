@@ -249,7 +249,7 @@
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('profiles/'.$profileM) }}" alt="Image of the guest of honor" class="img-fluid">
               <div class="details">
-                <h3><a href="speaker-details.html">{{$fullnameM}}</a></h3>
+                <h3><a href="">{{$fullnameM}}</a></h3>
                 <p>{{$occupationM}}</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
@@ -329,25 +329,31 @@
           <?php
           }
           if($fullname == ''){?>
-            <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
-              <div class="details">
-                <p>To be Comfirmed</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-3 col-md-6">
+          
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
+              <img src="{{ asset('siteimg/speakers/jim.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
-                <p>To be Comfirmed</p>
+                <h3><a href="">Dr. Jim Yonazi</a></h3>
+                <p>Parmanent Secretary</p>
+                <div class="social">
+                  <p>Ministry Of Information, Communication And Information Technology</p>
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="{{ asset('siteimg/speakers/dg.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
+              <div class="details">
+                <h3><a href="">Dr. Nkundwe M Mwasaga</a></h3>
+                <p>Director General, ICT COMMISSION</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -357,19 +363,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
-              <div class="details">
-                <p>To be Comfirmed</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-3 col-md-6">
+            
           </div>
           <?php }
           ?>
@@ -386,12 +381,12 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/fredrick.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Fredrick Mtenzi</a></h3>
-                <!-- <p>{{$occupationM}}</p> -->
+                <p>Dublin Institute Of Technology, Ireland</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -402,12 +397,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/tereza.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Thereza Israel Mugobi</a></h3>
-                <!-- <p>{{$occupationM}}</p> -->
+                <p>Open University Of Tanzania</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -418,12 +413,28 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/DRlupiana.jpeg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
-                <h3><a href="">Dennis Lupiana</a></h3>
-                <!-- <p>{{$occupationM}}</p> -->
+                <h3><a href="">Dr. Dennis Lupiana</a></h3>
+                <p>Institute Of Finance Management</p>
+                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
+                <div class="social">
+                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
+                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
+                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/george.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
+              <div class="details">
+                <h3><a href="">Prof. George Oreku</a></h3>
+                <p>Open University Of Tanzania</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -775,13 +786,13 @@
             </div>
           </div> -->
         <?php } ?>
-          <div class="col-lg-3 col-md-4">
+          <!-- <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
               <a href="{{asset('venuegallery/tmarathon.jpg')}}" class="glightbox" data-gall="venue-gallery">
                 <img src="{{asset('venuegallery/tmarathon.jpg')}}" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
