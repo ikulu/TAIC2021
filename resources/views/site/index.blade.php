@@ -956,10 +956,10 @@
         </div>
         <?php if($sponsorsname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <p style="text-align:center">To be confirmed</p>
+          <!-- <p style="text-align:center">To be confirmed</p> -->
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/11.png') }}" class="img-fluid" alt="">
+              <a href="https://tispa.or.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/tispa.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
