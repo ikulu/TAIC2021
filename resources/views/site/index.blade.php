@@ -333,7 +333,7 @@
           
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="200">
               <img src="{{ asset('siteimg/speakers/jim.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Dr. Jim Yonazi</a></h3>
@@ -349,7 +349,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="100">
               <img src="{{ asset('siteimg/speakers/dg.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Dr. Nkundwe M Mwasaga</a></h3>
@@ -458,148 +458,19 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Matobola Mihale</a></h3>
-                <p>Open University Of Tanzania</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Victor Kimutai Kimeli</a></h3>
-                <p>Moi University, Kenya</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Jameson Mbale</a></h3>
-                <p>University of Coper Belt, Zambia</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Mamata Rath</a></h3>
-                <p>DRIEMS, Cuttack, India</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Ashery Mbilinyi</a></h3>
-                <p>University of Basel, Swittzerland</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Magreth Mushi</a></h3>
-                <p>North Carolina State University, Raleigh, NC</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Mercy Mbamba Fandamu</a></h3>
-                <p>Copperbelt University (CBU)</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Oluwapelumi Giwa</a></h3>
-                <p>North West University</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Safaa O. Al-Mamory</a></h3>
-                <p>University of Information Technology and communications – Iraq</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
+          <div class="col-lg-6 col-md-6">
+            <div style="align-self:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <ol style="text-align:justify">
+                <li>Matobola Mihale       | <span style="font-weight:bold;">Open University Of Tanzania</span></li>
+                <li>Victor Kimutai Kimeli | <span style="font-weight:bold;">Moi University, Kenya</span></li>
+                <li>Jameson Mbale         | <span style="font-weight:bold;">University of Coper Belt, Zambia</span></li>
+                <li>Mamata Rath           | <span style="font-weight:bold;">DRIEMS, Cuttack, India</span></li>
+                <li>Ashery Mbilinyi       | <span style="font-weight:bold;">University of Basel, Swittzerland</span></li>
+                <li>Magreth Mushi         | <span style="font-weight:bold;">North Carolina State University, Raleigh, NC</span></li>
+                <li>Mercy Mbamba Fandamu  | <span style="font-weight:bold;">Copperbelt University (CBU)</span></li>
+                <li>Oluwapelumi Giwa      | <span style="font-weight:bold;">North West University</span></li>
+                <li>Safaa O. Al-Mamory    | <span style="font-weight:bold;">University of Information Technology and communications – Iraq</span></li>
+              <ol>
             </div>
           </div>
         </div>
@@ -1109,7 +980,7 @@
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Sponsors</h2>
+          <h2>Bronze Sponsors</h2>
         </div>
         <?php if($sponsorsname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
@@ -1122,7 +993,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/22.png') }}" class="img-fluid" alt="">
+              <a href="https://tispa.or.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/tcra.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
