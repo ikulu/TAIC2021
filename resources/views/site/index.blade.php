@@ -827,7 +827,7 @@
     </section><!-- End Venue Section -->
 
     <!-- ======= Hotels Section ======= -->
-    <!-- <section id="hotels" class="section-with-bg">
+    <section id="hotels" class="section-with-bg">
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -840,57 +840,147 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="{{ asset('siteimg/hotels/1.jpg') }}" alt="Hotel 1" class="img-fluid">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/camilaHotel.jpg') }}" alt="Camila Hotel" class="img-fluid">
               </div>
-              <h3><a href="#">Hotel 1</a></h3>
+              <h3><a href="#">Camila Hotel</a></h3>
               <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
               </div>
-              <p>0.4 Mile from the Venue</p>
+              <p>Two (2) Rooms Suit Two 2beds @Sh.140,000 <br />
+                26 Rooms Single 1px@Sh.80,000 2px@Sh.120,00
+              </p>
+              <p>0777848889</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="{{ asset('siteimg/hotels/2.jpg') }}" alt="Hotel 2" class="img-fluid">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/shanganiHotel.jpg') }}" alt="Shangani Hotel" class="img-fluid">
               </div>
-              <h3><a href="#">Hotel 2</a></h3>
+              <h3><a href="">Shangani Hotel</a></h3>
               <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill-half-full"></i>
+                <i class="bi bi-star-fill-half-full"></i> -->
               </div>
-              <p>0.5 Mile from the Venue</p>
+              <p>Standard 1px@Shs.80,000 2px@Shs.120,000</p>
+              <p>0777411703</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="{{ asset('siteimg/hotels/3.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/dreamshotel.jpg') }}" alt="Hotel 3" class="img-fluid">
               </div>
-              <h3><a href="#">Hotel 3</a></h3>
+              <h3><a href="#">Dreams Hotel</a></h3>
               <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
               </div>
-              <p>0.6 Mile from the Venue</p>
+              <p>Single room @Sh.90,000 <br> Twin room @Sh.120,000 <br> Deluxe Single @Sh.105,000 <br> Deluxe Double @Sh.130,000 <br> Family room 3px@Sh.160,000 <br> Family room 4px@Sh.200,000 <br> First Class Suite Single @Sh.150,000 First Class Suite Single @Sh.200,000</p>
+              <p>0772864645</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/zanzibaroceanviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid">
+              </div>
+              <h3><a href="#">Zanzibar Ocean View Hotel</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>2beds triple 3px@Sh.200,000 | 2px@Sh.150,000<br> 2beds twin 2px@Sh.150,000 | 1px@Sh.100,000 <br> 1bed 2px@Sh.150,000 | 1px@Sh.100,000</p>
+              <p>0777429014</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/kilimaniviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid">
+              </div>
+              <h3><a href="#">Kilimani View Hotel</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>9rooms Single 1px@Sh.75,000 <br> 4rooms 2 beds 4px@Sh.85,000 <br> 4rooms double 4px@Sh.95,000 <br> 4beds 2px@Sh.110,000 <br> 4beds 2px@Sh.110,000 <br> Family 1px@Sh.120,000</p>
+              <p>0620117381</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/mlandegeLodge.jpg') }}" alt="Hotel 3" class="img-fluid">
+              </div>
+              <h3><a href="#">Mlandege Lodge</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>3 Bed 1px @Shs.35,000 <br > 2 Bed 2px@Shs.45,000 | 3px@Shs.55,000</p>
+              <p>0622202990/0778859588</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/barasteLodge.jpg') }}" alt="Hotel 3" class="img-fluid">
+              </div>
+              <h3><a href="#">Baraste Lodge</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>Single Bed 1px@Sh.55,000 <br /> Single bed 2px@ Sh.65,000 <br /> Single 2bed @Sh.85,000 <br /> Family room 3bed 4px@Sh. 110,000 </p>
+              <p>0773117777</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#">Kilua Inn</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>Double Sh.90,000 <br /> Single Sh.70,000</p>
+              <p>0777960000</p>
             </div>
           </div>
 
         </div>
-      </div> -->
+      </div> 
 
-    <!--</section> End Hotels Section -->
+    </section><!-- End Hotels Section -->
 
     <?php 
       $picture = '';
