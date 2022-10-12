@@ -1202,7 +1202,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
+              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1255,10 +1255,10 @@
         </div>
         <?php if($partnersname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <p style="text-align:center">To be confirmed</p>
+          <!-- <p style="text-align:center">To be confirmed</p> -->
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/11.png') }}" class="img-fluid" alt="">
+              <a href="https://technoproafrica.net/" target="blank"><img src="{{ asset('siteimg/sponsors/TECHNOPRO.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
