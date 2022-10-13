@@ -1078,13 +1078,13 @@
           <!-- <p style="text-align:center">To be confirmed</p> -->
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt=""></a>
+              <a href="https://www.huawei.com/en/" target="blank"><img src="{{ asset('siteimg/sponsors/Huawei-Logo.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt=""></a>
+              <a href="https://crdbbank.co.tz/en" target="blank"><img src="{{ asset('siteimg/sponsors/crdb.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1140,7 +1140,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt=""></a>
+              <a href="https://www.uncdf.org/" target="blank"><img src="{{ asset('siteimg/sponsors/uncdf.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1200,11 +1200,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
