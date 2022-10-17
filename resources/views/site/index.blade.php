@@ -62,7 +62,7 @@
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li> -->
+          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
           <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> -->
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
@@ -840,7 +840,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/camilaHotel.jpg') }}" alt="Camila Hotel" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/camilaHotel.jpg') }}" alt="Camila Hotel" class="img-fluid"> -->
               </div>
               <h3><a href="#">Camila Hotel</a></h3>
               <div class="stars">
@@ -860,7 +860,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/shanganiHotel.jpg') }}" alt="Shangani Hotel" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/shanganiHotel.jpg') }}" alt="Shangani Hotel" class="img-fluid"> -->
               </div>
               <h3><a href="">Shangani Hotel</a></h3>
               <div class="stars">
@@ -878,7 +878,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/dreamshotel.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/dreamshotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
               </div>
               <h3><a href="#">Dreams Hotel</a></h3>
               <div class="stars">
@@ -895,7 +895,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/zanzibaroceanviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/zanzibaroceanviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
               </div>
               <h3><a href="#">Zanzibar Ocean View Hotel</a></h3>
               <div class="stars">
@@ -912,7 +912,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/kilimaniviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/kilimaniviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
               </div>
               <h3><a href="#">Kilimani View Hotel</a></h3>
               <div class="stars">
@@ -929,7 +929,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/mlandegeLodge.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/mlandegeLodge.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
               </div>
               <h3><a href="#">Mlandege Lodge</a></h3>
               <div class="stars">
@@ -946,7 +946,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/barasteLodge.jpg') }}" alt="Hotel 3" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/barasteLodge.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
               </div>
               <h3><a href="#">Baraste Lodge</a></h3>
               <div class="stars">
@@ -963,7 +963,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
               </div>
               <h3><a href="#">Kilua Inn</a></h3>
               <div class="stars">
@@ -974,6 +974,380 @@
               </div>
               <p>Double Sh.90,000 <br /> Single Sh.70,000</p>
               <p>0777960000</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">ZANZIBAR BEACH RESORT MAZIZINI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	USD	80 <br /> DOUBLE	USD	90</p>
+              <p>+255715373541</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">SEA VIEW HOTEL MAZIZINI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TZSH 90,000	USD 60 <br /> DOUBLE	TZSH 100,000	USD 70 <br /> TRIPLE	TSH 130,000	USD 100</p>
+              <p>+255789020364</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">ZANZIBAR OCEAN VIEW MAZIZINI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 85,000 <br /> DOUBLE	TSH 90,000 <br /> TRIPLE	TSH 105,000</p>
+              <p>+255777429014</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">CAMILA AIRPORT HOTEL KIEMBE SAMAKI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE (1 person)	TSH 70,000 <br /> SINGLE (2 persons)	TSH 80,000 <br /> DOUBLE	TSH 120,000</p>
+              <p>+255678818188</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">KILIMANI VIEW KILIMANI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 75,000 <br /> TWINS	TSH 85,000 <br /> DOUBLE	TSH 95,000 <br /> TRIPLE	TSH 100,000 <br /> FOUR BEDS	TSH 110,000 <br /> FAMILY	TSH 120,000</p>
+              <p>+255778786000</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">BIN ABASS APPATMENT AMANI KWA MABATA</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>2 BED ROOMS/WEEK	TSH 350,000</p>
+              <p>+255777872391</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">HOTEL EXECUTIVE</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE (1 person)	TSH 80,000 <br /> SINGLE (2 persons)	TSH 100,000 <br /> DOUBLE	TSH 100,000</p>
+              <p>+255658616187</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">HOTEL EXECUTIVE</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE (1 person)	TSH 80,000 <br /> SINGLE (2 persons)	TSH 100,000 <br /> DOUBLE	TSH 100,000</p>
+              <p>+255658616187</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">DREAM HOTEL MLANDEGE</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 90,000	USD 60 <br /> TWINS	TSH 120,000	USD 75 <br /> DELUXE SINGLE	TSH 105,000	USD 65 <br /> DELUXE DOUBLE	TSH 130,000	USD 85 <br /> FAMILY 3 P	TSH 160,000	USD 90 <br /> FAMILY 4 P	TSH 200,000	USD 100 <br /> FIRST CLASS SINGLE	TSH 150,000	USD 80 <br /> FIRST CLASS DOUBLE	TSH 200,000	USD 100</p>
+              <p>+255772864645</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">ISLAND PARADISE MLANDEGE</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>STANDARD DELUXE	TSH 120,000	USD 70 <br /> STANDARD DOUBLE	TSH 140,000	USD 85 <br /> STANDARD TWIN	TSH 140,000	USD 85 <br /> DELUXE TWIN	TSH 150,000	USD 95 <br /> SUPERIOR ROOM	TSH 150,000	USD 95 INTERCONNECTING	TSH 220,000	USD 130 <br /> STUDIO APPARTMENT	TSH 200,000	USD 100</p>
+              <p>+255778915227 | +255655916227</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">KILUA INN MUEMBE TANGA</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 70,000 <br /> TWINS	TSH 90,000 <br /> DOUBLE	TSH 90,000</p>
+              <p>+255777960000</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">KITUO CHA AMANI NA UTENGAMANO MASINGINI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>EXECUTIVE	TSH 100,000 <br /> DOUBLE	TSH 80,000 <br /> TWINS	TSH 80,000 <br /> SINGLE	TSH 50,000</p>
+              <p>+255716415781</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">CCM SOCIAL LODGE</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 85,000 <br /> DOUBLE	TSH 130,000</p>
+              <p>+255713077103</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">LAIL NOOR INN HOTEL</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>ALL	TSH 60,000</p>
+              <p>+255778002244</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">MARUHUBI BEACH VILLAS MARUHUBI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 100,000 <br /> DOUBLE/TWIN	TSH 150,000 <br /> TRIPLE	TSH 180,000</p>
+              <p>+255772166544 | +255778663068</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">ZANZIBAR PARADISE AMANI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 60,000 <br /> SINGLE TWIN	TSH 90,000 <br /> DOUBLE	TSH 70,000</p>
+              <p>+255682101299</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">RUMAISA MALINDI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 70,000	USD 50  <br /> DOUBLE	TSH 100,000	USD 60  <br /> TRIPLE	TSH 110,000	USD 70  <br /> FAMILIY	TSH 130,000	USD 80</p>
+              <p>+255777752777 | +255777306472</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">FUNGUNI PALACE HOTEL MALINDI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 50,000	USD 35 <br /> DOUBLE	TSH 80,000	USD 50 <br /> TRIPLE	TSH 100,000	USD 65</p>
+              <p>+255717177778</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">PLUMERIA HOTEL</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>DOUBLE	TSH 60,000	USD 65 <br /> FAMILY	TSH 80,000	USD 85</p>
+              <p>+255673202164</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">STONE TOWN HOUSE </a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 70,000 <br /> TWINS	TSH 95,000 <br /> TRIPLE	TSH 140,000  <br /> FAMILY (4 BEDS)	TSH 189,000</p>
+              <p>+255773817799</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">MRUSI HOUSE HOTEL </a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE	TSH 80,000	USD 35 <br /> DOUBLE 	TSH 100,000	USD 45 <br /> FAMILY TRIPLE	TSH 115,000	USD 50</p>
+              <p>+255772817032</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
+              </div>
+              <h3><a href="#">BARASTE LODGE MICHENZANI</a></h3>
+              <div class="stars">
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+              </div>
+              <p>SINGLE 	TSH 60,000	USD 60 <br /> DOUBLE	TSH 70,000	USD 70 <br /> TRIPLE	TSH 85,000	USD 80</p>
+              <p>+255773117777</p>
             </div>
           </div>
 
