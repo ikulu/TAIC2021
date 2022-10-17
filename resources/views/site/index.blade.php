@@ -1579,13 +1579,19 @@
               <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div> -->
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+            <a href="https://corporate.sybrin.com/" target="blank"><img src="{{ asset('siteimg/sponsors/Sybrin.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
             </div>
           </div>
-
+          
         </div>
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
