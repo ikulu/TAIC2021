@@ -1481,7 +1481,7 @@
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.undp.org/?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQjwnbmaBhD-ARIsAGTPcfXu0rSHcYAbTyTu00TuJFc9au_8kmSJYi3EpWjDcgfjEBabhv0mtmYaAs-oEALw_wcB" target="blank"><img src="{{ asset('siteimg/sponsors/undp.png') }}" class="img-fluid" alt=""></a>
-            </div>
+            </div>   
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
