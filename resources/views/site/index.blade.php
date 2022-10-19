@@ -120,6 +120,7 @@
       <!-- Tanzania Annual<br><span>ICT</span> Conference -->
       <p>THEME : Leveraging Digital Transformation In The Blue Economy For Social-Economic Development.</p>
       <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
+      <a href="#schedule"><p style="font-size: 35px;">ZAN FAST FERRIES TRAVEL SCHEDULE</p></a>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
       <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
@@ -604,6 +605,82 @@
       </div>
 
     </section><!-- End Speakers Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Travel Schedule</h2>
+          <p>ZAN FAST FERRIES TRAVEL SCHEDULE FOR TAIC PARTICIPANTS</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#DSM" role="tab" data-bs-toggle="tab">DSM - ZNZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ZNZ" role="tab" data-bs-toggle="tab">ZNZ - DSM</a>
+          </li>
+        </ul>
+
+        <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="DSM">
+            <div class="row schedule-item">
+              <div class="col-md-10">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>DATE</th>
+                      <th>TIME</th>
+                      <th>DISCOUNTED PRICE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>25<sup>TH</sup> OCTOBER, 2022</td>
+                      <td>0700HRS <br /> 1200HRS <br /> 1400HRS <br /> 1700HRS</td>
+                      <td>25,000/=</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="ZNZ">
+            <div class="row schedule-item">
+              <div class="col-md-2"><time></time></div>
+              <div class="col-md-10">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>DATE</th>
+                      <th>TIME</th>
+                      <th>DISCOUNTED PRICE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>29<sup>TH</sup> - 30<sup>TH</sup> OCTOBER, 2022</td>
+                      <td>0700HRS <br /> 1200HRS <br /> 1415HRS <br /> 1615HRS</td>
+                      <td>25,000/=</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 2 -->
+        </div>
+
+    </section><!-- End Schedule Section -->
 
     <?php 
       $day = '';
