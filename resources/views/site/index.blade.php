@@ -543,7 +543,7 @@
           if($fullname == ''){?>
           <div class="col-lg-3 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ asset('siteimg/speakers/Daniel Yu.png') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
+              <img src="{{ asset('siteimg/speakers/Daniel_Yu.png') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Daniel Yu</a></h3>
                 <p>CEO - Waskoko</p>
@@ -1743,7 +1743,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://threefold.io/" target="blank"><img src="{{ asset('siteimg/sponsors/THREE.Jpg') }}" class="img-fluid" alt=""></a>
+              <a href="https://threefold.io/" target="blank"><img src="{{ asset('siteimg/sponsors/THREE.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1755,7 +1755,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
+              <a href="https://liquid.tech/" target="blank"><img src="{{ asset('siteimg/sponsors/liquid.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1824,7 +1824,7 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
+              <a href="http://www.trendmicro.com/" target="blank"><img src="{{ asset('siteimg/sponsors/trend.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
