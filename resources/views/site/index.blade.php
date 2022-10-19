@@ -120,7 +120,7 @@
       <!-- Tanzania Annual<br><span>ICT</span> Conference -->
       <p>THEME : Leveraging Digital Transformation In The Blue Economy For Social-Economic Development.</p>
       <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
-      <a href="#schedule"><p style="font-size: 35px;">ZAN FAST FERRIES TRAVEL SCHEDULE</p></a>
+      <a href="#schedule"><p style="font-size: 35px;">TRAVEL SCHEDULE</p></a>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
       <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
