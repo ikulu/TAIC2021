@@ -543,7 +543,7 @@
           if($fullname == ''){?>
           <div class="col-lg-3 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ asset('siteimg/speakers/Daniel_Yu.png') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
+              <img src="{{ asset('siteimg/speakers/Daniel_Yu.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Daniel Yu</a></h3>
                 <p>CEO - Waskoko</p>
@@ -1541,31 +1541,31 @@
           <h2>Tanzanite Sponsors</h2>
         </div>
         <?php if($sponsorsname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.huawei.com/en/" target="blank"><img src="{{ asset('siteimg/sponsors/Huawei-Logo.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://crdbbank.co.tz/en" target="blank"><img src="{{ asset('siteimg/sponsors/crdb.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.undp.org/?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQjwnbmaBhD-ARIsAGTPcfXu0rSHcYAbTyTu00TuJFc9au_8kmSJYi3EpWjDcgfjEBabhv0mtmYaAs-oEALw_wcB" target="blank"><img src="{{ asset('siteimg/sponsors/undp.png') }}" class="img-fluid" alt=""></a>
             </div>   
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
             </div>
-          </div>
+          </div> -->
 
         </div>
         <?php }else{
@@ -1597,20 +1597,20 @@
           <h2>Silver Sponsors</h2>
         </div>
         <?php if($sponsorsname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-6 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.nmbbank.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/nmb.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-6 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.uncdf.org/" target="blank"><img src="{{ asset('siteimg/sponsors/uncdf.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
-
+<!-- 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
@@ -1621,7 +1621,7 @@
             <div class="supporter-logo">
               <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
             </div>
-          </div>
+          </div> -->
 
         </div>
         <?php }else{
@@ -1667,11 +1667,11 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
             </div>
-          </div> -->
+          </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
@@ -1713,6 +1713,26 @@
 
     </section><!-- End Sponsors Section -->
 
+    <!-- ======= Partners Section ======= -->
+    <section id="supporters" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Strategic Partner</h2>
+        </div>
+    
+        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+          
+          <div class="col-lg-12 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://threefold.io/" target="blank"><img src="{{ asset('siteimg/sponsors/THREE.jpg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+      </div>
+
+    </section><!-- End Pertiners Section -->
+
     <?php 
       $partnersname = '';
       $picture = '';
@@ -1735,25 +1755,19 @@
         <?php if($partnersname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://technoproafrica.net/" target="blank"><img src="{{ asset('siteimg/sponsors/TECHNOPRO.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://threefold.io/" target="blank"><img src="{{ asset('siteimg/sponsors/THREE.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.ttcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/ttcl.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://liquid.tech/" target="blank"><img src="{{ asset('siteimg/sponsors/liquid.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
