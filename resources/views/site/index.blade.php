@@ -1755,21 +1755,27 @@
         <?php if($partnersname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://technoproafrica.net/" target="blank"><img src="{{ asset('siteimg/sponsors/TECHNOPRO.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.ttcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/ttcl.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://liquid.tech/" target="blank"><img src="{{ asset('siteimg/sponsors/liquid.jpeg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://www.simbanet.net/" target="blank"><img src="{{ asset('siteimg/sponsors/SIMBANET-LOGO.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1842,6 +1848,12 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://nm-aist.ac.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/NM-AIST.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+          
         </div>
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
