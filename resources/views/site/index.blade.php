@@ -1693,7 +1693,7 @@
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/weconnect.jpeg') }}" class="img-fluid" alt=""></a>
+              <a href="https://www.konnect.co.tz/en" target="blank"><img src="{{ asset('siteimg/sponsors/weconnect.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
