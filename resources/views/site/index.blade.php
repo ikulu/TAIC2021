@@ -1666,12 +1666,6 @@
               <a href="https://www.tcra.go.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/tcra.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
@@ -1687,10 +1681,22 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/ucsa.jpeg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
               <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/wiki.jpeg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
           
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/weconnect.jpeg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
         </div>
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
@@ -1824,6 +1830,13 @@
         <?php if($exhibitorsname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://techmsaada.com" target="blank"><img src="{{ asset('siteimg/sponsors/techmsaada.jpeg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="http://www.zainafoundationtz.org/" target="blank"><img src="{{ asset('siteimg/sponsors/zaina logo final.png') }}" class="img-fluid" alt=""></a>
@@ -1851,6 +1864,48 @@
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://nm-aist.ac.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/NM-AIST.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://nidc.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/datacenter.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/ITL logo aafrika.jpg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Aktors.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Levercode.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
           
