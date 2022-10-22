@@ -559,9 +559,11 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
+              <img src="{{ asset('siteimg/speakers/leonard.jpg') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
               <div class="details">
-                <p>To be Confirmed</p>
+                <h3><a href="">Dr. Leonard Binamungu</a></h3>
+                <p>UDSM - COICT</p>
+                <!-- <p>To be Confirmed</p> -->
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1831,9 +1833,15 @@
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://techmsaada.com" target="blank"><img src="{{ asset('siteimg/sponsors/techmsaada.jpeg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div> -->
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://www.tigo.co.tz" target="blank"><img src="{{ asset('siteimg/sponsors/tigo.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
