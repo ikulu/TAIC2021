@@ -248,10 +248,10 @@
           <div class="col-lg-4 col-md-6"></div>
           <div class="col-lg-3 col-md-6">
             <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('profiles/'.$profileM) }}" alt="Image of the guest of honor" class="img-fluid">
+            <img src="{{ asset('siteimg/speakers/mwinyi.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
-                <h3><a href="">{{$fullnameM}}</a></h3>
-                <p>{{$occupationM}}</p>
+                <h3><a href="">Dr Hussein Ali Mwinyi</a></h3>
+                <p>President Of Zanzibar</p>
                 <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
                 <div class="social">
                   <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
@@ -1699,6 +1699,12 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://vodacom.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/voda.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
         </div>
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
@@ -1784,6 +1790,18 @@
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="https://www.simbanet.net/" target="blank"><img src="{{ asset('siteimg/sponsors/SIMBANET-LOGO.jpg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="http://zictia.go.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/zict.jpg') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://www.zanlink.com/" target="blank"><img src="{{ asset('siteimg/sponsors/Zanlink-Logo.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1916,13 +1934,6 @@
               <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.zanlink.com/" target="blank"><img src="{{ asset('siteimg/sponsors/Zanlink-Logo.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
           
         </div>
         <?php }else{
