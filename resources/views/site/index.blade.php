@@ -959,7 +959,10 @@
 
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
+            <a class="nav-link active" href="#day-0" role="tab" data-bs-toggle="tab">Tuesday</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Thursday</a>
@@ -974,8 +977,21 @@
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
+          <!-- Schdule Day 0 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-0">
+            <div class="row schedule-item">
+              <h3>PRE-CONFERENCE EVENT:  TUESDAY 25th OCTOBER 2022</h3>
+              <h5>Arrivals and TAIC Registration</h5>
+              <div class="col-md-3"><time>09:00hrs – 21:00hrs</time></div>
+              <div class="col-md-9">
+                <h4>Delegates and invited guests<span></span></h4>
+                <p>Golden Tulip Airport Hotel</p>
+              </div>
+            </div>
+          </div>
+
           <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="day-1">
 
             <?php
               foreach($schedule AS $schedules){
@@ -997,12 +1013,75 @@
               <?php 
               if($action == ''){
             ?>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time></time></div>
-              <div class="col-md-10">
-                <h4>To be Comfirmed</h4>
+              <div class="row schedule-item">
+                <h3>SUB THEME:  DIGITAL AND BLUE ECONOMY</h3>
+                <h5>SESSION 1: CONFERENCE OPENING CEREMONY</h5>
+                <div class="col-md-3"><time>09:00hrs – 11:40hrs</time></div>
+                <div class="col-md-9">
+                  <h4>Conference opening celebrations<span></span></h4>
+                </div>
+                <h5>SESSION 2: DIGITAL TRANSFORMATION IN THE BLUE ECONOMY</h5>
+                <div class="col-md-3"><time>11:40hrs – 12:40hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>Key Presentations</b>: Digital Transformation in the Blue Economy<span></span></h4>
+                  <h4><b>Panel Discussion</b>: Leveraging Digital Transformation in the Blue Economy for Social-Economic Development</h4>
+                </div>
+                <div class="col-md-3"><time>12:40hrs – 13:30hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>Panel Discussion</b>: Digital Transformation Journey of Tanzania<span></span></h4>
+                </div>
+                <div class="col-md-3"><time>13:30hrs – 14:30hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>LUNCH BREAK</b></h4>
+                </div>
+                <h5>SESSION 3: DIGITAL SKILLS</h5>
+                <div class="col-md-3"><time>14:30hrs – 15:30hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>WORKSHOP 1</b>: ROADMAP FOR EFFECTIVE e-EDUCATION ECOSYSTEM<span></span></h4>
+                  The session will discuss how all Tanzania will possess digital skills that exploit the available digital space, tools, and processes to make the country the better place to live. 
+                  <ul>
+                    <li>Participation and Practical Use of e-Services</li>
+                    <li>Provision of Digital Skills and Innovative Services</li>
+                    <li>Digital Skills in Digital  Services and Systems</li>
+                    <li>Digital Skills in Large Scale Blue Economy Projects</li>
+                    <li>Digital Skills in the Education Sector</li>
+                    <li>Enhance Digital Skills in e-Commerce to Stimulate Trade</li>
+                    <li>Enhance Digital Skills in Agriculture Sector to Stimulate Production</li>
+                    <li>Digital Skills in the Health Sector</li>
+                  </ul>
+                </div>
+                <h5>SESSION 4: DIGITAL FRAUD MANAGEMENT</h5>
+                <div class="col-md-3"><time>15:30hrs – 16:00hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>Topic</b>: Open Source Fraud Risk Management Platform<span></span></h4>
+                </div>
+                <h5>DIGITAL TAXATION IN THE PLATFORM ECONOMY</h5>
+                <div class="col-md-3"><time>16:00hrs – 16:30hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>Topic</b>: Innovations driving trade facilitation and revenue mobilization<span></span></h4>
+                </div>
+                <h5>SPACE TECH: DIGITALISATION OF ENVIRONMENTAL MANAGEMENT AND URBAN DEVELOPMENT</h5>
+                <div class="col-md-3"><time>16:30hrs – 17:00hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>Topic</b>: Space borne hyperspectral imaging and analytics for sustainable development and mitigation of climate change impacts in Tanzania<span></span></h4>
+                </div>
+                <h5>SESSION 5: DIGITAL SECURITY, TRUST AND DATA PROTECTION</h5>
+                <div class="col-md-3"><time>16:30hrs – 17:00hrs</time></div>
+                <div class="col-md-9">
+                  <h4><b>WORKSHOP 2</b>: CONSUMER PROTECTION AND DATA PROTECTION IN THE DIGITAL PLATFORMS<span></span></h4>
+                  This session will discuss the techniques on how everyone in Tanzania will enjoy safe and protected digital space as they do in physical space so that security threats or concerns do not hinder digital transformation and the use of digital services.
+                  <ul>
+                    <li>Digital Security Capability</li>
+                    <li>The Use of Electronic Identity and Trust Services in Digital Economy</li>
+                    <li>Consumer Protection and Data Protection in the Digital Platforms</li>
+                    <li>Protecting Users from Digital Harmful Content</li>
+                    <li>Digitalization of Emergency Response and Disaster Management Systems</li>
+                    <li>Strengthening the National Security and Information Space</li>
+                    <li>Digitization of the investigation and prosecution process</li>
+                  </ul>
+                </div>
+                
               </div>
-            </div>
             <?php } ?>
 
           </div>
