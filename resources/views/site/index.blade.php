@@ -577,7 +577,8 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
               <div class="details">
-                <p>To be Confirmed</p>
+                <h3><a href="">Carl-Robert Reidolf</a></h3>
+                <p>Entrepreneur in Residence at Net Group – Estonia</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -591,7 +592,248 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
               <div class="details">
-                <p>To be Confirmed</p>
+                <h3><a href="">Cynthia C. Prince</a></h3>
+                <p>Simbanet</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Shakil Dharamsi</a></h3>
+                <p>Power Computers</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Kwame Makundi</a></h3>
+                <p>Chief Digital Transformation Officer-NMB</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Greg McCormick</a></h3>
+                <p>Sybin</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Toumas Tikka</a></h3>
+                <p>Kuva Space</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Karim Mchatta</a></h3>
+                <p>HACK IT Consultancy Ltd</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Mr. Nguvu Kamando</a></h3>
+                <p>Vodacom</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Dr. Jabir Bakari</a></h3>
+                <p>TCRA</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Mr. Phillipe Baudrier</a></h3>
+                <p>Konnect Africa (EUTASALAT)</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Nazar Nicholaus</a></h3>
+                <p>President-ISOC Tanzania</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Benedict Ndomba</a></h3>
+                <p>Director General, e-Government Authority</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Kedi Välba</a></h3>
+                <p>Regional Manager for Africa & Middle East at Aktors, Estonia</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Dr.Seif Rashid</a></h3>
+                <p>Data Use Partnership (DUP)PATH, Project Director</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Dr. Jabir Bakari</a></h3>
+                <p>Director General – TCRA</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Kristof De Spiegeleer</a></h3>
+                <p>Threefold</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Joseph Manirakiza</a></h3>
+                <p>Project Manager, UNDP Funguo Program</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
+              <div class="details">
+                <h3><a href="">Mr. Bruce Mwile</a></h3>
+                <p>Chief Operations Officer CRDB Bank</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
