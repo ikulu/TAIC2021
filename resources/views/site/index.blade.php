@@ -546,7 +546,7 @@
               <img src="{{ asset('siteimg/speakers/Daniel_Yu.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
               <div class="details">
                 <h3><a href="">Daniel Yu</a></h3>
-                <p>CEO - Waskoko</p>
+                <p>CEO - Wasoko</p>
                 <!-- <p>To be Comfirmed</p> -->
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -684,21 +684,6 @@
               <div class="details">
                 <h3><a href="">Mr. Nguvu Kamando</a></h3>
                 <p>Vodacom</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Dr. Jabir Bakari</a></h3>
-                <p>TCRA</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
