@@ -30,6 +30,11 @@
     #more {display: none;}
     #moree {display: none;}
 
+    @keyframes blink{
+      0%{opacity: 0;}
+      50%{opacity: .5;}
+      100%{opacity: 1;}
+    }
   </style>
 </head>
 
@@ -121,6 +126,7 @@
       <p>THEME : Leveraging Digital Transformation In The Blue Economy For Social-Economic Development.</p>
       <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
       <a href="#schedule"><p style="font-size: 35px;">TRAVEL SCHEDULE</p></a>
+      <p style="background-color: magenta;padding: 15px;text-align: center;font-size: 25px;font-family: cursive;color: white;animation: blink 1s linear infinite;">For Control Number and Registration Kindly Call 0652348502</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
       <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
@@ -1095,9 +1101,11 @@
               if($action2 == ''){
             ?>
             <div class="row schedule-item">
-              <div class="col-md-2"><time></time></div>
-              <div class="col-md-10">
-                <h4>To be Comfirmed</h4>
+              <h3>SUB THEME: DIGITAL PLATFORMS </h3>
+              <h5>SESSION 5: THE INTERNET AND TELECOMMUNICATION SERVICES</h5>
+              <div class="col-md-3"><time>09:00hrs – 11:40hrs</time></div>
+              <div class="col-md-9">
+                <h4>Conference opening celebrations<span></span></h4>
               </div>
             </div>
             <?php } ?>
@@ -2238,6 +2246,12 @@
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/shake.jpg') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
           
