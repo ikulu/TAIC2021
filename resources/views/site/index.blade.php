@@ -129,7 +129,8 @@
       <p style="background-color: magenta;padding: 15px;text-align: center;font-size: 25px;font-family: cursive;color: white;animation: blink 1s linear infinite;">For Control Number and Registration Kindly Call 0652348502</p>
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
-      <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">INFORMATION BOOKLET</a>
+      <!-- <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">TIMETABLE</a> -->
+      <a href="#schedule" class="about-btn scrollto" target="blank">TIMETABLE</a>
     </div>
   </section><!-- End Hero Section -->
 
