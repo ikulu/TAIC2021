@@ -1005,81 +1005,9 @@
               if($action == ''){
             ?>
               <div class="row schedule-item">
-                <h3>SUB THEME:  DIGITAL AND BLUE ECONOMY</h3>
-                <h5>SESSION 1: CONFERENCE OPENING CEREMONY</h5>
-                <div class="col-md-3"><time>09:00hrs – 11:40hrs</time></div>
                 <div class="col-md-9">
-                  <h4>Conference opening celebrations<span></span></h4>
+                  <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 1.pdf') }}">Get Timetable</a></h4>
                 </div>
-                <hr />
-                <h5>SESSION 2: DIGITAL TRANSFORMATION IN THE BLUE ECONOMY</h5>
-                <div class="col-md-3"><time>11:40hrs – 12:40hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>Key Presentations</b>: Digital Transformation in the Blue Economy<span></span></h4>
-                  <h4><b>Panel Discussion</b>: Leveraging Digital Transformation in the Blue Economy for Social-Economic Development</h4>
-                </div>
-                <hr />
-                <div class="col-md-3"><time>12:40hrs – 13:30hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>Panel Discussion</b>: Digital Transformation Journey of Tanzania<span></span></h4>
-                </div>
-                <hr />
-                <div class="col-md-3"><time>13:30hrs – 14:30hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>LUNCH BREAK</b></h4>
-                </div>
-                <hr />
-                <h5>SESSION 3: DIGITAL SKILLS</h5>
-                <div class="col-md-3"><time>14:30hrs – 15:30hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>WORKSHOP 1</b>: ROADMAP FOR EFFECTIVE e-EDUCATION ECOSYSTEM<span></span></h4>
-                  The session will discuss how all Tanzania will possess digital skills that exploit the available digital space, tools, and processes to make the country the better place to live. 
-                  <ul>
-                    <li>Participation and Practical Use of e-Services</li>
-                    <li>Provision of Digital Skills and Innovative Services</li>
-                    <li>Digital Skills in Digital  Services and Systems</li>
-                    <li>Digital Skills in Large Scale Blue Economy Projects</li>
-                    <li>Digital Skills in the Education Sector</li>
-                    <li>Enhance Digital Skills in e-Commerce to Stimulate Trade</li>
-                    <li>Enhance Digital Skills in Agriculture Sector to Stimulate Production</li>
-                    <li>Digital Skills in the Health Sector</li>
-                  </ul>
-                </div>
-                <hr />
-                <h5>SESSION 4: DIGITAL FRAUD MANAGEMENT</h5>
-                <div class="col-md-3"><time>15:30hrs – 16:00hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>Topic</b>: Open Source Fraud Risk Management Platform<span></span></h4>
-                </div>
-                <hr />
-                <h5>DIGITAL TAXATION IN THE PLATFORM ECONOMY</h5>
-                <div class="col-md-3"><time>16:00hrs – 16:30hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>Topic</b>: Innovations driving trade facilitation and revenue mobilization<span></span></h4>
-                </div>
-                <hr />
-                <h5>SPACE TECH: DIGITALISATION OF ENVIRONMENTAL MANAGEMENT AND URBAN DEVELOPMENT</h5>
-                <div class="col-md-3"><time>16:30hrs – 17:00hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>Topic</b>: Space borne hyperspectral imaging and analytics for sustainable development and mitigation of climate change impacts in Tanzania<span></span></h4>
-                </div>
-                <hr />
-                <h5>SESSION 5: DIGITAL SECURITY, TRUST AND DATA PROTECTION</h5>
-                <div class="col-md-3"><time>16:30hrs – 17:00hrs</time></div>
-                <div class="col-md-9">
-                  <h4><b>WORKSHOP 2</b>: CONSUMER PROTECTION AND DATA PROTECTION IN THE DIGITAL PLATFORMS<span></span></h4>
-                  This session will discuss the techniques on how everyone in Tanzania will enjoy safe and protected digital space as they do in physical space so that security threats or concerns do not hinder digital transformation and the use of digital services.
-                  <ul>
-                    <li>Digital Security Capability</li>
-                    <li>The Use of Electronic Identity and Trust Services in Digital Economy</li>
-                    <li>Consumer Protection and Data Protection in the Digital Platforms</li>
-                    <li>Protecting Users from Digital Harmful Content</li>
-                    <li>Digitalization of Emergency Response and Disaster Management Systems</li>
-                    <li>Strengthening the National Security and Information Space</li>
-                    <li>Digitization of the investigation and prosecution process</li>
-                  </ul>
-                </div>
-                
               </div>
             <?php } ?>
 
@@ -1109,61 +1037,8 @@
               if($action2 == ''){
             ?>
             <div class="row schedule-item">
-              <h3>SUB THEME: DIGITAL PLATFORMS </h3>
               <div class="col-md-9">
-                <h4>SESSION 5: THE INTERNET AND TELECOMMUNICATION SERVICES<span> VENUE: MAIN HALL</span></h4>
-                <hr />
-                <h4>SESSION 6: ACADEMIC PAPER PRESENTATION<span> VENUE: TO BE COMMUNICATED</span></h4>
-              </div>
-              <hr />
-              <h5>ARRIVAL AND BREAKFAST</h5>
-              <div class="col-md-3"><time>07:00hrs – 08:30hrs</time></div>
-              <hr />
-              <h5>Topic: Zanzibar International Gateway</h5>
-              <div class="col-md-3"><time>08:30 – 09:00hrs</time></div>
-              <hr />
-              <h5>Track/Session 1: Technology enabled health care and agriculture (m-health, e-agriculture)</h5>
-              <div class="col-md-3"><time>0900 - 0945hrs</time></div>
-              <hr />
-              <h5>WORKSHOP 4: CHALLENGES OF PROVIDING TELECOMMUNICATION SERVICES</h5>
-              <div class="col-md-3"><time>09:00 – 10:30hrs</time></div>
-              <div class="col-md-9">
-                This session will discuss how everyone in Tanzania will access, improve, and use quality digital communications services as well as to create new products and services.
-                </ul>  
-                  <li>Development of medium and last-mile electronic communications network infrastructure</li>
-                  <li>Promoting Digital Infrastructure Sharing for Return on Investment</li>
-                  <li>Access to Digital Communications Services and Infrastructure </li>
-                  <li>Promoting Secure Deployment of IPv6 </li>
-                  <li>Deployment of 5G</li>
-                </ul>
-              </div>
-              <hr />
-              <h5>Track/Session 2: Emerging and future technologies (AI, Big Data, Cloud Computing, IoT, Block chain)</h5>
-              <div class="col-md-3"><time>10:00-11:00hrs</time></div>
-              <hr />
-              <h5>Track/Session 3: Information and Communication Technology for Development (ICT4D)</h5>
-              <div class="col-md-3"><time>1145-1215hrs</time></div>
-              <hr />
-              <h5>SESSION 7: DIGITAL ECONOMY AND PUBLIC SERVICES TRANSFORMATION</h5>
-              <h5>DIGITAL TRANSFORMATION OF PUBLIC SERVICES<span></span></h5>
-              <div class="col-md-3"><time>10:30 – 11:30hrs</time></div>
-              <hr />
-              <h5>Digitization of the investigation and prosecution process </h5>
-              <div class="col-md-3"><time>10:30hrs – 11:00hrs</time></div>
-              <hr />
-              <h5>DIGITAL FINANCIAL ASSETS AND DIGITAL TAXATION IN THE DIGITAL ECONOMY</h5>
-              <div class="col-md-3"><time>11:00 – 11:30hrs</time></div>
-              <div class="col-md-9">
-              This session will discuss how digital service platforms will be part of Tanzania's digital infrastructure where digital processes, products, and services play a crucial role in the functioning of the economy by reducing on-site and manual processing, transforming communication and data exchange from documents to data, and share with the public important data that are in the custody of private individuals and the government. 
-              <ul>
-                <li>Service Platforms</li> 
-                <li>Personal Data Protection</li> 
-                <li>Digital Finance and Taxation</li>
-                <li>Development of Digital Financial Assets</li>
-                <li>Exchange of Financial and Taxation Documents</li>
-                <li>Innovative, Efficient, Fast, and Seamless Payment Infrastructure</li>
-                <li>Smart Contracts</li>
-              </ul>
+                <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 2.pdf') }}">Get Timetable</a></h4>
               </div>
             </div>
             <?php } ?>
@@ -1195,7 +1070,7 @@
             <div class="row schedule-item">
               <div class="col-md-2"><time></time></div>
               <div class="col-md-10">
-                <h4>To be Comfirmed</h4>
+                <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 3.pdf') }}">Get Timetable</a></h4>
               </div>
             </div>
             <?php } ?>
@@ -2761,7 +2636,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "WELCOME TAIC 2022";
   }
 }, 1000);
   </script>
