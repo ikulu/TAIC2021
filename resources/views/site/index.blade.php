@@ -197,6 +197,16 @@
               <li><a href="sitedocuments/presentations/PATH-DATA INTEROPERABILITY IN DIGITAL HEALTH.pdf" target="blank">PATH - Data Interoperability in Digital health</a></li>
               <li><a href="sitedocuments/presentations/Reliable Identification in Digital Transformation - Znz ICT Summit.pdf" target="blank">SOFTNET - Reliable Identification in Digital Transformation</a></li>
               <li><a href="sitedocuments/presentations/ROMANIA-DEVELOPING A NATIONAL DIGITAL INNOVATION ECOSYSTEM.pdf" target="blank">Developing a national digital innovation ecosystem</a></li>
+              <li><a href="sitedocuments/presentations/NMAIST-HIGH PERFORMANCE COMPUTING IN OCEAN MODELLING.pdf" target="blank">NMAIST - High Performance Computing in Ocean Modeling</a></li>
+              <li><a href="sitedocuments/presentations/SGS-DIGITAL TAXATION IN THE PLATFORM ECONOMY.pdf" target="blank">SGS - DIGITAL TAXATION IN THE PLATFORM ECONOMY</a></li>
+              <li><a href="sitedocuments/presentations/SIMBANET-TECHNOLOGICAL TRANSFORMATION IN EDUCATION.pdf" target="blank">SIMBANET - TECHNOLOGICAL TRANSFORMATION IN EDUCATION SECTOR BY INTRODUCING E-LEARNING</a></li>
+              <li><a href="sitedocuments/presentations/STRENGHTHENING SAFETY IN SOFTWARE ENGINEERING.pdf" target="blank">STRENGTHENING SAFETY IN SOFTWARE ENGINEERING</a></li>
+              <li><a href="sitedocuments/presentations/THREE FOLD- INTERNET 2.0.pdf" target="blank">THREE FOLD - GDP POSITIVE INTERNET 2.0</a></li>
+              <li><a href="sitedocuments/presentations/TPC-POSTA KIGANJANI.pdf" target="blank">POSTA - Using Posta e-Shop in the Blue Economy for Social and Economic Development</a></li>
+              <li><a href="sitedocuments/presentations/TYDS Report Launch - 2022.pdf" target="blank">TYDS - Creating Transformative Youth Digital Spaces</a></li>
+              <li><a href="sitedocuments/presentations/UNDP-INTEGRATED APPROACH TO SUPPORT IMPACT DRIVEN START-UPS.pdf" target="blank">UNDP - Integrated Approach to Supporting Impact-Driven Startups</a></li>
+              <li><a href="sitedocuments/presentations/VODACOM-5G BENEFITS.pdf" target="blank">VODACOM - 5G Benefits</a></li>
+              <li><a href="sitedocuments/presentations/WASOKO-REINVENTING TECH TALENT POLICIES FOR AFRICAN STARTUPS.pdf" target="blank">WASOKO - Reinventing Tech Talent Policies for African Startups</a></li>
             </ul>
             <!-- <a href="sitedocuments/workshopSummary2022.pdf" target="blank">INTERNATIONAL WORKSHOP TO ENHANCE ICT INTEGRATION FOR SUSTAINABLE TOURISM DEVELOPMENT IN TANZANIA</a> -->
           </div>
