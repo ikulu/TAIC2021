@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Taic2022 - Index</title>
+  <title>Taic2023 - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -110,9 +110,9 @@
         $location = $frontpages->location;
     }
     if($title == ''){$title = 'Tanzania Annual ICT Conference';}
-    if($location == ''){$location = 'Golden Tulip, Zanzibar, Tanzania';}
-    if($fromdate == ''){$fromdate = '2022-10-26';}
-    if($todate == ''){$todate = '2022-10-28';}
+    if($location == ''){$location = 'Julius Nyerere International Convention Centre (JNICC) Tanzania';}
+    if($fromdate == ''){$fromdate = '2023-10-18';}
+    if($todate == ''){$todate = '2023-10-20';}
     $fromdate = date_create($fromdate);
     $todate = date_create($todate);
     $presentedFromdate = date_format($fromdate,"d");
@@ -512,10 +512,10 @@
           $about = $eventvenues->about;
         }
         if($about == ''){
-          $about = 'Zanzibar is a fantastic beach holiday destination. It is also an excellent value-for-money destination with lots of character and rich history. The culture is colourful and interesting. The old architecture is unique and the beaches are beautiful.';
+          $about = '';
         }
         if($location == ''){
-          $location = 'Golden Tulip, Zanzibar, Tanzania';
+          $location = 'Julius Nyerere International Convention Centre (JNICC) Tanzania';
         }
       }
     ?>
@@ -530,7 +530,7 @@
 
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126947.85811237132!2d39.080924362499985!3d-6.114467200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cdb24b2ae2fff%3A0xc86d9f3a80d72083!2sGolden%20Tulip%20Zanzibar%20Airport!5e0!3m2!1sen!2sde!4v1658322818379!5m2!1sen!2sde" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6396190453916!2d39.29141791477213!3d-6.813613495075424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b13ab3b27db%3A0x5e80e2765959908e!2sJulius%20Nyerere%20International%20Convention%20Centre!5e0!3m2!1sen!2stz!4v1688892519149!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
@@ -1015,7 +1015,7 @@
 
   <script>
   // Set the date we're counting down to
-var countDownDate = new Date("Oct 26, 2022 00:00:00").getTime();
+var countDownDate = new Date("Oct 18, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
