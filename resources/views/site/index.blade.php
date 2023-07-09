@@ -45,7 +45,6 @@
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
-        <!-- Uncomment below if you prefer to use a text logo -->
         <?php 
           $apname = '';
           $apnames = DB::select("SELECT * FROM headers WHERE id IN(SELECT MAX(id) FROM headers)");
@@ -53,11 +52,10 @@
               $apname = $name->appname;
           }
           if($apname == ''){
-            $apname = "2022";
+            $apname = "2023";
           }
         ?>
         <h1><a href="/">TAIC<span>{{$apname}}</span></a></h1>
-        <!-- <a href="index.html" class="scrollto"><img src="{{ asset('siteimg/logo.png') }}" alt="" title=""></a> -->
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -68,27 +66,26 @@
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
           <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> -->
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2022</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#about">PRESENTATIONS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2021</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank">Final Report</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>TAIC 2020</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Final Report</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+            <ul>
+              <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2022</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#about">PRESENTATIONS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2021</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank">Final Report</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>TAIC 2020</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Final Report</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -123,18 +120,15 @@
     $presentedMonthDate = date_format($fromdate,"F");
     $presentedYearDate = date_format($fromdate,"Y"); 
   ?>
+
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">{{$title}}</h1>
-      <!-- Tanzania Annual<br><span>ICT</span> Conference -->
-      <p>THEME : Leveraging Digital Transformation In The Blue Economy For Social-Economic Development.</p>
+      <p>THEME : To be Confirmed.</p>
       <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
-      <!-- <a href="#schedule"><p style="font-size: 35px;">TRAVEL SCHEDULE</p></a> -->
-      <!-- <p style="background-color: magenta;padding: 15px;text-align: center;font-size: 25px;font-family: cursive;color: white;animation: blink 1s linear infinite;">For Control Number and Registration Kindly Call 0652348502</p> -->
       <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
       <a href="" class="glightbox play-btn mb-4"></a>
-      <!-- <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" class="about-btn scrollto" target="blank">TIMETABLE</a> -->
       <a href="#schedule" class="about-btn scrollto" target="blank">TIMETABLE</a>
     </div>
   </section><!-- End Hero Section -->
@@ -154,7 +148,8 @@
         $when = $aboutsections->when;
     }
     if($title == ''){$title = 'About The Conference';}
-    if($about == ''){$about = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
+    if($about == ''){
+      $about = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
       ICT industry players in Tanzania that offers a unique platform for capacity building, policy
       dialogues, business investors networking, professional discussion, experience and knowledge
       sharing on the global ICT issues, business opportunities, knowledge and skills needs to cope
@@ -169,356 +164,107 @@
       social-economic development and the role of ICT as an important tool for attainment of
       Tanzania Development Vision and Sustainable Development Goals. The conference will be
       featured with exhibitions from various ICT stakeholders showcasing their products, services
-      and innovations.';}
-      if($when == ''){$when = 'Wednesday to Friday';}
+      and innovations.';
+    }
+    if($when == ''){$when = 'Wednesday to Friday';}
+
+    $fullname = '';
+    $occupation = '';
+    $fb = '';
+    $twitter = '';
+    $insta = '';
+    $ini = '';
+    $fullnameM = '';
+    $occupationM = '';
+    $profileM = '';
+    $facebookM = '';
+    $instagramM = '';
+    $twitterM = '';
+    $instaM = '';
+    $iniM = '';
+    $idM = '';
+    $speakers = DB::select("SELECT * FROM speakers WHERE title = 'others'");
+    $speakersMain = DB::select("SELECT * FROM speakers WHERE title = 'main'");
+    if(isset($speakersMain)){
+      foreach($speakersMain AS $speakerM){
+        $fullnameM = $speakerM->fullname;
+        $occupationM = $speakerM->occupation;
+        $profileM = $speakerM->profile;
+        $facebookM = $speakerM->facebook;
+        $twitterM = $speakerM->tweeter;
+        $iniM = $speakerM->ini;
+        $instagramM = $speakerM->instagram;;
+        $idM = $speakerM->id;
+      }
+    }
+    if($fullnameM == ''){$fullnameM = 'Full Name';}
+    if($occupationM == ''){$occupationM = 'Occupation';}
+    if($profileM == ''){$profileM = 'default.png';}
+    if($facebookM == ''){
+      $facebookM = '#';
+    }else{
+      $facebookM = "https://www.facebook.com/".$facebookM;
+    }
+    if($twitterM == ''){
+      $twitterM = '#';
+    }else{
+      $twitterM = "https://www.twitter.com/".$twitterM;
+    }
+    if($iniM == ''){
+      $iniM = '#';
+    }else{
+      $iniM = "https://www.linkedin.com/".$iniM;
+    }
+    if($instagramM == ''){
+      $instagramM = '#';
+    }else{
+      $instagramM = "https://www.instagram.com/".$instagramM;
+    }
   ?>
+
   <!-- ======= About Section ======= -->
   <section id="about">
     <div class="container" data-aos="fade-up">
       <div class="row">
-        <div class="col-lg-6">
-          <h2>{{$title}}</h2>
-          <p style="text-align: justify;">{{$about}} For more information read <a href="sitedocuments/TAIC 2022 INFORMATION BOOKLET.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a></span></p>
+        <div class="col-lg-12">
+          <div class="section-header">
+            <h2>{{$title}}</h2>
           </div>
-          <div class="col-lg-6">
-            <!-- <h3>Where</h3>
-            <p>{{$location}}</p>
-            <h3>When</h3>
-            <p>{{$when}}<br>{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}</p> -->
-            <!-- <a href="sitedocuments/TAIC 2022 Information Booklet Updated.pdf" target="blank">TAIC 2022 INFORMATION BOOKLET</a><br /><br /> -->
-            <h3>PRESENTATIONS TAIC 2022</h3>
-            <ul>
-              <li><a href="sitedocuments/presentations/BOT-TIPS Presentation.pdf" target="blank">BOT - Tanzania Instant Payment System (TIPS)</a></li>
-              <li><a href="sitedocuments/presentations/eGA-Leaving no one behind in delivery of Public Service.pdf" target="blank">e-GOVERNMENT AUTHORITY (e-GA) “LEAVING NO ONE BEHIND IN DIGITAL DELIVERY OF PUBLIC SERVICE</a></li>
-              <li><a href="sitedocuments/presentations/HUAWEI-Cyber Security Strategy and Approach.pdf" target="blank">HUAWEI - Cyber Security Strategy and Approach</a></li>
-              <li><a href="sitedocuments/presentations/MoFP-GePG IMPLEMENTATIONS ACHIEVEMENTS AND CHALLENGES.pdf" target="blank">GePG Implementation, Achievements and Challenges</a></li>
-              <li><a href="sitedocuments/presentations/NMB-BUILDING ICT ECOSYSTEM OF TANZANIA-OPPORTUNITIES FOR START UPS.pdf" target="blank">NMB - BUILDING ICT ECOSYSTEM OF TANZANIA – opportunities for Startups</a></li>
-              <li><a href="sitedocuments/presentations/NMB-DIGITAL TRANSFORMATION IN THE BLUE ECONOMY.pdf" target="blank">NMB - Digital Transformation in the Blue Economy</a></li>
-              <li><a href="sitedocuments/presentations/PATH-DATA INTEROPERABILITY IN DIGITAL HEALTH.pdf" target="blank">PATH - Data Interoperability in Digital health</a></li>
-              <li><a href="sitedocuments/presentations/Reliable Identification in Digital Transformation - Znz ICT Summit.pdf" target="blank">SOFTNET - Reliable Identification in Digital Transformation</a></li>
-              <li><a href="sitedocuments/presentations/ROMANIA-DEVELOPING A NATIONAL DIGITAL INNOVATION ECOSYSTEM.pdf" target="blank">Developing a national digital innovation ecosystem</a></li>
-              <li><a href="sitedocuments/presentations/NMAIST-HIGH PERFORMANCE COMPUTING IN OCEAN MODELLING.pdf" target="blank">NMAIST - High Performance Computing in Ocean Modeling</a></li>
-              <li><a href="sitedocuments/presentations/SGS-DIGITAL TAXATION IN THE PLATFORM ECONOMY.pdf" target="blank">SGS - DIGITAL TAXATION IN THE PLATFORM ECONOMY</a></li>
-              <li><a href="sitedocuments/presentations/SIMBANET-TECHNOLOGICAL TRANSFORMATION IN EDUCATION.pdf" target="blank">SIMBANET - TECHNOLOGICAL TRANSFORMATION IN EDUCATION SECTOR BY INTRODUCING E-LEARNING</a></li>
-              <li><a href="sitedocuments/presentations/STRENGHTHENING SAFETY IN SOFTWARE ENGINEERING.pdf" target="blank">STRENGTHENING SAFETY IN SOFTWARE ENGINEERING</a></li>
-              <li><a href="sitedocuments/presentations/THREE FOLD- INTERNET 2.0.pdf" target="blank">THREE FOLD - GDP POSITIVE INTERNET 2.0</a></li>
-              <li><a href="sitedocuments/presentations/TPC-POSTA KIGANJANI.pdf" target="blank">POSTA - Using Posta e-Shop in the Blue Economy for Social and Economic Development</a></li>
-              <li><a href="sitedocuments/presentations/TYDS Report Launch - 2022.pdf" target="blank">TYDS - Creating Transformative Youth Digital Spaces</a></li>
-              <li><a href="sitedocuments/presentations/UNDP-INTEGRATED APPROACH TO SUPPORT IMPACT DRIVEN START-UPS.pdf" target="blank">UNDP - Integrated Approach to Supporting Impact-Driven Startups</a></li>
-              <li><a href="sitedocuments/presentations/VODACOM-5G BENEFITS.pdf" target="blank">VODACOM - 5G Benefits</a></li>
-              <li><a href="sitedocuments/presentations/WASOKO-REINVENTING TECH TALENT POLICIES FOR AFRICAN STARTUPS.pdf" target="blank">WASOKO - Reinventing Tech Talent Policies for African Startups</a></li>
-            </ul>
-            <!-- <a href="sitedocuments/workshopSummary2022.pdf" target="blank">INTERNATIONAL WORKSHOP TO ENHANCE ICT INTEGRATION FOR SUSTAINABLE TOURISM DEVELOPMENT IN TANZANIA</a> -->
-          </div>
-          <!-- <div class="col-lg-3">
-            <img src="{{ asset('siteimg/taic1.jpeg') }}" alt="Speaker 3" class="img-fluid">
-          </div> -->
+          <p style="text-align: center;">{{$about}}</p>
+        </div>
         </div>
       </div>
   </section><!-- End About Section -->
     
-    <?php 
-      $fullname = '';
-      $occupation = '';
-      $fb = '';
-      $twitter = '';
-      $insta = '';
-      $ini = '';
-      $fullnameM = '';
-      $occupationM = '';
-      $profileM = '';
-      $facebookM = '';
-      $instagramM = '';
-      $twitterM = '';
-      $instaM = '';
-      $iniM = '';
-      $idM = '';
-      $speakers = DB::select("SELECT * FROM speakers WHERE title = 'others'");
-      $speakersMain = DB::select("SELECT * FROM speakers WHERE title = 'main'");
-      if(isset($speakersMain)){
-        foreach($speakersMain AS $speakerM){
-          $fullnameM = $speakerM->fullname;
-          $occupationM = $speakerM->occupation;
-          $profileM = $speakerM->profile;
-          $facebookM = $speakerM->facebook;
-          $twitterM = $speakerM->tweeter;
-          $iniM = $speakerM->ini;
-          $instagramM = $speakerM->instagram;;
-          $idM = $speakerM->id;
-        }
-      }
-      if($fullnameM == ''){$fullnameM = 'Full Name';}
-      if($occupationM == ''){$occupationM = 'Occupation';}
-      if($profileM == ''){$profileM = 'default.png';}
-      if($facebookM == ''){
-        $facebookM = '#';
-      }else{
-        $facebookM = "https://www.facebook.com/".$facebookM;
-      }
-      if($twitterM == ''){
-        $twitterM = '#';
-      }else{
-        $twitterM = "https://www.twitter.com/".$twitterM;
-      }
-      if($iniM == ''){
-        $iniM = '#';
-      }else{
-        $iniM = "https://www.linkedin.com/".$iniM;
-      }
-      if($instagramM == ''){
-        $instagramM = '#';
-      }else{
-        $instagramM = "https://www.instagram.com/".$instagramM;
-      }
-    ?>
-    <!-- ======= Guest Of Honour Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Guest Of Honour</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6"></div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-            <img src="{{ asset('siteimg/speakers/mwinyi.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Dr Hussein Ali Mwinyi</a></h3>
-                <p>President Of Zanzibar</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6"></div>
-        </div>
+  <!-- ======= Guest Of Honour Section ======= -->
+  <section id="speakers">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Guest Of Honour</h2>
       </div>
 
-    </section><!-- End Speakers Section -->
-
-     <!-- ======= Chairs Section ======= -->
-     <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Conference Chairs</h2>
-          <!-- <p>Here are some of our speakers</p> -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6"></div>
+        <div class="col-lg-3 col-md-6">
+          <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
+          <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
+            <div class="details">
+              <h3><a>To Be Confirmed</a></h3>
+              <!-- <p></p> -->
+              <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
+            </div>
+          </div>
         </div>
-
-        <div class="row">
-        <?php
-          foreach($speakers AS $speaker){
-              $fullname = $speaker->fullname;
-              $occupation = $speaker->occupation;
-              $profile = $speaker->profile;
-              $facebook = $speaker->facebook;
-              $instagram = $speaker->instagram;
-              $twitter = $speaker->tweeter;
-              $ini = $speaker->ini;
-              $id = $speaker->id;
-
-              if($fullname == ''){$fullname = 'Full Name';}
-              if($occupation == ''){$occupation = 'Occupation';}
-              if($profile == ''){$profile = 'default.png';}
-              if($facebook == ''){
-                $facebook = '#';
-              }else{
-                $facebook = "https://www.facebook.com/".$facebook;
-              }
-              if($twitter == ''){
-                $twitter = '#';
-              }else{
-                $twitter = "https://www.twitter.com/".$twitter;
-              }
-              if($ini == ''){
-                $ini = '#';
-              }else{
-                $ini = "https://www.linkedin.com/".$ini;
-              }
-              if($instagram == ''){
-                $instagram = '#';
-              }else{
-                $instagram = "https://www.instagram.com/".$instagram;
-              }
-        ?>
-              <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{asset('profiles/'.$profile)}}" alt='' class='img-fluid'>
-              <div class='details'>
-                <h6><a href='speaker-details.html'>{{$fullname}}</a></h6>
-                <p>{{$occupation}}</p>
-                <div class='social'>
-                  <a href='{{$twitter}}'><i class='bi bi-twitter'></i></a>
-                  <a href='{{$facebook}}'><i class='bi bi-facebook'></i></a>
-                  <a href='{{$instagram}}'><i class='bi bi-instagram'></i></a>
-                  <a href='{{$ini}}'><i class='bi bi-linkedin'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php
-          }
-          if($fullname == ''){?>
-          <div class="col-lg-3 col-md-6">
-          
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/jim.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Dr. Jim Yonazi</a></h3>
-                <p>Parmanent Secretary</p>
-                <div class="social">
-                  <p>Ministry Of Information, Communication And Information Technology</p>
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ asset('siteimg/speakers/dg.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Dr. Nkundwe M Mwasaga</a></h3>
-                <p>Director General, ICT COMMISSION</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            
-          </div>
-          <?php }
-          ?>
-        </div>
+        <div class="col-lg-4 col-md-6"></div>
       </div>
-
-    </section><!-- End Speakers Section -->
-
-    <!-- ======= Guest Of Honour Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Conference Papers Reviewer</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/fredrick.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Fredrick Mtenzi</a></h3>
-                <p>Dublin Institute Of Technology, Ireland</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/tereza.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Thereza Israel Mugobi</a></h3>
-                <p>Open University Of Tanzania</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/DRlupiana.jpeg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Dr. Dennis Lupiana</a></h3>
-                <p>Institute Of Finance Management</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/george.jpg') }}" alt="Image of the guest of honor" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Prof. George Oreku</a></h3>
-                <p>Open University Of Tanzania</p>
-                <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-                <div class="social">
-                  <a href="{{$twitterM}}" target = "blank"><i class="bi bi-twitter"></i></a>
-                  <a href="{{$facebookM}}" target = "blank"><i class="bi bi-facebook"></i></a>
-                  <a href="{{$instagramM}}" target = "blank"><i class="bi bi-instagram"></i></a>
-                  <a href="{{$iniM}}" target = "blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Speakers Section -->
-
-    <!-- ======= Guest Of Honour Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>International Scientific Commitee</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div style="align-self:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <ol style="text-align:justify">
-                <li>Matobola Mihale       | <span style="font-weight:bold;">Open University Of Tanzania</span></li>
-                <li>Victor Kimutai Kimeli | <span style="font-weight:bold;">Moi University, Kenya</span></li>
-                <li>Jameson Mbale         | <span style="font-weight:bold;">University of Coper Belt, Zambia</span></li>
-                <li>Mamata Rath           | <span style="font-weight:bold;">DRIEMS, Cuttack, India</span></li>
-                <li>Ashery Mbilinyi       | <span style="font-weight:bold;">University of Basel, Swittzerland</span></li>
-                <li>Magreth Mushi         | <span style="font-weight:bold;">North Carolina State University, Raleigh, NC</span></li>
-                <li>Mercy Mbamba Fandamu  | <span style="font-weight:bold;">Copperbelt University (CBU)</span></li>
-                <li>Oluwapelumi Giwa      | <span style="font-weight:bold;">North West University</span></li>
-                <li>Safaa O. Al-Mamory    | <span style="font-weight:bold;">University of Information Technology and communications – Iraq</span></li>
-              <ol>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Speakers Section -->
+    </div>
+  </section><!-- End Speakers Section -->
 
     <!-- ======= Speakers Section ======= -->
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Conference Speakers</h2>
-          <p>Here are some of our speakers</p>
         </div>
 
         <div class="row">
@@ -575,290 +321,30 @@
           <?php
           }
           if($fullname == ''){?>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ asset('siteimg/speakers/Daniel_Yu.jpg') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a href="">Daniel Yu</a></h3>
-                <p>CEO - Wasoko</p>
-                <!-- <p>To be Comfirmed</p> -->
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/leonard.jpg') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
               <div class="details">
-                <h3><a href="">Dr. Leonard Binamungu</a></h3>
-                <p>UDSM - COICT</p>
-                <!-- <p>To be Confirmed</p> -->
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <h3><a>To Be Confirmed</a></h3>
+                <p></p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
+              <div class="details">
+                <h3><a>To Be Confirmed</a></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
               <div class="details">
-                <h3><a href="">Carl-Robert Reidolf</a></h3>
-                <p>Entrepreneur in Residence at Net Group – Estonia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
-              <div class="details">
-                <h3><a href="">Cynthia C. Prince</a></h3>
-                <p>Simbanet</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Shakil Dharamsi</a></h3>
-                <p>Power Computers</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Kwame Makundi</a></h3>
-                <p>Chief Digital Transformation Officer-NMB</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Greg McCormick</a></h3>
-                <p>Sybin</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Toumas Tikka</a></h3>
-                <p>Kuva Space</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Karim Mchatta</a></h3>
-                <p>HACK IT Consultancy Ltd</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Mr. Nguvu Kamando</a></h3>
-                <p>Vodacom</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Mr. Phillipe Baudrier</a></h3>
-                <p>Konnect Africa (EUTASALAT)</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Nazar Nicholaus</a></h3>
-                <p>President-ISOC Tanzania</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Benedict Ndomba</a></h3>
-                <p>Director General, e-Government Authority</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Kedi Välba</a></h3>
-                <p>Regional Manager for Africa & Middle East at Aktors, Estonia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Dr.Seif Rashid</a></h3>
-                <p>Data Use Partnership (DUP)PATH, Project Director</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Dr. Jabir Bakari</a></h3>
-                <p>Director General – TCRA</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Kristof De Spiegeleer</a></h3>
-                <p>Threefold</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Joseph Manirakiza</a></h3>
-                <p>Project Manager, UNDP Funguo Program</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:200px;width:auto">
-              <div class="details">
-                <h3><a href="">Mr. Bruce Mwile</a></h3>
-                <p>Chief Operations Officer CRDB Bank</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <h3><a>To Be Confirmed</a></h3>
+                <p></p>
               </div>
             </div>
           </div>
@@ -897,15 +383,11 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Event Schedule</h2>
-          <p>Here is our event schedule</p>
         </div>
 
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item">
-            <a class="nav-link active" href="#day-0" role="tab" data-bs-toggle="tab">Tuesday</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Thursday</a>
@@ -919,19 +401,6 @@
           necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Schdule Day 0 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-0">
-            <div class="row schedule-item">
-              <h3>PRE-CONFERENCE EVENT:  TUESDAY 25th OCTOBER 2022</h3>
-              <h5>Arrivals and TAIC Registration</h5>
-              <div class="col-md-3"><time>09:00hrs – 21:00hrs</time></div>
-              <div class="col-md-9">
-                <h4>Delegates and invited guests<span></span></h4>
-                <p>Golden Tulip Airport Hotel</p>
-              </div>
-            </div>
-          </div>
 
           <!-- Schdule Day 1 -->
           <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="day-1">
@@ -958,7 +427,7 @@
             ?>
               <div class="row schedule-item">
                 <div class="col-md-9">
-                  <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 1.pdf') }}">Get Timetable</a></h4>
+                  <h4>To Be Confirmed</h4>
                 </div>
               </div>
             <?php } ?>
@@ -990,7 +459,7 @@
             ?>
             <div class="row schedule-item">
               <div class="col-md-9">
-                <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 2.pdf') }}">Get Timetable</a></h4>
+                <h4>To Be Confirmed</h4>
               </div>
             </div>
             <?php } ?>
@@ -1022,7 +491,7 @@
             <div class="row schedule-item">
               <div class="col-md-2"><time></time></div>
               <div class="col-md-10">
-                <h4><a target="blank" href="{{ asset('sitedocuments/TAIC 2022 DAY 3.pdf') }}">Get Timetable</a></h4>
+                <h4>To Be Confirmed</h4>
               </div>
             </div>
             <?php } ?>
@@ -1057,17 +526,12 @@
 
         <div class="section-header">
           <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
         </div>
 
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507805.24791743327!2d39.1001373338375!3d-6.099898206507772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185d29602a2909e5%3A0xa035af4aad9b7d5f!2sUnguja!5e0!3m2!1sen!2stz!4v1652091771928!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126947.85811237132!2d39.080924362499985!3d-6.114467200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd3df5d859047%3A0x62612435cf1c0707!2sGolden%20Tulip%20Zanzibar%20Resort!5e0!3m2!1sen!2sde!4v1658319766553!5m2!1sen!2sde" frameborder="0" style="border:0" allowfullscreen></iframe> -->
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126947.85811237132!2d39.080924362499985!3d-6.114467200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cdb24b2ae2fff%3A0xc86d9f3a80d72083!2sGolden%20Tulip%20Zanzibar%20Airport!5e0!3m2!1sen!2sde!4v1658322818379!5m2!1sen!2sde" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe> -->
           </div>
-
           <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8 position-relative">
@@ -1082,7 +546,6 @@
 
       <?php 
         $picture = '';
-        
         $gallery = DB::select("SELECT * FROM venue_galleries");
         if(isset($gallery)){
           foreach($gallery AS $gallerys){
@@ -1093,28 +556,11 @@
 
       <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-0">
-
-        <?php
-        foreach($gallery AS $gallerys){
-            $picture = $gallerys->picture;
-        ?>
-
-<!-- this is the original one dynamic -->
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="{{asset('venuegallery/'.$picture)}}" class="glightbox" data-gall="venue-gallery">
-                <img src="{{asset('venuegallery/'.$picture)}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div> -->
-        <?php } ?>
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="{{asset('venuegallery/tmarathon.jpg')}}" class="glightbox" data-gall="venue-gallery">
-                <img src="{{asset('venuegallery/tmarathon.jpg')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div> -->
+          <?php
+          foreach($gallery AS $gallerys){
+              $picture = $gallerys->picture;
+          ?>
+          <?php } ?>
         </div>
       </div>
 
@@ -1131,517 +577,11 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-12 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/camilaHotel.jpg') }}" alt="Camila Hotel" class="img-fluid"> -->
               </div>
-              <h3><a href="#">Camila Hotel</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>Two (2) Rooms Suit Two 2beds @Sh.140,000 <br />
-                26 Rooms Single 1px@Sh.80,000 2px@Sh.120,00
-              </p>
-              <p>0777848889</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/shanganiHotel.jpg') }}" alt="Shangani Hotel" class="img-fluid"> -->
-              </div>
-              <h3><a href="">Shangani Hotel</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill-half-full"></i> -->
-              </div>
-              <p>Standard 1px@Shs.80,000 2px@Shs.120,000</p>
-              <p>0777411703</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/dreamshotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Dreams Hotel</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>Single room @Sh.90,000 <br> Twin room @Sh.120,000 <br> Deluxe Single @Sh.105,000 <br> Deluxe Double @Sh.130,000 <br> Family room 3px@Sh.160,000 <br> Family room 4px@Sh.200,000 <br> First Class Suite Single @Sh.150,000 First Class Suite Single @Sh.200,000</p>
-              <p>0772864645</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/zanzibaroceanviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Zanzibar Ocean View Hotel</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>2beds triple 3px@Sh.200,000 | 2px@Sh.150,000<br> 2beds twin 2px@Sh.150,000 | 1px@Sh.100,000 <br> 1bed 2px@Sh.150,000 | 1px@Sh.100,000</p>
-              <p>0777429014</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/kilimaniviewhotel.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Kilimani View Hotel</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>9rooms Single 1px@Sh.75,000 <br> 4rooms 2 beds 4px@Sh.85,000 <br> 4rooms double 4px@Sh.95,000 <br> 4beds 2px@Sh.110,000 <br> 4beds 2px@Sh.110,000 <br> Family 1px@Sh.120,000</p>
-              <p>0620117381</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/mlandegeLodge.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Mlandege Lodge</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>3 Bed 1px @Shs.35,000 <br > 2 Bed 2px@Shs.45,000 | 3px@Shs.55,000</p>
-              <p>0622202990/0778859588</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/barasteLodge.jpg') }}" alt="Hotel 3" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Baraste Lodge</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>Single Bed 1px@Sh.55,000 <br /> Single bed 2px@ Sh.65,000 <br /> Single 2bed @Sh.85,000 <br /> Family room 3bed 4px@Sh. 110,000 </p>
-              <p>0773117777</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">Kilua Inn</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>Double Sh.90,000 <br /> Single Sh.70,000</p>
-              <p>0777960000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">ZANZIBAR BEACH RESORT MAZIZINI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	USD	80 <br /> DOUBLE	USD	90</p>
-              <p>+255715373541</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">SEA VIEW HOTEL MAZIZINI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TZSH 90,000	USD 60 <br /> DOUBLE	TZSH 100,000	USD 70 <br /> TRIPLE	TSH 130,000	USD 100</p>
-              <p>+255789020364</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">ZANZIBAR OCEAN VIEW MAZIZINI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 85,000 <br /> DOUBLE	TSH 90,000 <br /> TRIPLE	TSH 105,000</p>
-              <p>+255777429014</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">CAMILA AIRPORT HOTEL KIEMBE SAMAKI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE (1 person)	TSH 70,000 <br /> SINGLE (2 persons)	TSH 80,000 <br /> DOUBLE	TSH 120,000</p>
-              <p>+255678818188</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">KILIMANI VIEW KILIMANI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 75,000 <br /> TWINS	TSH 85,000 <br /> DOUBLE	TSH 95,000 <br /> TRIPLE	TSH 100,000 <br /> FOUR BEDS	TSH 110,000 <br /> FAMILY	TSH 120,000</p>
-              <p>+255778786000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">BIN ABASS APPATMENT AMANI KWA MABATA</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>2 BED ROOMS/WEEK	TSH 350,000</p>
-              <p>+255777872391</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">HOTEL EXECUTIVE</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE (1 person)	TSH 80,000 <br /> SINGLE (2 persons)	TSH 100,000 <br /> DOUBLE	TSH 100,000</p>
-              <p>+255658616187</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">HOTEL EXECUTIVE</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE (1 person)	TSH 80,000 <br /> SINGLE (2 persons)	TSH 100,000 <br /> DOUBLE	TSH 100,000</p>
-              <p>+255658616187</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">DREAM HOTEL MLANDEGE</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 90,000	USD 60 <br /> TWINS	TSH 120,000	USD 75 <br /> DELUXE SINGLE	TSH 105,000	USD 65 <br /> DELUXE DOUBLE	TSH 130,000	USD 85 <br /> FAMILY 3 P	TSH 160,000	USD 90 <br /> FAMILY 4 P	TSH 200,000	USD 100 <br /> FIRST CLASS SINGLE	TSH 150,000	USD 80 <br /> FIRST CLASS DOUBLE	TSH 200,000	USD 100</p>
-              <p>+255772864645</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">ISLAND PARADISE MLANDEGE</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>STANDARD DELUXE	TSH 120,000	USD 70 <br /> STANDARD DOUBLE	TSH 140,000	USD 85 <br /> STANDARD TWIN	TSH 140,000	USD 85 <br /> DELUXE TWIN	TSH 150,000	USD 95 <br /> SUPERIOR ROOM	TSH 150,000	USD 95 INTERCONNECTING	TSH 220,000	USD 130 <br /> STUDIO APPARTMENT	TSH 200,000	USD 100</p>
-              <p>+255778915227 | +255655916227</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">KILUA INN MUEMBE TANGA</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 70,000 <br /> TWINS	TSH 90,000 <br /> DOUBLE	TSH 90,000</p>
-              <p>+255777960000</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">KITUO CHA AMANI NA UTENGAMANO MASINGINI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>EXECUTIVE	TSH 100,000 <br /> DOUBLE	TSH 80,000 <br /> TWINS	TSH 80,000 <br /> SINGLE	TSH 50,000</p>
-              <p>+255716415781</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">CCM SOCIAL LODGE</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 85,000 <br /> DOUBLE	TSH 130,000</p>
-              <p>+255713077103</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">LAIL NOOR INN HOTEL</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>ALL	TSH 60,000</p>
-              <p>+255778002244</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">MARUHUBI BEACH VILLAS MARUHUBI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 100,000 <br /> DOUBLE/TWIN	TSH 150,000 <br /> TRIPLE	TSH 180,000</p>
-              <p>+255772166544 | +255778663068</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">ZANZIBAR PARADISE AMANI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 60,000 <br /> SINGLE TWIN	TSH 90,000 <br /> DOUBLE	TSH 70,000</p>
-              <p>+255682101299</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">RUMAISA MALINDI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 70,000	USD 50  <br /> DOUBLE	TSH 100,000	USD 60  <br /> TRIPLE	TSH 110,000	USD 70  <br /> FAMILIY	TSH 130,000	USD 80</p>
-              <p>+255777752777 | +255777306472</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">FUNGUNI PALACE HOTEL MALINDI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 50,000	USD 35 <br /> DOUBLE	TSH 80,000	USD 50 <br /> TRIPLE	TSH 100,000	USD 65</p>
-              <p>+255717177778</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">PLUMERIA HOTEL</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>DOUBLE	TSH 60,000	USD 65 <br /> FAMILY	TSH 80,000	USD 85</p>
-              <p>+255673202164</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">STONE TOWN HOUSE </a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 70,000 <br /> TWINS	TSH 95,000 <br /> TRIPLE	TSH 140,000  <br /> FAMILY (4 BEDS)	TSH 189,000</p>
-              <p>+255773817799</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">MRUSI HOUSE HOTEL </a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE	TSH 80,000	USD 35 <br /> DOUBLE 	TSH 100,000	USD 45 <br /> FAMILY TRIPLE	TSH 115,000	USD 50</p>
-              <p>+255772817032</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <!-- <img style="max-height:300px;min-width:500px" src="{{ asset('siteimg/hotels/') }}" alt="" class="img-fluid"> -->
-              </div>
-              <h3><a href="#">BARASTE LODGE MICHENZANI</a></h3>
-              <div class="stars">
-                <!-- <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i> -->
-              </div>
-              <p>SINGLE 	TSH 60,000	USD 60 <br /> DOUBLE	TSH 70,000	USD 70 <br /> TRIPLE	TSH 85,000	USD 80</p>
-              <p>+255773117777</p>
+              <h3 style="align-content: center;"><a>To Be Confirmed</a></h3>
             </div>
           </div>
 
@@ -1649,77 +589,6 @@
       </div> 
 
     </section><!-- End Hotels Section -->
-
-    <?php 
-      $picture = '';
-      
-      $gallery = DB::select("SELECT * FROM galleries");
-    ?>
-    <!-- ======= Gallery Section ======= -->
-    <?php if($picture != ''){?>
-    <section id="gallery">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Gallery</h2>
-          <!-- <p>Check our gallery from the recent events</p> -->
-        </div>
-      </div>
-      <div class="gallery-slider swiper">
-      <div class="swiper-wrapper align-items-center">
-      <?php
-      
-        foreach($gallery AS $gallerys){
-          $picture = $gallerys->picture;           
-          ?>
-          <div class="swiper-slide"><a href="{{asset('gallery/'.$picture)}}" class="gallery-lightbox"><img src="{{asset('gallery/'.$picture)}}" class="img-fluid" alt=""></a></div>
-        <?php }
-      ?>
-        </div>
-        <div class="swiper-pagination"></div>
-        </div>
-    </section> <!-- End Gallery Section -->
-    <?php }?>
-    <?php 
-      $analyticsname = '';
-      $picture = '';
-      
-      $analytics = DB::select("SELECT * FROM analytics");
-      if(isset($analytics)){
-        foreach($analytics AS $analytic){
-          $analyticsname = $analytic->analyticsname;
-          $picture = $analytic->picture;
-        }
-      }
-    ?>
-    <!-- ======= Analytics Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <?php if($analyticsname == ''){?>
-        
-        <?php }else{?>
-          <div class="section-header">
-          <h2>Analytics</h2>
-        </div>
-        <?php
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($analytics AS $analytic){
-            $picture = $analytic->picture;
-            $analyticsname = $analytic->analyticsname;
-            ?>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$analyticsname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('analytics/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-        <?php
-          }
-          echo '</div>';
-        } ?>
-      </div>
-
-    </section><!-- End Analytics Section -->
 
     <?php 
       $sponsorsname = '';
@@ -1743,32 +612,26 @@
         </div>
         <?php if($sponsorsname == ''){?>
         <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <!-- <p style="text-align:center">To be confirmed</p> -->
           <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.huawei.com/en/" target="blank"><img src="{{ asset('siteimg/sponsors/Huawei-Logo.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://crdbbank.co.tz/en" target="blank"><img src="{{ asset('siteimg/sponsors/crdb.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.undp.org/?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQjwnbmaBhD-ARIsAGTPcfXu0rSHcYAbTyTu00TuJFc9au_8kmSJYi3EpWjDcgfjEBabhv0mtmYaAs-oEALw_wcB" target="blank"><img src="{{ asset('siteimg/sponsors/undp.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>   
           </div>
 
-          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
-            </div>
-          </div> -->
-
         </div>
+
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
           foreach($sponsors AS $sponsor){
@@ -1799,30 +662,17 @@
         </div>
         <?php if($sponsorsname == ''){?>
         <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <!-- <p style="text-align:center">To be confirmed</p> -->
           <div class="col-lg-6 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.nmbbank.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/nmb.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.uncdf.org/" target="blank"><img src="{{ asset('siteimg/sponsors/uncdf.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
-<!-- 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/33.png') }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{{ asset('siteimg/supporters/44.png') }}" class="img-fluid" alt="">
-            </div>
-          </div> -->
 
         </div>
         <?php }else{
@@ -1856,51 +706,21 @@
         <?php if($sponsorsname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
           <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://tispa.or.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/tispa.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.tcra.go.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/tcra.jpg') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
           
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-            <a href="https://corporate.sybrin.com/" target="blank"><img src="{{ asset('siteimg/sponsors/Sybrin.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="http://softnet.co.tz/cms/" target="blank"><img src="{{ asset('siteimg/sponsors/softnet.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/ucsa.jpeg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/wiki.jpeg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.konnect.co.tz/en" target="blank"><img src="{{ asset('siteimg/sponsors/weconnect.jpeg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://vodacom.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/voda.png') }}" class="img-fluid" alt=""></a>
+            <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -1926,26 +746,6 @@
 
     </section><!-- End Sponsors Section -->
 
-    <!-- ======= Partners Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Strategic Partner</h2>
-        </div>
-    
-        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          
-          <div class="col-lg-12 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://threefold.io/" target="blank"><img src="{{ asset('siteimg/sponsors/THREE.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-      </div>
-
-    </section><!-- End Pertiners Section -->
-
     <?php 
       $partnersname = '';
       $picture = '';
@@ -1967,40 +767,21 @@
         </div>
         <?php if($partnersname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://technoproafrica.net/" target="blank"><img src="{{ asset('siteimg/sponsors/TECHNOPRO.jpeg') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://www.ttcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/ttcl.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://liquid.tech/" target="blank"><img src="{{ asset('siteimg/sponsors/liquid.jpeg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.simbanet.net/" target="blank"><img src="{{ asset('siteimg/sponsors/SIMBANET-LOGO.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="http://zictia.go.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/zict.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.zanlink.com/" target="blank"><img src="{{ asset('siteimg/sponsors/Zanlink-Logo.jpg') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
@@ -2048,98 +829,25 @@
         </div>
         <?php if($exhibitorsname == ''){?>
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <!-- <p style="text-align:center">To be confirmed</p> -->
 
-          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://techmsaada.com" target="blank"><img src="{{ asset('siteimg/sponsors/techmsaada.jpeg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div> -->
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.tigo.co.tz" target="blank"><img src="{{ asset('siteimg/sponsors/tigo.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="http://www.zainafoundationtz.org/" target="blank"><img src="{{ asset('siteimg/sponsors/zaina logo final.png') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <a href="https://unisoft.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/unisoft.jpg') }}" class="img-fluid" alt=""></a>
+              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://powercomputers.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/powerComputers.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="http://www.trendmicro.com/" target="blank"><img src="{{ asset('siteimg/sponsors/trend.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://nm-aist.ac.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/NM-AIST.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://www.stcl.com/" target="blank"><img src="{{ asset('siteimg/sponsors/SoftTech.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="https://nidc.co.tz/" target="blank"><img src="{{ asset('siteimg/sponsors/datacenter.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/ITL logo aafrika.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Aktors.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Levercode.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/Digital_Nation.png') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a href="#" target="blank"><img src="{{ asset('siteimg/sponsors/shake.jpg') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
         </div>
         <?php }else{
           echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
@@ -2162,217 +870,6 @@
       </div>
 
     </section><!-- End Sponsors Section -->
-
-    <!-- =======  F.A.Q Section ======= -->
-    <!-- <section id="faq">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>F.A.Q </h2>
-        </div>
-
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-9">
-
-            <ul class="faq-list">
-
-              <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-
-          </div>
-        </div>
-
-      </div> -->
-
-    <!--</section> End  F.A.Q Section -->
-
-    <!-- ======= Subscribe Section ======= -->
-    <section id="subscribe">
-      <div class="container" data-aos="zoom-in">
-        <div class="section-header">
-          <h2>Newsletter</h2>
-          <!-- <p>Rerum numquam illum recusandae quia mollitia consequatur.</p> -->
-        </div>
-
-        <form method="POST" action="addmail">
-        @csrf
-          <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-10 d-flex">
-              <input name="email" type="email" class="form-control" placeholder="Enter your Email">
-              <button type="submit" class="ms-2">Subscribe</button>
-            </div>
-          </div>
-        </form>
-
-      </div>
-    </section><!-- End Subscribe Section -->
-
-    <!-- ======= Buy Ticket Section ======= -->
-    <!-- <section id="buy-tickets" class="section-with-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Buy Tickets</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                <h6 class="card-price text-center">$150</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
-                <h6 class="card-price text-center">$250</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
-                <h6 class="card-price text-center">$350</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      
-      <div id="buy-ticket-modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Buy Tickets</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group mt-3">
-                  <select id="ticket-type" name="ticket-type" class="form-select">
-                    <option value="">-- Select Your Ticket Type --</option>
-                    <option value="standard-access">Standard Access</option>
-                    <option value="pro-access">Pro Access</option>
-                    <option value="premium-access">Premium Access</option>
-                  </select>
-                </div>
-                <div class="text-center mt-3">
-                  <button type="submit" class="btn">Buy Now</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
 
     <?php 
       $address = '';
@@ -2435,32 +932,6 @@
 
         </div>
 
-        <div class="form">
-          <form action="addmessage" method="POST" role="form" class="php-email-for">
-            @csrf
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <!-- <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message">Your message has been sent. Thank you!</div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div> -->
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
       </div>
     </section><!-- End Contact Section -->
 
@@ -2471,11 +942,6 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-          <!-- <div class="col-lg-3 col-md-6 footer-info">
-            <img src="{{ asset('siteimg/logo.png') }}" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div> -->
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
@@ -2520,22 +986,7 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script>
-  // function myFunction() {
-  //   var dots = document.getElementById("dots");
-  //   var moreText = document.getElementById("more");
-  //   var btnText = document.getElementById("myBtn");
   
-  //   if (dots.style.display === "none") {
-  //     dots.style.display = "inline";
-  //     btnText.innerHTML = "Read more"; 
-  //     moreText.style.display = "none";
-  //   } else {
-  //     dots.style.display = "none";
-  //     btnText.innerHTML = "Read less"; 
-  //     moreText.style.display = "inline";
-  //   }
-  // }
-
   function myFunctionn() {
     var dots = document.getElementById("dotss");
     var moreText = document.getElementById("moree");
@@ -2588,7 +1039,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "WELCOME TAIC 2022";
+    document.getElementById("demo").innerHTML = "WELCOME TAIC 2023";
   }
 }, 1000);
   </script>
