@@ -15,7 +15,7 @@ class HomeController extends Controller
 
     $fromdate = '2023-10-16';
     $todate = '2023-10-20';
-    $location = 'J.Nyerere International Convention Centre (JNICC) Tanzania';
+    $location = 'Julius Nyerere International Convention Centre';
     $fromdate = date_create($fromdate);
     $todate = date_create($todate);
     $presentedFromdate = date_format($fromdate,"d");

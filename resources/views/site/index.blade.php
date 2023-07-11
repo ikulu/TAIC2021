@@ -146,123 +146,9 @@
   </section><!-- End About Section -->
     
   <!-- ======= Guest Of Honour Section ======= -->
-  <section id="speakers">
-    <div class="container" data-aos="fade-up">
-      <div class="section-header">
-        <h2>Guest Of Honour</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6"></div>
-        <div class="col-lg-3 col-md-6">
-          <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
-          <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="max-height:300px;min-width:300px">
-            <div class="details">
-              <h3><a>To Be Confirmed</a></h3>
-              <!-- <p></p> -->
-              <?php if($fullnameM == ''){ echo "<p>To be Comfirmed</p>";} ?>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6"></div>
-      </div>
-    </div>
-  </section><!-- End Speakers Section -->
-
-    <!-- ======= Speakers Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Conference Speakers</h2>
-        </div>
-
-        <div class="row">
-        <?php
-          foreach($speakers AS $speaker){
-              $fullname = $speaker->fullname;
-              $occupation = $speaker->occupation;
-              $profile = $speaker->profile;
-              $facebook = $speaker->facebook;
-              $instagram = $speaker->instagram;
-              $twitter = $speaker->tweeter;
-              $ini = $speaker->ini;
-              $id = $speaker->id;
-
-              if($fullname == ''){$fullname = 'Full Name';}
-              if($occupation == ''){$occupation = 'Occupation';}
-              if($profile == ''){$profile = 'default.png';}
-              if($facebook == ''){
-                $facebook = '#';
-              }else{
-                $facebook = "https://www.facebook.com/".$facebook;
-              }
-              if($twitter == ''){
-                $twitter = '#';
-              }else{
-                $twitter = "https://www.twitter.com/".$twitter;
-              }
-              if($ini == ''){
-                $ini = '#';
-              }else{
-                $ini = "https://www.linkedin.com/".$ini;
-              }
-              if($instagram == ''){
-                $instagram = '#';
-              }else{
-                $instagram = "https://www.instagram.com/".$instagram;
-              }
-        ?>
-              <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{asset('profiles/'.$profile)}}" alt='' class='img-fluid'>
-              <div class='details'>
-                <h6><a href='speaker-details.html'>{{$fullname}}</a></h6>
-                <p>{{$occupation}}</p>
-                <div class='social'>
-                  <a href='{{$twitter}}'><i class='bi bi-twitter'></i></a>
-                  <a href='{{$facebook}}'><i class='bi bi-facebook'></i></a>
-                  <a href='{{$instagram}}'><i class='bi bi-instagram'></i></a>
-                  <a href='{{$ini}}'><i class='bi bi-linkedin'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php
-          }
-          if($fullname == ''){?>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a>To Be Confirmed</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a>To Be Confirmed</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
-              <div class="details">
-                <h3><a>To Be Confirmed</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <?php }
-          ?>
-        </div>
-      </div>
-
-    </section><!-- End Speakers Section -->
+  @include('site.guests')
+ 
+    <!-- End Speakers Section -->
 
     <?php 
       $day = '';
@@ -430,13 +316,10 @@
     ?>
     <!-- ======= Venue Section ======= -->
     <section id="venue">
-
       <div class="container-fluid" data-aos="fade-up">
-
         <div class="section-header">
           <h2>Event Venue</h2>
         </div>
-
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6396190453916!2d39.29141791477213!3d-6.813613495075424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b13ab3b27db%3A0x5e80e2765959908e!2sJulius%20Nyerere%20International%20Convention%20Centre!5e0!3m2!1sen!2stz!4v1688892519149!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -513,148 +396,7 @@
     ?>
 
     <!-- ======= Sponsors Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Tanzanite Sponsors</h2>
-        </div>
-        <?php if($sponsorsname == ''){?>
-        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>   
-          </div>
-
-        </div>
-
-        <?php }else{
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($sponsors AS $sponsor){
-            $picture = $sponsor->picture;
-            $sponsorsname = $sponsor->sponsorsname;
-            ?>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$sponsorsname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('sponsors/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-        
-        <?php
-          }
-          echo '</div>';
-        } ?>
-      </div>
-
-    </section><!-- End Sponsors Section -->
-
-    <!-- ======= Sponsors Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Silver Sponsors</h2>
-        </div>
-        <?php if($sponsorsname == ''){?>
-        <div style="margin: auto;width: 50%;padding: 10px;" class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-6 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-        </div>
-        <?php }else{
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($sponsors AS $sponsor){
-            $picture = $sponsor->picture;
-            $sponsorsname = $sponsor->sponsorsname;
-            ?>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$sponsorsname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('sponsors/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-        
-        <?php
-          }
-          echo '</div>';
-        } ?>
-      </div>
-
-    </section><!-- End Sponsors Section -->
-    
-    <!-- ======= Sponsors Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Bronze Sponsors</h2>
-        </div>
-        <?php if($sponsorsname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <!-- <p style="text-align:center">To be confirmed</p> -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-            <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-        </div>
-        <?php }else{
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($sponsors AS $sponsor){
-            $picture = $sponsor->picture;
-            $sponsorsname = $sponsor->sponsorsname;
-            ?>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$sponsorsname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('sponsors/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-        
-        <?php
-          }
-          echo '</div>';
-        } ?>
-      </div>
-
-    </section><!-- End Sponsors Section -->
-
+    @include('site.sponsors')
     <?php 
       $partnersname = '';
       $picture = '';
@@ -668,54 +410,8 @@
       }
     ?>
     <!-- ======= Partners Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Partners</h2>
-        </div>
-        <?php if($partnersname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-        </div>
-        <?php }else{
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($partners AS $partner){
-            $picture = $partner->picture;
-            $partnersname = $partner->partnersname;
-            ?>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$partnersname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('partners/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <?php
-          }
-          echo '</div>';
-          } ?>
-      </div>
-
-    </section><!-- End Pertiners Section -->
+    @include('site.partners')
+    <!-- End Pertiners Section -->
     
     <?php 
       $exhibitorsname = '';
@@ -730,55 +426,8 @@
       }
     ?>
     <!-- ======= Exhibitors Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Exhibitors</h2>
-        </div>
-        <?php if($exhibitorsname == ''){?>
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <a><img src="{{ asset('siteimg/sponsors/') }}" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-
-        </div>
-        <?php }else{
-          echo '<div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">';
-          foreach($exhibitors AS $exhibitor){
-            $picture = $exhibitor->picture;
-            $exhibitorsname = $exhibitor->exhibitorsname;
-            ?>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <p style="text-align:center">{{$exhibitorsname}}</p>
-            <div class="supporter-logo">
-              <img src="{{ asset('exhibitors/'.$picture) }}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <?php
-          }
-          echo '</div>';
-          } ?>
-      </div>
-
-    </section><!-- End Sponsors Section -->
+    @include('site.exhibitors')
+    <!-- End Sponsors Section -->
 
     <?php 
       $address = '';
@@ -847,52 +496,8 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.mawasiliano.go.tz/" target="blank">Policy</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.tcra.go.tz/" target="blank">Regulatory</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.tic.go.tz/" target="blank">Investment</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.costech.or.tz/" target="blank">Research</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ega.co.tz/" target="blank">e-Government</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              14 Jamhuri Street,
-              P.O.Box 70479,<br>
-              11470 Dar ES Salaam,<br>
-              Tanzania.<br>
-              <strong>Phone:</strong> +255 738 171 742<br>
-              <strong>Email:</strong> info@ictc.go.tz<br>taic@ictc.go.tz
-            </p>
-
-            <div class="social-links">
-              <a href="https://twitter.com/ict_commission?lang=en" target="blank" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://web.facebook.com/ICT-Commision-106494500752999/" target="blank" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/ict_commission_tanzania/" target="blank" class="instagram"><i class="bi bi-instagram"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>ICTC 2021</strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
+  @include('site.footer')
+  <!-- End  Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script>
   

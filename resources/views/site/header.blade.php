@@ -38,6 +38,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="https://taicregform.ictc.go.tz/" target="blank">Register</a>
+      {{-- <a class="buy-tickets scrollto" href="https://taicregform.ictc.go.tz/" target="blank">Register</a> --}}
     </div>
   </header><!-- End Header -->
