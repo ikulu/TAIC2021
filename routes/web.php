@@ -6,6 +6,8 @@ use app\Http\Controllers\TodoController;
 Route::get('/', function () {
     return view('site.index');
 });
+# To push changes 
+// https://iprs.ictc.go.tz/index.php/git_pull_taic
 
 // auth rout for all users, when they logged in
 Route::group(['middleware' => ['auth']], function () {
