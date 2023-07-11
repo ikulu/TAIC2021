@@ -442,10 +442,15 @@ h1, h2, h3, h4, h5, h6 {
     top: 70px;
   }
 }
+@media (max-width: 991px) {
+  #hero .hero-container {
+    top: 70px;
+  }
+}
 #hero h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 56px;
+  font-size: 5rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -543,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px;
+  margin: 4px;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;

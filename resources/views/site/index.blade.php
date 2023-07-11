@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>TAIC-2023</title>
+  <title>TAIC-{{$eventYear}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,10 +39,6 @@
 <body>
   <!-- ======= Header ======= -->
   @include('site.header')
-  <?php 
-    
-  ?>
-
   <!-- ======= Hero Section ======= -->
  @include('site.HeroSection')
   <!-- End Hero Section -->
