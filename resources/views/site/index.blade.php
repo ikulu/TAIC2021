@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>TAIC - 2023</title>
+  <title>TAIC-2023</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,104 +36,18 @@
     }
   </style>
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center ">
-    <div class="container-fluid container-xxl d-flex align-items-center">
-
-      <div id="logo" class="me-auto">
-        <?php 
-          $apname = '';
-          $apnames = DB::select("SELECT * FROM headers WHERE id IN(SELECT MAX(id) FROM headers)");
-          foreach($apnames AS $name){
-              $apname = $name->appname;
-          }
-          if($apname == ''){
-            $apname = "2023";
-          }
-        ?>
-        <h1><a href="/">TAIC<span>{{$apname}}</span></a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
-          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
-          <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2022</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#about">PRESENTATIONS</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2021</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank">Final Report</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>TAIC 2020</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Final Report</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="https://taicregform.ictc.go.tz/" target="blank">Register</a>
-
-    </div>
-  </header><!-- End Header -->
-
+  @include('site.header')
   <?php 
-    $title = '';
-    $fromdate = '';
-    $todate = '';
-    $timmer = '';
-    $location = '';
-    $frontpage = DB::select("SELECT * FROM frontpages WHERE id IN(SELECT MAX(id) FROM frontpages)");
-    foreach($frontpage AS $frontpages){
-        $title = $frontpages->title;
-        $fromdate = $frontpages->fromdate;
-        $todate = $frontpages->todate;
-        $timmer = $frontpages->timmer;
-        $location = $frontpages->location;
-    }
-    if($title == ''){$title = 'Tanzania Annual ICT Conference';}
-    if($location == ''){$location = 'Julius Nyerere International Convention Centre (JNICC) Tanzania';}
-    if($fromdate == ''){$fromdate = '2023-10-18';}
-    if($todate == ''){$todate = '2023-10-20';}
-    $fromdate = date_create($fromdate);
-    $todate = date_create($todate);
-    $presentedFromdate = date_format($fromdate,"d");
-    $presentedTodate = date_format($todate,"d");
-    $presentedMonthDate = date_format($fromdate,"F");
-    $presentedYearDate = date_format($fromdate,"Y"); 
+    
   ?>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="mb-4 pb-0">{{$title}}</h1>
-      <p>THEME : To be Confirmed.</p>
-      <p class="mb-4 pb-0">{{$presentedFromdate}} - {{$presentedTodate}} {{$presentedMonthDate}} {{$presentedYearDate}}, {{$location}}</p>
-      <p style="text-align: center;font-size: 60px;margin-top: 0px;" id="demo"></p>
-      <a href="" class="glightbox play-btn mb-4"></a>
-      <a href="#schedule" class="about-btn scrollto" target="blank">TIMETABLE</a>
-    </div>
-  </section><!-- End Hero Section -->
+ @include('site.HeroSection')
+  <!-- End Hero Section -->
 
   <main id="main">
-
   <?php 
     $title = '';
     $when = '';
