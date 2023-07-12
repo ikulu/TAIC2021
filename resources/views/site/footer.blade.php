@@ -39,7 +39,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>ICTC 2021</strong>. All Rights Reserved
+        &copy; Copyright <strong>ICTC 2023</strong>. All Rights Reserved
       </div>
     </div>
   </footer>

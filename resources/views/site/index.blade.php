@@ -58,24 +58,9 @@
     }
     if($title == ''){$title = 'About The Conference';}
     if($about == ''){
-      $about = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
-      ICT industry players in Tanzania that offers a unique platform for capacity building, policy
-      dialogues, business investors networking, professional discussion, experience and knowledge
-      sharing on the global ICT issues, business opportunities, knowledge and skills needs to cope
-      with the dynamic digital ecosystem. The Conference also serves as a platform for participants to
-      discuss enabling environment for ICT growth towards socio-economic development in Tanzania.
-      The 5 th TAIC 2019 succeeds two TAICs and two Annual ICT Professionals Conferences
-      (AIPC) that the Information and Communication Technologies (ICT) Commission has been
-      organizing since 2017 bringing together more than 800 ICT stakeholders from both Government
-      and Private Sector, Small Medium Enterprises, Academia, researchers, startups, ICT
-      Entrepreneurs and the business industry. organized by the Tanzania ICT Commission.
-      The conference discussions focus on a wide range of topics emphasizing on the role of ICT in
-      social-economic development and the role of ICT as an important tool for attainment of
-      Tanzania Development Vision and Sustainable Development Goals. The conference will be
-      featured with exhibitions from various ICT stakeholders showcasing their products, services
-      and innovations.';
+      
     }
-    if($when == ''){$when = 'Wednesday to Friday';}
+    if($when == ''){$when = 'Monday to Friday';}
 
     $fullname = '';
     $occupation = '';
@@ -137,9 +122,9 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-header">
-            <h2>{{$title}}</h2>
+            <h2>{{$aboutTitle}}</h2>
           </div>
-          <p style="text-align: center;">{{$about}}</p>
+          <p style="text-align: center;">{{$aboutConference}}</p>
         </div>
         </div>
       </div>
@@ -174,229 +159,10 @@
       $schedule3 = DB::select("SELECT * FROM schedules WHERE day = 'Friday'");
     ?>
     <!-- ======= Schedule Section ======= -->
-    <section id="schedule" class="section-with-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Event Schedule</h2>
-        </div>
-
-        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Wednesday</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Thursday</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Friday</a>
-          </li>
-        </ul>
-
-        <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-          necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
-
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="day-1">
-
-            <?php
-              foreach($schedule AS $schedules){
-                $day = $schedules->day;
-                $action = $schedules->action;
-                $timefrom = $schedules->timefrom;
-                $timeto = $schedules->timeto;
-                $venue = $schedules->venue;
-                $id1 = $schedules->id; 
-              ?>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>{{$timefrom}}-{{$timeto}}</time></div>
-                <div class="col-md-10">
-                  <h4>{{$action}} <span></span></h4>
-                  <p>{{$venue}}</p>
-                </div>
-              </div>
-              <?php } ?>
-              <?php 
-              if($action == ''){
-            ?>
-              <div class="row schedule-item">
-                <div class="col-md-9">
-                  <h4>To Be Confirmed</h4>
-                </div>
-              </div>
-            <?php } ?>
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-              <?php
-              foreach($schedule2 AS $schedules2){
-                $day2 = $schedules2->day;
-                $action2 = $schedules2->action;
-                $timefrom2 = $schedules2->timefrom;
-                $timeto2 = $schedules2->timeto;
-                $venue2 = $schedules2->venue;
-                $id12 = $schedules2->id; 
-              ?>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>{{$timefrom2}}-{{$timeto2}}</time></div>
-                <div class="col-md-10">
-                  <h4>{{$action2}} <span></span></h4>
-                  <p>{{$venue2}}</p>
-                </div>
-              </div>
-              <?php } ?>
-              <?php 
-              if($action2 == ''){
-            ?>
-            <div class="row schedule-item">
-              <div class="col-md-9">
-                <h4>To Be Confirmed</h4>
-              </div>
-            </div>
-            <?php } ?>
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-          <?php
-              foreach($schedule3 AS $schedules3){
-                $day3 = $schedules3->day;
-                $action3 = $schedules3->action;
-                $timefrom3 = $schedules3->timefrom;
-                $timeto3 = $schedules3->timeto;
-                $venue3 = $schedules3->venue;
-                $id3 = $schedules3->id; 
-              ?>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>{{$timefrom3}}-{{$timeto3}}</time></div>
-                <div class="col-md-10">
-                  <h4>{{$action3}} <span></span></h4>
-                  <p>{{$venue3}}</p>
-                </div>
-              </div>
-              <?php } ?>
-              <?php 
-              if($action3 == ''){
-            ?>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time></time></div>
-              <div class="col-md-10">
-                <h4>To Be Confirmed</h4>
-              </div>
-            </div>
-            <?php } ?>
-          </div>
-
-      </div>
-
-    </section><!-- End Schedule Section -->
-
-    <?php 
-      $location = '';
-      $about = '';
-      
-      $eventvenue = DB::select("SELECT * FROM venues");
-      if(isset($eventvenue)){
-        foreach($eventvenue AS $eventvenues){
-          $location = $eventvenues->location;
-          $about = $eventvenues->about;
-        }
-        if($about == ''){
-          $about = '';
-        }
-        if($location == ''){
-          $location = 'Julius Nyerere International Convention Centre (JNICC) Tanzania';
-        }
-      }
-    ?>
-    <!-- ======= Venue Section ======= -->
-    <section id="venue">
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Event Venue</h2>
-        </div>
-        <div class="row g-0">
-          <div class="col-lg-6 venue-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6396190453916!2d39.29141791477213!3d-6.813613495075424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b13ab3b27db%3A0x5e80e2765959908e!2sJulius%20Nyerere%20International%20Convention%20Centre!5e0!3m2!1sen!2stz!4v1688892519149!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-6 venue-info">
-            <div class="row justify-content-center">
-              <div class="col-11 col-lg-8 position-relative">
-                <h3>{{$location}}</h3>
-                <p>{{$about}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <?php 
-        $picture = '';
-        $gallery = DB::select("SELECT * FROM venue_galleries");
-        if(isset($gallery)){
-          foreach($gallery AS $gallerys){
-            $picture = $gallerys->picture;
-          }
-        }
-      ?>
-
-      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-0">
-          <?php
-          foreach($gallery AS $gallerys){
-              $picture = $gallerys->picture;
-          ?>
-          <?php } ?>
-        </div>
-      </div>
-
-    </section><!-- End Venue Section -->
-
-    <!-- ======= Hotels Section ======= -->
-    <section id="hotels" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Hotels</h2>
-          <p>Her are some nearby hotels</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-12 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-              </div>
-              <h3 style="align-content: center;"><a>To Be Confirmed</a></h3>
-            </div>
-          </div>
-
-        </div>
-      </div> 
-
-    </section><!-- End Hotels Section -->
-
-    <?php 
-      $sponsorsname = '';
-      $picture = '';
-      
-      $sponsors = DB::select("SELECT * FROM sponsors");
-      if(isset($sponsors)){
-        foreach($sponsors AS $sponsor){
-          $sponsorsname = $sponsor->sponsorsname;
-          $picture = $sponsor->picture;
-        }
-      }
-    ?>
-
+    @include('site.schedule')
+    
     <!-- ======= Sponsors Section ======= -->
-    @include('site.sponsors')
+    {{-- @include('site.sponsors') --}}
     <?php 
       $partnersname = '';
       $picture = '';
@@ -476,7 +242,7 @@
             <div class="contact-phone">
               <i class="bi bi-phone"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">{{$phone}}</a></p>
+              <p><a href="tel:+255738171742">+255738171742</a></p>
             </div>
           </div>
 
@@ -484,7 +250,7 @@
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">{{$email}}</a></p>
+              <p><a href="info@ictc.go.tz">info@ictc.go.tz</a></p>
             </div>
           </div>
 
