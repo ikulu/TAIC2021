@@ -3,7 +3,7 @@
 
       <div id="logo" class="me-auto">
         
-        <h1><a href="/">TAIC<span>{{$eventYear}}</span></a></h1>
+        {{-- <h1><a href="/">TAIC<span>{{$eventYear}}</span></a></h1> --}}
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
