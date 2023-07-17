@@ -13,6 +13,6 @@
       {{-- Counter --}}
       <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
       id="demo"></p>
-      <a href="#schedule" class="about-btn scrollto" target="blank">TIMETABLE</a>
+      <a href="#" class="about-btn scrollto" target="blank" style="font-size: 1.4rem">Register</a>
     </div>
   </section>

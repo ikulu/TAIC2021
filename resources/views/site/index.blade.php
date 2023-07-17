@@ -24,6 +24,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('sitecss/style.css') }}" rel="stylesheet">
+   
   <style>
     /* For more text in about section */
     #more {display: none;}
@@ -132,6 +133,7 @@
     
   <!-- ======= Guest Of Honour Section ======= -->
   @include('site.guests')
+  @include('site.pricing')
  
     <!-- End Speakers Section -->
 

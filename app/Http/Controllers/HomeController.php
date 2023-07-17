@@ -38,7 +38,7 @@ class HomeController extends Controller
       Tanzania Development Vision and Sustainable Development Goals. The conference will be
       featured with exhibitions from various ICT stakeholders showcasing their products, services
       and innovations.';
-      $aboutTitle = '';
+      $aboutTitle = 'About Conference';
         return view('site.index',compact([
             'title',
             'theme',
