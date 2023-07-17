@@ -132,8 +132,8 @@
   </section><!-- End About Section -->
     
   <!-- ======= Guest Of Honour Section ======= -->
-  @include('site.guests')
   @include('site.pricing')
+  @include('site.guests')
  
     <!-- End Speakers Section -->
 
