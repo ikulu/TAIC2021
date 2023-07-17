@@ -117,12 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #9195a2;
 }
-.contact-pricing {
-  background-color: #acdaed;
-  margin-bottom:0px;
-  border-radius: .8rem;
-  text-align: center;
-}
+
 .section-with-bg {
   background-color: #cfe6f0;
 }
