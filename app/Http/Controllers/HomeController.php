@@ -22,22 +22,9 @@ class HomeController extends Controller
     $presentedTodate = date_format($todate,"d");
     $presentedMonthDate = date_format($fromdate,"F");
     $eventYear = date_format($fromdate,"Y"); 
-    $aboutConference = 'The Tanzania Annual ICT Conference (TAIC) is one of the largest international gathering of
-      ICT industry players in Tanzania that offers a unique platform for capacity building, policy
-      dialogues, business investors networking, professional discussion, experience and knowledge
-      sharing on the global ICT issues, business opportunities, knowledge and skills needs to cope
-      with the dynamic digital ecosystem. The Conference also serves as a platform for participants to
-      discuss enabling environment for ICT growth towards socio-economic development in Tanzania.
-      The 5 th TAIC 2019 succeeds two TAICs and two Annual ICT Professionals Conferences
-      (AIPC) that the Information and Communication Technologies (ICT) Commission has been
-      organizing since 2017 bringing together more than 800 ICT stakeholders from both Government
-      and Private Sector, Small Medium Enterprises, Academia, researchers, startups, ICT
-      Entrepreneurs and the business industry. organized by the Tanzania ICT Commission.
-      The conference discussions focus on a wide range of topics emphasizing on the role of ICT in
-      social-economic development and the role of ICT as an important tool for attainment of
-      Tanzania Development Vision and Sustainable Development Goals. The conference will be
-      featured with exhibitions from various ICT stakeholders showcasing their products, services
-      and innovations.';
+    $aboutConference = 'The Tanzania Annual ICT Conference (TAIC) is the biggest ICT sector event in Tanzania organised annually by the ICT Commission (ICTC). As for the last six conferences, TAIC brings together stakeholders including academia, researchers, development partners, business industry, investors and youth in digital innovation spaces and practitioners in the ICT Industry. The conference aims to call the attention of all stakeholders through discussion and knowledge sharing on matters related to policy, research, innovation and business aspects of the digital economy and ICT sector contribution to Tanzania’s economic growth and global digital presence.
+    The 07th Tanzania Annual ICT Conference 2023 (TAIC 2023) will be held at the Julius Nyerere International Conference Centre (JNICC). TAIC 2023 will have pre-conference events of Women and Youth in ICT open to the public and will be held on 16th and 17th October 2023 respectively. The main TAIC 2023 will be held from 18th to 20th October 2023. 
+    ';
       $aboutTitle = 'About Conference';
         return view('site.index',compact([
             'title',
