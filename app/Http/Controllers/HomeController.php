@@ -38,4 +38,7 @@ class HomeController extends Controller
             'aboutTitle',
         ]));
     }
+    public function adminHome(){
+      return view('admin.admindashboard');
+    }
 }

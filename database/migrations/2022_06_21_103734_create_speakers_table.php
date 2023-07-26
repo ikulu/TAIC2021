@@ -15,14 +15,12 @@ class CreateSpeakersTable extends Migration
     {
         Schema::create('speakers', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('titleLabel');
             $table->string('fullname');
             $table->binary('profile');
             $table->string('occupation');
-            $table->string('facebook');
-            $table->string('tweeter');
-            $table->string('instagram');
-            $table->string('ini');
+            $table->string('twitter');
+            $table->boolean('showStatus')->default(false);
             $table->timestamps();
         });
     }

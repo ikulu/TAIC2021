@@ -78,8 +78,8 @@
     $instaM = '';
     $iniM = '';
     $idM = '';
-    $speakers = DB::select("SELECT * FROM speakers WHERE title = 'others'");
-    $speakersMain = DB::select("SELECT * FROM speakers WHERE title = 'main'");
+    $speakers = DB::select("SELECT * FROM speakers WHERE titleLabel = 'others'");
+    $speakersMain = DB::select("SELECT * FROM speakers WHERE titleLabel = 'main'");
     if(isset($speakersMain)){
       foreach($speakersMain AS $speakerM){
         $fullnameM = $speakerM->fullname;

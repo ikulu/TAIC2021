@@ -23,7 +23,6 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'dpt_id'
     ];
 
     /**
@@ -45,17 +44,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    protected $table = "users";
-
-    public function todos(){
-        return $this->hasMany(Todo::class);
-    }
-    
-    public function departments(){
-        return $this->belongsTo(Department::class);
-    }
-
-    public function transfers(){
-        return $this->hasMany(Transfer::class);
-    }
 }

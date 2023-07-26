@@ -64,10 +64,10 @@
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
-        @include('layouts.header')
-        @include('layouts.sidebar')
+        {{-- @include('layouts.header') --}}
+        {{-- @include('layouts.sidebar') --}}
         {{ $slot }}
-        <!-- @include('layouts.footer') -->
+        {{-- <!-- @include('layouts.footer') --> --}}
     </div>
 
       <!-- Vendor JS Files -->

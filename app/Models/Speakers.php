@@ -9,13 +9,11 @@ class Speakers extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title',
+        'titleLabel',
         'fullname',
         'profile',
         'occupation',
-        'facebook',
-        'tweeter',
-        'instagram',
-        'ini',
+        'twitter',
+        'showStatus',
     ];
 }
