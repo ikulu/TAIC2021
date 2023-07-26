@@ -1,10 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import AppLayout from './components/AppLayout.vue';
 </script>
 
 <template>
   <div>
-    <RouterView />
+    <AppLayout>
+      <RouterView />
+    </AppLayout>
   </div>
 </template>
 
