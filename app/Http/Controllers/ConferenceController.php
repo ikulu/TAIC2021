@@ -15,6 +15,11 @@ class ConferenceController extends Controller
     public function index()
     {
         //
+        $conferences = Conference::all();
+        return response()->json([
+            'message'=> 'Conferences: All',
+            'data'=> $conferences
+        ]);
     }
 
     /**

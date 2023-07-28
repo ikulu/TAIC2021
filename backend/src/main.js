@@ -1,4 +1,5 @@
 // import './assets/main.css'
+import './assets/css/main.css'
 import './assets/coreUI_assets/css/style.css'
 import './assets/coreUI_assets/css/examples.css'
 import './assets/coreUI_assets/css/vendors/simplebar.css'
