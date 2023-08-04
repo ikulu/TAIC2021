@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import DatePicker from '../../components/DatePicker.vue'
 const theme = ref('')
 const regionId = ref('')
 const venue = ref('')

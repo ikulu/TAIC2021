@@ -1,28 +1,39 @@
 <script setup>
-import { ref } from 'vue';
-import DatePicker from '../../components/DatePicker.vue'
-const theme = ref('')
-const regionId = ref('')
-const venue = ref('')
-const registeredPrice = ref('')
-const nonRegisteredPrice = ref('')
-const message = ref('')
-const handleSubmit = ()=>{
-    alert('Hello From submit')
-}
+import { ref } from "vue";
+const regions = [
+  { id: 1, name: "Dar es salaam" },
+  { id: 2, name: "Arusha" },
+  { id: 3, name: "Dodoma" },
+  { id: 4, name: "Morogoro" },
+];
+const data = {
+    theme:'',
+    regionID: '',
+    venue: '',
+    registeredPrice: '',
+    nonRegisteredPrice: '',
+    startDate: '',
+    endDate: '',
+    message: '',
+};
+const handleSubmit = () => {
+  alert(data);
+};
 </script>
 <template>
   <div>
     <h2>New Conference</h2>
     <div class="row justify-content-center">
       <div class="col-md-10 form-bg">
-        <form class="row g-3 needs-validation" novalidate @submit.prevent="handleSubmit">
-            <div class="mb-3">
-            <label class="form-label" for="themeText"
-              >Conference Theme</label
-            >
+        <form
+          class="row g-3 needs-validation"
+          novalidate
+          @submit.prevent="handleSubmit"
+        >
+          <div class="mb-3">
+            <label class="form-label" for="themeText">Conference Theme</label>
             <textarea
-                v-model="theme"
+              v-model="data.theme"
               class="form-control"
               id="themeText"
               rows="2"
@@ -30,9 +41,15 @@ const handleSubmit = ()=>{
           </div>
           <div class="col-md-6">
             <label for="regionSelect" class="form-label">Region</label>
-            <select class="form-select" id="regionSelect" required>
+            <select class="form-select" id="regionSelect" required v-model="data.regionID">
               <option selected disabled value="">Choose...</option>
-              <option>...</option>
+              <option
+                v-for="region in regions"
+                :key="region.id"
+                :value="region.id"
+              >
+                {{ region.name }}
+              </option>
             </select>
             <div class="invalid-feedback">Please select a valid Region.</div>
           </div>
@@ -42,7 +59,7 @@ const handleSubmit = ()=>{
               type="text"
               class="form-control"
               id="venueInput"
-              v-model="venue"
+              v-model="data.venue"
               required
             />
             <div class="valid-feedback">Looks good!</div>
@@ -50,7 +67,7 @@ const handleSubmit = ()=>{
           <div class="col-md-6">
             <label for="priceInput1" class="form-label">Registed Price</label>
             <input
-                v-model="registeredPrice"
+              v-model="data.registeredPrice"
               type="number"
               class="form-control"
               id="priceInput1"
@@ -59,9 +76,11 @@ const handleSubmit = ()=>{
             <div class="valid-feedback">Looks good!</div>
           </div>
           <div class="col-md-6">
-            <label for="priceInput2" class="form-label">Non-Registed Price</label>
+            <label for="priceInput2" class="form-label"
+              >Non-Registed Price</label
+            >
             <input
-                v-model="nonRegisteredPrice"
+              v-model="data.nonRegisteredPrice"
               type="number"
               class="form-control"
               id="priceInput2"
@@ -69,13 +88,36 @@ const handleSubmit = ()=>{
             />
             <div class="valid-feedback">Looks good!</div>
           </div>
-          <DatePicker />
+          <div class="row">
+            <div class="col-md-6">
+              <label for="startDate" class="form-label">Starting Date</label>
+              <input
+                v-model="data.startDate"
+                type="date"
+                class="form-control"
+                id="startDate"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="endDate" class="form-label">End Date</label>
+              <input
+                v-model="data.endDate"
+                type="date"
+                class="form-control"
+                id="endDate"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+          </div>
           <div class="mb-3">
             <label class="form-label" for="conferenceMessageText"
               >Conference Message</label
             >
             <textarea
-              v-model="message"
+              v-model="data.message"
               class="form-control"
               id="conferenceMessageText"
               rows="3"

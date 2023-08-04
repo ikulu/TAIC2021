@@ -16,7 +16,7 @@
           <img src="{{asset('siteimg/icons/registered.png')}}" width="80px" height="80px" alt="Registered">
           <h3 style="padding:0px;margin:4px 0px;font-size:2.6rem;
           border-radius: .8rem;color: #001466; font-weight: 500;">
-          420,000 Tsh</h3>
+          TZS 420,000</h3>
           <address style="font-size: 1.4rem">Registered ICT Professional</address>
         </div>
       </div>
@@ -26,7 +26,7 @@
           <img src="{{asset('siteimg/icons/error.png')}}" width="80px" height="80px" alt="Non-Registered">
           <h3 style="padding:0px;margin:4px 0px;font-size:2.6rem;
           border-radius: .8rem;color: #001466; font-weight: 500;">
-          500,000 Tsh</h3>
+          TZS 500,000</h3>
           <address style="font-size: 1.4rem">Non registered ICT Professionals and other participants</address>
         </div>
       </div>
