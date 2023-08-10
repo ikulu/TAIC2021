@@ -47,6 +47,11 @@ class HomeController extends Controller
 
         return view('site.Pages.exhibitors',compact(['PageTitle']));
     }
+    public function opening() {
+      $PageTitle = "Registration Open";
+
+        return view('site.Pages.opening',compact(['PageTitle']));
+    }
     public function sponsorship() {
       $PageTitle = "Sponsorships";
       

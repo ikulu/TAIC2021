@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class,'index'])->name('landing');
 Route::get('/sponsorship',[HomeController::class,'sponsorship'])->name('sponsorship');
 Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting');
+Route::get('/registration',[HomeController::class,'opening'])->name('opening');
 
 Route::middleware('auth')->group(
     function(){

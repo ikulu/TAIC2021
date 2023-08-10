@@ -13,14 +13,6 @@
       {{-- Counter --}}
       <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
       id="demo"></p>
-      {{-- <a href="#" class="about-btn scrollto" target="blank" style="font-size: 1.4rem">Register</a> --}}
-      <a href="#" id="showPopoverBtn" class="about-btn" target="blank" style="font-size: 1.4rem">Register</a>
+      <a href="{{route('opening')}}" class="about-btn" target="_blank" style="font-size: 1.4rem">Register</a>
     </div>
-    <div id="popoverContainer" class="popover-container">
-      <div class="popover-card">
-          <img src="{{asset('siteimg/icons/waiting.png')}}" alt="Waiting">
-          <p style="color: black;">Registration  will be Open <span style="color:rgb(22, 74, 3);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">August 17, 2023</span></p>
-          <button id="closePopoverBtn">Close</button>
-      </div>
-  </div>
   </section>
