@@ -8,7 +8,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{route('root')}}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{{route('landing')}}">Home</a></li>
           <li><a class="nav-link " href="{{route('sponsorship')}}">Sponsorships</a></li>
           <li><a class="nav-link " href="{{route('exhibiting')}}">Exhibitors</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
