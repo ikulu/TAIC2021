@@ -41,4 +41,15 @@ class HomeController extends Controller
     public function adminHome(){
       return view('admin.admindashboard');
     }
+
+    public function exhibiting() {
+      $PageTitle = "Exhibitions";
+
+        return view('site.Pages.exhibitors',compact(['PageTitle']));
+    }
+    public function sponsorship() {
+      $PageTitle = "Sponsorships";
+      
+      return view('site.Pages.sponsors',compact(['PageTitle']));
+  }
 }

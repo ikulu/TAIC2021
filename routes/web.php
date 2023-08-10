@@ -7,7 +7,9 @@ use Illuminate\Support\Facades\Route;
 
 # To push changes 
 // https://iprs.ictc.go.tz/index.php/git_pull_taic
-Route::get('/',[HomeController::class,'index']);
+Route::get('/',[HomeController::class,'index'])->name('root');
+Route::get('/sponsorship',[HomeController::class,'sponsorship'])->name('sponsorship');
+Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting');
 
 Route::middleware('auth')->group(
     function(){

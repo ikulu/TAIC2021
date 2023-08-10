@@ -4,6 +4,20 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+document.addEventListener("DOMContentLoaded", function() {
+  const showPopoverBtn = document.getElementById("showPopoverBtn");
+  const closePopoverBtn = document.getElementById("closePopoverBtn");
+  const popoverContainer = document.getElementById("popoverContainer");
+
+  showPopoverBtn.addEventListener("click", function() {
+      popoverContainer.style.display = "block";
+  });
+
+  closePopoverBtn.addEventListener("click", function() {
+      popoverContainer.style.display = "none";
+  });
+});
+
 (function() {
   "use strict";
 

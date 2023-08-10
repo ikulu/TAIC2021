@@ -140,49 +140,7 @@
       }
     }
   ?>
-  <!-- ======= Venue Section ======= -->
-  <section id="venue">
-    <div class="container-fluid" data-aos="fade-up">
-      <div class="section-header">
-        <h2>Event Venue</h2>
-      </div>
-      <div class="row g-0">
-        <div class="col-lg-6 venue-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6396190453916!2d39.29141791477213!3d-6.813613495075424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b13ab3b27db%3A0x5e80e2765959908e!2sJulius%20Nyerere%20International%20Convention%20Centre!5e0!3m2!1sen!2stz!4v1688892519149!5m2!1sen!2stz" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-6 venue-info">
-          <div class="row justify-content-center">
-            <div class="col-11 col-lg-8 position-relative">
-              <h3>{{$location}}</h3>
-              <p>{{$about}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <?php 
-      $picture = '';
-      $gallery = DB::select("SELECT * FROM venue_galleries");
-      if(isset($gallery)){
-        foreach($gallery AS $gallerys){
-          $picture = $gallerys->picture;
-        }
-      }
-    ?>
-
-    <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-0">
-        <?php
-        foreach($gallery AS $gallerys){
-            $picture = $gallerys->picture;
-        ?>
-        <?php } ?>
-      </div>
-    </div>
-
-  </section><!-- End Venue Section -->
+ 
 
   <!-- ======= Hotels Section ======= -->
   <section id="hotels" class="section-with-bg">
