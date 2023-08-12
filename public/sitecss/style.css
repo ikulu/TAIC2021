@@ -7,7 +7,14 @@
 
 
 /* Add your preferred styles here */
-
+.baseSlot {
+  margin-top:1.6rem;
+  padding:.2rem;
+  background-color: rgb(252, 251, 251);
+}
+.baseSlot section {
+  margin-top: .6rem;
+}
 
 .popover-container {
   position: fixed;
@@ -44,11 +51,11 @@
 }
 
 #closePopoverBtn {
-  margin-top: 10px;
+  margin: .2rem;
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
 }

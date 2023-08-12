@@ -11,8 +11,8 @@
     <div id="popoverContainer" class="popover-container">
         <div class="popover-card">
             <img src="{{asset('siteimg/icons/waiting.png')}}" alt="Waiting">
-            <p style="color: black;">Registration  will be Open <span style="color:rgb(22, 74, 3);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">August 17, 2023</span></p>
-            <button id="closePopoverBtn">Close</button>
+            <p style="color: black;">Registration  will commence on <span style="color:rgb(22, 74, 3);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">August 17, 2023</span></p>
+            <a href="{{route('landing')}}" id="closePopoverBtn">Go back</a>
         </div>
     </div>
 

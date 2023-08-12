@@ -37,11 +37,11 @@
   </style>
 </head>
 <body>
-  <!-- ======= Header ======= -->
-  @include('site.header')
   <main id="main">
-    
-    @yield('content')
+    <div class="baseSlot">
+      <a href="{{route('landing')}}" id="closePopoverBtn">Go back</a>
+      @yield('baseSlot')
+    </div>
     {{-- @include('site._contact') --}}
   </main><!-- End #main -->
 
