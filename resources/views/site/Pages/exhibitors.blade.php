@@ -1,6 +1,6 @@
 @extends('site.Pages.pageLayout')
 @section('baseSlot')
-<section id="speakers">
+<section id="speakers" class="custormBG">
     <div class="container" data-aos="fade-up">
       <div class="section-header">
         <h2>EXHIBITION</h2>
@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div style="text-align:center;background-color:antiquewhite;" class="speaker" data-aos="fade-up" data-aos-delay="300" >
-            <img src="{{ asset('siteimg/icons/singlebooth.png') }}" alt="Speaker 3" width="400px" height="400px">
+            <img src="{{ asset('siteimg/icons/singlebooth.png') }}" alt="Speaker 3" width="300px" height="300px">
             <div class="details">
               <h3><a href="speaker-details.html">TZS 2,000,000</a></h3>
               <p>(3m*3m)</p>
@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-6">
             <div style="text-align:center;background-color:rgb(250, 235, 215);" class="speaker" data-aos="fade-up" data-aos-delay="300" >
-              <img src="{{ asset('siteimg/icons/doublebooth.png') }}" alt="Speaker 3" width="400px" height="400px">
+              <img src="{{ asset('siteimg/icons/doublebooth.png') }}" alt="Speaker 3" width="300px" height="300px">
               <div class="details">
                 <h3><a href="speaker-details.html">TZS 3,000,000</a></h3>
                 <p>(6m*3m)</p>

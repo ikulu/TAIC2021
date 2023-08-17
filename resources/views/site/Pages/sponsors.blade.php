@@ -67,7 +67,6 @@
                         <div class="col-md-2"><time></time></div>
                         <div class="col-md-10">
                             <img src="{{ asset('siteimg/icons/i3.png') }}" alt="1" width="64px" height="64px">
-
                         </div>
                     </div>
                 </div>

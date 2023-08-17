@@ -9,14 +9,15 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="{{route('landing')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link " href="{{route('sponsorship')}}">Sponsorships</a></li>
           <li><a class="nav-link " href="{{route('exhibiting')}}">Exhibitors</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link " href="{{route('hospitality')}}">Hospitality</a></li>
+          <li><a class="nav-link " href="{{route('tours')}}">Tours</a></li>
+          {{-- <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li> --}}
+          {{-- <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li> --}}
           <li><a class="nav-link scrollto" 
             href="https://aipc.org/member/julius-nyerere-international-convention-centre-jnicc/" target="_blank">Venue</a></li>
-          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
           <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="sitedocuments/TAIC 2021_FINAL_REPORT.pdf" target="blank"><span>TAIC 2022</span> <i class="bi bi-chevron-right"></i></a>
@@ -36,7 +37,7 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

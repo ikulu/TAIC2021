@@ -11,6 +11,8 @@ Route::get('/',[HomeController::class,'index'])->name('landing');
 Route::get('/sponsorship',[HomeController::class,'sponsorship'])->name('sponsorship');
 Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting');
 Route::get('/registration',[HomeController::class,'opening'])->name('opening');
+Route::get('/hospitality',[HomeController::class,'hospitality'])->name('hospitality');
+Route::get('/tours',[HomeController::class,'tours'])->name('tours');
 
 Route::middleware('auth')->group(
     function(){

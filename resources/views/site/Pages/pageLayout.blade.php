@@ -37,11 +37,18 @@
   </style>
 </head>
 <body>
-  <main id="main">
-    <div class="baseSlot">
-      <a href="{{route('landing')}}" id="closePopoverBtn">Go back</a>
-      @yield('baseSlot')
+  
+  <!-- ======= Header ======= -->
+  @include('site.header')
+  <!-- ======= Hero Section ======= -->
+  <section id="hero2">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-1 mt-2 pb-0"></h1>
     </div>
+  </section>
+  <!-- End Hero Section -->
+  <main id="main">
+    @yield('baseSlot')
     {{-- @include('site._contact') --}}
   </main><!-- End #main -->
 
