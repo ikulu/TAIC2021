@@ -858,10 +858,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #cad4f6;
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: white;
   transition: background-color ease-in-out 0.3s;
 }
 #schedule .schedule-item:hover {
-  background-color: #fff;
+  background-color: #d4f0f4b1;
 }
 #schedule .schedule-item time {
   padding-bottom: 5px;
