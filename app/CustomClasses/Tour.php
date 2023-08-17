@@ -11,8 +11,7 @@ class Tour
   public function __construct(
     $name,
     $imgName,
-    $locDetails,
-    
+    $locDetails
   ) {
     $this->name = $name;
     $this->imgName = $imgName;
