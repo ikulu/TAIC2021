@@ -13,6 +13,16 @@
       {{-- Counter --}}
       <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
       id="demo"></p>
+      {{-- <div class="row">
+        <div class="col-xl-6">
+
+          <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
+        </div>
+        <div class="col-xl-6">
+          
+          <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
+        </div>
+      </div> --}}
       <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
     </div>
   </section>
