@@ -1,7 +1,7 @@
     <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-1 mt-2 pb-0">{{$title}}</h1>
-        <p style="font-size:1.6rem;color:rgb(107, 221, 244)">"{{$theme}}"</p>
+        <p style="font-size:1.6rem;color:rgb(107, 221, 244)">"{{$theme}}."</p>
       <p class="mb-1 pb-0">{{$conferenceVenue}}</p>
       <p class="mb-1 pb-0" style=" color:rgb(95, 245, 95);">
         {{$presentedFromdate}}<sup style="color:white">th</sup> 
