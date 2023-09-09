@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Route;
 # To push changes 
 // https://iprs.ictc.go.tz/index.php/git_pull_taic
 Route::get('/',[HomeController::class,'index'])->name('landing');
-Route::get('/sponsorship',[HomeController::class,'sponsorship'])->name('sponsorship');
+Route::get('/local-sponsorship',[HomeController::class,'localsponsorship'])->name('localsponsorship');
+Route::get('/international-sponsorship',[HomeController::class,'foreignsponsorship'])->name('foreignsponsorship');
 Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting');
 Route::get('/registration',[HomeController::class,'opening'])->name('opening');
 Route::get('/hospitality',[HomeController::class,'hospitality'])->name('hospitality');

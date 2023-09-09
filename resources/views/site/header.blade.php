@@ -10,7 +10,16 @@
         <ul>
           <li><a class="nav-link scrollto active" href="{{route('landing')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link " href="{{route('sponsorship')}}">Sponsorships</a></li>
+          <li class="dropdown"><a href="#"><span>Sponsorships</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="{{route('localsponsorship')}}"><span>Local Sponsorships</span></a>
+              </li>
+              <li class="dropdown">
+                <a href="{{route('foreignsponsorship')}}"><span>International Sponsorships</span></a>
+              </li>
+            </ul>
+          </li>
           <li><a class="nav-link " href="{{route('exhibiting')}}">Exhibitors</a></li>
           <li><a class="nav-link " href="{{route('hospitality')}}">Hospitality</a></li>
           <li><a class="nav-link " href="{{route('tours')}}">Tours</a></li>

@@ -58,11 +58,19 @@ class HomeController extends Controller
 
     return view('site.Pages.opening', compact(['PageTitle']));
   }
-  public function sponsorship()
+  public function localsponsorship()
   {
-    $PageTitle = "Sponsorships";
+    $PageTitle = "Local Sponsors";
+    $sponsporImg = ['img1.png','img2.png','img3.png','img4.png','img5.png','img6.png'];
 
-    return view('site.Pages.sponsors', compact(['PageTitle']));
+    return view('site.Pages.localSponsors', compact(['PageTitle','sponsporImg']));
+  }
+  public function foreignsponsorship()
+  {
+    $PageTitle = "International Sponsors";
+    $sponsporImg = ['img1.png','img2.png','img3.png','img4.png','img5.png','img6.png'];
+
+    return view('site.Pages.foreignSponsors', compact(['PageTitle','sponsporImg']));
   }
   public function hospitality()
   {
