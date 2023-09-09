@@ -140,31 +140,7 @@
       }
     }
   ?>
- 
 
-  <!-- ======= Hotels Section ======= -->
-  <section id="hotels" class="section-with-bg">
-
-    <div class="container" data-aos="fade-up">
-      <div class="section-header">
-        <h2>Hotels</h2>
-        <p>Her are some nearby hotels</p>
-      </div>
-
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="col-lg-12 col-md-6">
-          <div class="hotel">
-            <div class="hotel-img">
-            </div>
-            <h3 style="align-content: center;"><a>To Be Confirmed</a></h3>
-          </div>
-        </div>
-
-      </div>
-    </div> 
-
-  </section><!-- End Hotels Section -->
 
   <?php 
     $sponsorsname = '';
