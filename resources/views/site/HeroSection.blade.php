@@ -23,6 +23,6 @@
           <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
         </div>
       </div> --}}
-      <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
+      <a href="http://registertaic.ictc.go.tz/ictcReg/public/" target="_blank" class="about-btn" style="font-size: 1.4rem">Register</a>
     </div>
   </section>
