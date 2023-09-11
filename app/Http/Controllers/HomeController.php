@@ -155,6 +155,32 @@ class HomeController extends Controller
         '(+255) 659 070 800',
         '10.jpg'
       ),
+      new Hotel(
+        'FOUR POINTS BY SHERATON NEW AFRICA HOTEL',
+        'N/A',
+        '',
+        155 ,
+        225,
+        'https://www.marriott.com/hotels/travel/darfp-four-points-dar-es-salaam-new-africa',
+        0.7,
+        'Town Hotel',
+        "(+255) 222 117 050",
+        '(+255) 677 023 236',
+        '10.jpg'
+      ),
+      new Hotel(
+        'SEA CLIF HOTEL',
+        'N/A',
+        '',
+        185 ,
+        360,
+        'https://www.rotana.com/rotanahotelandresorts/tanzania/daressalaam/joharirotana',
+        1.1 ,
+        'Town Hotel',
+        "(+255) 764 700 600",
+        '(+255) 764 700 600',
+        '10.jpg'
+      ),
     );
     return view('site.Pages.hospitality', compact(['PageTitle', 'hotels']));
   }
