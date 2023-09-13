@@ -8,7 +8,7 @@
   <link href="{{ asset('sitecss/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="popoverContainer" class="popover-container">
+    <div id="popoverContainer" class="popover-container" style="background-image: url('{{asset('siteimg/bg6.jpg')}}');">
         <div class="popover-card">
             <img src="{{asset('siteimg/icons/taic-logo.jpg')}}" alt="Waiting">
             <p style="color: rgb(15, 46, 7);">Registration  will commence on
