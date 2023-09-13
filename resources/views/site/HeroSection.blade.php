@@ -13,16 +13,16 @@
       {{-- Counter --}}
       <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
       id="demo"></p>
-      {{-- <div class="row">
-        <div class="col-xl-6">
+      <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
+      <div class="row">
+        {{-- <div class="col-xl-6">
 
-          <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
-        </div>
-        <div class="col-xl-6">
+        </div> --}}
+        {{-- <div class="col-xl-6">
           
           <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a>
-        </div>
-      </div> --}}
-      <a href="http://registertaic.ictc.go.tz/ictcReg/public/" target="_blank" class="about-btn" style="font-size: 1.4rem">Register</a>
+        </div> --}}
+      </div>
+      {{-- <a href="http://registertaic.ictc.go.tz/ictcReg/public/" target="_blank" class="about-btn" style="font-size: 1.4rem">Register</a> --}}
     </div>
   </section>

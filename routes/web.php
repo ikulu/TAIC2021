@@ -11,7 +11,7 @@ Route::get('/',[HomeController::class,'index'])->name('landing');
 Route::get('/local-sponsorship',[HomeController::class,'localsponsorship'])->name('localsponsorship');
 Route::get('/international-sponsorship',[HomeController::class,'foreignsponsorship'])->name('foreignsponsorship');
 Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting');
-// Route::get('/registration',[HomeController::class,'opening'])->name('opening');
+Route::get('/registration',[HomeController::class,'opening'])->name('opening');
 Route::get('/hospitality',[HomeController::class,'hospitality'])->name('hospitality');
 Route::get('/tours',[HomeController::class,'tours'])->name('tours');
 
