@@ -1,8 +1,5 @@
 /**
-* Template Name: TheEvent - v4.7.0
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+***-----
 */
 .opening{
   /* background-image: url('/public/siteimg/bg1.jpg'); */
@@ -37,18 +34,16 @@
 .baseSlot section {
   margin-top: .6rem;
 }
-
 .popover-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/siteimg/bg6.jpg');
+  background-image: url('./sitecss/bg6.jpg');
   background-repeat: no-repeat;
   z-index: 9999;
 }
-
 .popover-card {
   background-color: rgba(154, 155, 151, 0.884);
     padding: 20px;
