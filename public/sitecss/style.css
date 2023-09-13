@@ -4,7 +4,10 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+.opening{
+  /* background-image: url('/public/siteimg/bg1.jpg'); */
+  background-color:black;
+}
 
 /* Add your preferred styles here */
 .custormBG {
@@ -41,12 +44,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(26, 76, 176, 0.5);
+  background-image: url('/public/siteimg/bg6.jpg');
+  background-repeat: no-repeat;
   z-index: 9999;
 }
 
 .popover-card {
-  background-color: white;
+  background-color: rgba(154, 155, 151, 0.884);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,8 +69,9 @@
 }
 
 .popover-card img{
-  width: 64px;
-  height: 64px;
+  width: 512px;
+  border-radius: .6rem;
+  height: 300px;
 }
 
 #closePopoverBtn {
