@@ -13,7 +13,7 @@
             <img src="{{asset('siteimg/icons/taic-logo.jpg')}}" alt="Waiting">
             <p style="color: rgb(15, 46, 7);">Registration  will commence on
                  <span style="color:rgb(16, 66, 68);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-                    September 14<sup>th</sup>, 2023</span></p>
+                    September 16<sup>th</sup>, 2023</span></p>
             <a href="{{route('landing')}}" id="closePopoverBtn">Go back</a>
         </div>
     </div>
