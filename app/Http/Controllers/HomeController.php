@@ -254,4 +254,8 @@ class HomeController extends Controller
     );
     return view('site.Pages.tours', compact(['PageTitle','tours']));
   }
+  public function appPrivacyPolicy(){
+    $updateDate = '19 September 2023';
+    return view('site.Pages.taic_app_policy',compact(['updateDate']));
+  }
 }

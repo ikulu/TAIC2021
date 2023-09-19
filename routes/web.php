@@ -23,4 +23,5 @@ Route::middleware('auth')->group(
         }
 );
 Route::get('/auth/logout',[CustomAuthController::class,'logout']);
+Route::get('/taic-registration-app-privacy-policy',[HomeController::class,'appPrivacyPolicy']);
 require __DIR__.'/auth.php';
