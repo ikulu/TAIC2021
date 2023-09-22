@@ -1,6 +1,9 @@
 /**
 ***-----
 */
+.btns{
+  display: inline;
+}
 .opening{
   /* background-image: url('/public/siteimg/bg1.jpg'); */
   background-color:black;

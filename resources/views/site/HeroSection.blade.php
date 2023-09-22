@@ -13,7 +13,15 @@
       {{-- Counter --}}
       <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
       id="demo"></p>
-      {{-- <a href="{{route('opening')}}" class="about-btn" style="font-size: 1.4rem">Register</a> --}}
-      <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size: 1.4rem">Register</a>
+      
+      <div class="btns">
+        <div class="">
+          <a href="https://play.google.com/store/apps/details?id=com.ncard.taic" 
+          target="_blank" class="about-btn" style="font-size:1rem">Registration App</a>
+        </div>
+        <div class="">
+          <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:1rem">Register Now</a>
+        </div>
+      </div>
     </div>
   </section>
