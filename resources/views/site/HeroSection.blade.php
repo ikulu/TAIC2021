@@ -17,10 +17,10 @@
       <div class="btns">
         <div class="">
           <a href="https://play.google.com/store/apps/details?id=com.ncard.taic" 
-          target="_blank" class="about-btn" style="font-size:1rem">Registration App</a>
+          target="_blank" class="about-btn" style="font-size:.8rem">Registration App</a>
         </div>
         <div class="">
-          <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:1rem">Register Now</a>
+          <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:.8rem">Register Now</a>
         </div>
       </div>
     </div>
