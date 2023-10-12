@@ -28,79 +28,27 @@
           <h2>Conference Speakers</h2>
         </div>
 
-        <div class="row">
-        <?php
-          foreach($speakers AS $speaker){
-              $fullname = $speaker->fullname;
-              $occupation = $speaker->occupation;
-              $profile = $speaker->profile;
-              $facebook = $speaker->facebook;
-              $instagram = $speaker->instagram;
-              $twitter = $speaker->tweeter;
-              $ini = $speaker->ini;
-              $id = $speaker->id;
-
-              if($fullname == ''){$fullname = 'Full Name';}
-              if($occupation == ''){$occupation = 'Occupation';}
-              if($profile == ''){$profile = 'default.png';}
-              if($facebook == ''){
-                $facebook = '#';
-              }else{
-                $facebook = "https://www.facebook.com/".$facebook;
-              }
-              if($twitter == ''){
-                $twitter = '#';
-              }else{
-                $twitter = "https://www.twitter.com/".$twitter;
-              }
-              if($ini == ''){
-                $ini = '#';
-              }else{
-                $ini = "https://www.linkedin.com/".$ini;
-              }
-              if($instagram == ''){
-                $instagram = '#';
-              }else{
-                $instagram = "https://www.instagram.com/".$instagram;
-              }
-        ?>
-              <div class="col-lg-4 col-md-6">
+        <div class="row justify-content-center">
+          {{-- Individual speaker --}}
+          <div class="col-lg-4 col-md-6">
               <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{asset('profiles/'.$profile)}}" alt='' class='img-fluid'>
+              <img src="{{asset('siteimg/speakers/2023/speaker1.jpg')}}" alt='' class='img-fluid'>
               <div class='details'>
-                <h6><a href='speaker-details.html'>{{$fullname}}</a></h6>
-                <p>{{$occupation}}</p>
+                <h6 style="font-weight:700">
+                  <a href='https://softnet.co.tz/' target="_blank">Harish R. Bhatt</a>
+                </h6>
+                <p>CEO-SOFTNET</p>
                 <div class='social'>
-                  <a href='{{$twitter}}'><i class='bi bi-twitter'></i></a>
-                  <a href='{{$facebook}}'><i class='bi bi-facebook'></i></a>
-                  <a href='{{$instagram}}'><i class='bi bi-instagram'></i></a>
-                  <a href='{{$ini}}'><i class='bi bi-linkedin'></i></a>
+                  <a href='#'><i class='bi bi-twitter'></i></a>
+                  <a href='#'><i class='bi bi-facebook'></i></a>
+                  <a href='#'><i class='bi bi-instagram'></i></a>
+                  <a href='#'><i class='bi bi-linkedin'></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <?php
-          }
-          if($fullname == ''){?>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a>To Be Confirmed</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid" style="min-height:300px;min-width:300px">
-              <div class="details">
-                <h3><a>To Be Confirmed</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
+          {{-- End Speaker  --}}
+          {{-- <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="{{ asset('siteimg/speakers/person.png') }}" alt="" class="img-fluid">
               <div class="details">
@@ -108,9 +56,7 @@
                 <p></p>
               </div>
             </div>
-          </div>
-          <?php }
-          ?>
+          </div> --}}
         </div>
       </div>
       </section>
