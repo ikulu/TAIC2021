@@ -185,6 +185,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+.section-header h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
 .section-header p {
   text-align: center;
   padding: 0;
@@ -1064,8 +1072,8 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
-  height: 160px;
+  background: rgb(255, 255, 255);
+  height: 150px;
 }
 #supporters .supporter-logo:hover img {
   transform: scale(1.2);
