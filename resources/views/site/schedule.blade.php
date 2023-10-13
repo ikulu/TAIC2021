@@ -30,41 +30,41 @@
               <div class="col-md-2"><time>07:00 – 08:30</time></div>
               <div class="col-md-10">
                 <h4>REGISTRATION AND EXHIBITIONS <span></span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>08:30 – 09:30 </time></div>
               <div class="col-md-10">
                 <h4>Guest of Honour arrival and Visit exhibitions<span></span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>09:30 – 10:10 </time></div>
               <div class="col-md-10">
                 <h4>Introductions, sponsors speech and welcoming remarks<span></span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>10:10 – 10:40 </time></div>
               <div class="col-md-10">
                 <h4>Opening Speech - Guest of Honour<span></span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>11:00 – 11:30</time></div>
               <div class="col-md-10">
                 <h4>KEYNOTE LECTURE:
                   <span>“The State of Play of Women in the Digital Economy”</span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>11:30 – 12:15</time></div>
               <div class="col-md-10">
                 <h4>PANEL DISCUSSION:
                   <span>“Unleashing emerging technologies in the digital transformation for job creation and socio-
                     economic development.”</span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>12:15 – 13:00</time></div>
               <div class="col-md-10">
                 <h4>FUNDING WOMEN-LED ICT STARTUPS IN TANZANIA
                   <span>“The funding options and the challenges of funding Women-led ICT Startups in Tanzania.”</span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <h4>13:00 – 14:00 LUNCH BREAK</h4>
 
@@ -76,7 +76,7 @@
                     brought by AI can improve women-led businesses and make life
                     easier for everyone as well as increase economic growth by
                     unlocking wealth creation and creating jobs for women.”</span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>14:45 – 15:30</time></div>
               <div class="col-md-10">
@@ -84,7 +84,7 @@
                   <span>“This session will discuss key investment strategies to build robust
                     and resilient women-led startup ecosystem for sustainable
                     economic growth”</span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <div class="col-md-2"><time>15:30 – 16:15</time></div>
               <div class="col-md-10">
@@ -92,7 +92,7 @@
                   <span>
                     “How can AI for business drive digital transformation, inclusiveness, and sustainability”
                   </span></h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
 
               <div class="col-md-2"><time>16:15 – 17:00</time></div>
@@ -103,7 +103,7 @@
                   some few African economies?
                   ”</span>
                 </h4>
-                <p>Destriontion</p>
+                <p>~</p>
               </div>
               <h4>17:00 CLOSING OF THE WOMEN IN ICT DAY</h4>
             </div>
@@ -115,22 +115,22 @@
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
               <h4>REGISTRATION AND EXHIBITIONS <span></span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>08:30 – 09:30 </time></div>
             <div class="col-md-10">
               <h4>Guest of Honour arrival and Visit exhibitions<span></span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>09:30 – 10:10 </time></div>
             <div class="col-md-10">
               <h4>Introductions, sponsors speech and welcoming remarks<span></span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>10:10 – 10:40 </time></div>
             <div class="col-md-10">
               <h4>Opening Speech - Guest of Honour<span></span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>11:00 – 11:30</time></div>
             <div class="col-md-10">
@@ -138,7 +138,7 @@
                 <span>
                   “Emerging Technologies in Digital Transformation”
                 </span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>11:30 – 12:15</time></div>
             <div class="col-md-10">
@@ -148,7 +148,7 @@
                   economic development.”
                 </span>
               </h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>12:15 – 12:35</time></div>
             <div class="col-md-10">
@@ -156,7 +156,7 @@
                 <span>
                   “The cybersecurity threat demographics of Africa”
                 </span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>12:35 – 13:05</time></div>
             <div class="col-md-10">
@@ -180,7 +180,7 @@
             <div class="col-md-10">
               <h4>FUNDING OPPORTUNITIES FOR STARTUPS IN TANZANIA
                 <span>The session will discuss about:</span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <div class="col-md-2"><time>14:45 – 15:30</time></div>
             <div class="col-md-10">
@@ -203,7 +203,7 @@
                   so that they will scale to the level that they will cross border and
                   compete globally
                 </span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
             </div>
             <h4>17:00 CLOSING OF THE YOUTH IN ICT DAY</h4>
           </div>
@@ -215,22 +215,22 @@
           <div class="col-md-2"><time>07:00 – 08:30</time></div>
           <div class="col-md-10">
             <h4>REGISTRATION AND EXHIBITIONS <span></span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>08:30 – 09:30 </time></div>
           <div class="col-md-10">
             <h4>Guest of Honour arrival and Visit exhibitions<span></span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>09:30 – 10:20 </time></div>
           <div class="col-md-10">
             <h4>Introductions, sponsors speech and welcoming remarks<span></span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>10:20 – 11:00 </time></div>
           <div class="col-md-10">
             <h4>Opening Speech - Guest of Honour<span></span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>11:00 – 12:00</time></div>
           <div class="col-md-10">
@@ -238,7 +238,7 @@
               <span>
                 “Digital Transformation Journey of Tanzania”
               </span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>12:00 – 12:45</time></div>
           <div class="col-md-10">
@@ -248,7 +248,7 @@
                 socio-economic development.”
               </span>
             </h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>12:45 – 13:30</time></div>
           <div class="col-md-10">
@@ -256,7 +256,7 @@
               <span>
                 “State of the Economy of Tanzania and Digital Transformation”
               </span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <h4>13:30 – 14:30 LUNCH BREAK</h4>
 
@@ -264,7 +264,7 @@
           <div class="col-md-10">
             <h4>FUNDING OPPORTUNITIES FOR STARTUPS IN TANZANIA
               <span>The session will discuss about:</span></h4>
-            <p>Destriontion</p>
+            <p>~</p>
           </div>
           <div class="col-md-2"><time>14:30 – 15:30</time></div>
           <div class="col-md-10">
@@ -274,7 +274,7 @@
                 skills to design and exploit the available AI tools for social
                 economic development.
               </span></h4>
-              <p>Destriontion</p>
+              <p>~</p>
           </div>
           <div class="col-md-2"><time>14:30 – 15:30</time></div>
           <div class="col-md-10">
