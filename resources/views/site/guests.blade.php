@@ -48,6 +48,23 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="{{asset('siteimg/speakers/2023/speaker2.jpg')}}" alt='' class='img-fluid'>
+            <div class='details'>
+              <h6 style="font-weight:700">
+                <a href='https://apacongress.africa' target="_blank">Mr. Biju Varghese</a>
+              </h6>
+              <p>Senior. Vice President & Business Head, APAC</p>
+              <div class='social'>
+                <a href='#'><i class='bi bi-twitter'></i></a>
+                <a href='#'><i class='bi bi-facebook'></i></a>
+                <a href='#'><i class='bi bi-instagram'></i></a>
+                <a href='#'><i class='bi bi-linkedin'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
           {{-- End Speaker  --}}
           {{-- <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
