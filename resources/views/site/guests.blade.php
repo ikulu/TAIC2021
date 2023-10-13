@@ -38,7 +38,7 @@
                 <h6 style="font-weight:700">
                   <a href='https://softnet.co.tz/' target="_blank">Harish R. Bhatt</a>
                 </h6>
-                <p>CEO-SOFTNET</p>
+                <p>CEO of SOFT-TECH CONSULTANTS LTD and Satcom Networks Africa Ltd</p>
                 <div class='social'>
                   <a href='#'><i class='bi bi-twitter'></i></a>
                   <a href='#'><i class='bi bi-facebook'></i></a>
