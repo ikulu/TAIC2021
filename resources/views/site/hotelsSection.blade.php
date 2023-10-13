@@ -4,7 +4,7 @@
     <div class="container" data-aos="fade-up">
       <div class="section-header">
         <h2>Hotels</h2>
-        <p>Her are some nearby hotels</p>
+        <p>Here are some nearby hotels</p>
       </div>
       <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
         <div class="col-lg-4 col-md-4 col-xs-6">

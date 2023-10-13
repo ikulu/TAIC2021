@@ -30,9 +30,10 @@
 
         <div class="row justify-content-center">
           {{-- Individual speaker --}}
-          <div class="col-lg-4 col-md-6">
+          
+          <div class="col-lg-3 col-md-6">
               <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{asset('siteimg/speakers/2023/speaker1.jpg')}}" alt='' class='img-fluid'>
+                <img src="{{asset('siteimg/speakers/2023/speaker1.jpg')}}" alt='' class='img-fluid'>
               <div class='details'>
                 <h6 style="font-weight:700">
                   <a href='https://softnet.co.tz/' target="_blank">Harish R. Bhatt</a>

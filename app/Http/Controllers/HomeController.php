@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\CustomClasses\Hotel;
+use App\CustomClasses\Speaker;
 use App\CustomClasses\Tour;
 
 class HomeController extends Controller
@@ -29,6 +30,12 @@ class HomeController extends Controller
     The 07th Tanzania Annual ICT Conference 2023 (TAIC 2023) will be held at the Julius Nyerere International Conference Centre (JNICC). TAIC 2023 will have pre-conference events of Women and Youth in ICT open to the public and will be held on 16th and 17th October 2023 respectively. The main TAIC 2023 will be held from 18th to 20th October 2023. 
     ';
     $aboutTitle = 'About Conference';
+    $speakers = array(
+      new Speaker('Harish R. Bhatt',
+      'CEO-SOFTNET','https://softnet.co.tz/','speaker1.jpg'),
+      new Speaker('Harish R. Bhatt',
+      'CEO-SOFTNET','https://softnet.co.tz/','speaker1.jpg')
+    );
     return view('site.index', compact([
       'title',
       'theme',
@@ -39,6 +46,7 @@ class HomeController extends Controller
       'conferenceVenue',
       'aboutConference',
       'aboutTitle',
+      'speakers',
     ]));
   }
   public function adminHome()

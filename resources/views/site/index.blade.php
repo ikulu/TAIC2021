@@ -89,7 +89,7 @@ if($instagramM == ''){
 
 <!-- ======= Guest Of Honour Section ======= -->
 @include('site.pricing')
-@include('site.guests')
+@include('site.guests',['speakers' => $speakers])
 
 <!-- End Speakers Section -->
 
