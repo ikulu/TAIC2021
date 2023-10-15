@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
-
   /**
    * Back to top button
    */
@@ -243,3 +242,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 })()
+

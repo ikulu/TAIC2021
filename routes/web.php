@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\customAuth\CustomAuthController;
+use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SpeakerController;
 use Illuminate\Support\Facades\Route;
@@ -24,4 +25,12 @@ Route::middleware('auth')->group(
 );
 Route::get('/auth/logout',[CustomAuthController::class,'logout']);
 Route::get('/taic-registration-app-privacy-policy',[HomeController::class,'appPrivacyPolicy']);
+
+Route::get('/women-youth-day-registration',[GuestController::class,'index'])->name('guest');
+Route::get('/women-youth-day-success',[GuestController::class,'guestResponse'])->name('guestResponse');
+Route::post('/register-women-youth-day',[GuestController::class,'register'])->name('registerGuest');
+Route::get('/system-women-youth-day-list',[GuestController::class,'guestData'])->name('registeredGuest');
+
+
+
 require __DIR__.'/auth.php';

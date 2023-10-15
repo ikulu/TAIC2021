@@ -266,4 +266,5 @@ class HomeController extends Controller
     $updateDate = '19 September 2023';
     return view('site.Pages.taic_app_policy',compact(['updateDate']));
   }
+  
 }

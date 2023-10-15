@@ -83,6 +83,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('sitejs/main.js') }}"></script>
+  <script src="{{ asset('sitejs/sortable.js') }}"></script>
 
   <script>
   // Set the date we're counting down to
