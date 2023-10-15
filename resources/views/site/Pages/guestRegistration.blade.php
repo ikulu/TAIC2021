@@ -3,7 +3,7 @@
     <section id="speakers" class="custormBG">
         <div class="container-fluid" data-aos="fade-up">
             <div class="section-header">
-                <h2>WOMEN & YOUTH IN ICT DAY</h2>
+                <h2>WOMEN & YOUTH IN ICT DAYS</h2>
             </div>
             <div class="container text-center" style="border-radius:.8rem">
                 <div class="row justify-content-center">
@@ -57,17 +57,15 @@
                                                 <div class="alert alert-danger">{{ $message }}</div>
                                                  @enderror
                                         </div>
-                                        
-                                       
-                                              <div class="input_field radio_option">
-                                            <input type="radio" id="gender" name="gender" id="rd1" value="M">
-                                            <label for="rd1">Male</label>
-                                            <input type="radio" name="gender" id="rd2" value="F">
-                                            <label for="rd2">Female</label>
-                                            @error('gender')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                             @enderror
-                                            </div>
+                                        <div class="input_field radio_option">
+                                          <input type="radio" name="gender" id="rd1">
+                                          <label for="rd1">Male</label>
+                                          <input type="radio" name="gender" id="rd2">
+                                          <label for="rd2">Female</label>
+                                          @error('gender')
+                                          <div class="alert alert-danger">{{ $message }}</div>
+                                           @enderror
+                                          </div>
                                             <div class="input_field select_option">
                                               <select id="regionID" name="regionID">
                                                 <option disabled>Region</option>
