@@ -21,7 +21,7 @@
         </div>
         <div class="">
           <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:.8rem">Register Main Event</a>
-          <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:.8rem">Register Day 1 & 2</a>
+          <a href="{{route('guest')}}"class="about-btn" style="font-size:.8rem">Register Day 1 & 2</a>
         </div>
       </div>
     </div>
