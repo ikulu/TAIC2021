@@ -41,7 +41,6 @@ class GuestController extends Controller
             $data = $validator->validated();
             $arrayToken = ["guestToken"=>$guestToken];
             $data = array_merge($data,$arrayToken);
-            dd($data);
             Guest::create($data);
             return redirect()->route('guestResponse');
     }
