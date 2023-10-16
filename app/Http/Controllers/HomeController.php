@@ -266,5 +266,9 @@ class HomeController extends Controller
     $updateDate = '19 September 2023';
     return view('site.Pages.taic_app_policy',compact(['updateDate']));
   }
+  public function timetable(){
+    $PageTitle = 'Womens In ICT';
+    return view('site.Pages.timetable',compact(['PageTitle']));
+  }
   
 }

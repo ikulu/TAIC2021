@@ -14,6 +14,7 @@ Route::get('/exhibiting',[HomeController::class,'exhibiting'])->name('exhibiting
 Route::get('/registration',[HomeController::class,'opening'])->name('opening');
 Route::get('/hospitality',[HomeController::class,'hospitality'])->name('hospitality');
 Route::get('/tours',[HomeController::class,'tours'])->name('tours');
+Route::get('/timetable',[HomeController::class,'timetable'])->name('timetable');
 
 Route::middleware('auth')->group(
     function(){
