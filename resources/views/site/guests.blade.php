@@ -65,6 +65,40 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{asset('siteimg/speakers/2023/speaker3.jpg')}}" alt='' class='img-fluid'>
+          <div class='details'>
+            <h6 style="font-weight:700">
+              <a href='https://www.huawei.com/en' target="_blank">Mr. Jason Yi</a>
+            </h6>
+            <p>Board Director of Huawei Tanzania</p>
+            <div class='social'>
+              <a href='#'><i class='bi bi-twitter'></i></a>
+              <a href='#'><i class='bi bi-facebook'></i></a>
+              <a href='#'><i class='bi bi-instagram'></i></a>
+              <a href='#'><i class='bi bi-linkedin'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+          <img src="{{asset('siteimg/speakers/2023/speaker4.jpg')}}" alt='' class='img-fluid'>
+        <div class='details'>
+          <h6 style="font-weight:700">
+            <a href='https://www.huawei.com/en' target="_blank">Dr. Bello Moussa</a>
+          </h6>
+          <p>Head of Innovation and ICT Strategies Huawei Southern Africa</p>
+          <div class='social'>
+            <a href='#'><i class='bi bi-twitter'></i></a>
+            <a href='#'><i class='bi bi-facebook'></i></a>
+            <a href='#'><i class='bi bi-instagram'></i></a>
+            <a href='#'><i class='bi bi-linkedin'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
           {{-- End Speaker  --}}
           {{-- <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">

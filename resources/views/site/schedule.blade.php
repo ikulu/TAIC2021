@@ -133,7 +133,7 @@
         <!-- Schdule Day 3 -->
         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-3">
           <div class="row schedule-item">
-            <h4>DAY 1</h4>
+            <h4>DAY 1 OF MAIN PROGRAMME</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
               <h4>REGISTRATION AND EXHIBITIONS <span></span></h4>
@@ -224,7 +224,7 @@
         <!-- Schdule Day 4 -->
         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-4">
           <div class="row schedule-item">
-            <h4>DAY 2</h4>
+            <h4>DAY 2 OF MAIN PROGRAMME</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
               <h4>REGISTRATION<span></span></h4>
@@ -321,13 +321,13 @@
                 </span></h4>
                 <p>~</p>
             </div>
-            <h4>17:00 CLOSING OF THE FIRST DAY</h4>
+            <h4>17:00 CLOSING OF THE SECOND DAY</h4>
           </div>
         </div>
         <!-- Schdule Day 5 -->
         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-5">
           <div class="row schedule-item">
-            <h4>DAY 3</h4>
+            <h4>DAY 3 OF MAIN PROGRAMME</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
               <h4>REGISTRATION<span></span></h4>
@@ -393,7 +393,7 @@
                   <li>Strengthen data protection in in AI era</li> 
                   </ul></p>
             </div>
-            <h4>17:00 CLOSING OF THE FIRST DAY</h4>
+            <h4>17:00 MAIN PROGRAMME CLOSING  DAY</h4>
           </div>
         </div>
         {{--       

@@ -14,6 +14,18 @@
     </div>
     <div class="container" data-aos="fade-up">
       <div class="section-header">
+        <h3>Silver Sponsors</h3>
+      </div>    
+      <div class="row no-gutters justify-content-center supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="supporter-logo">
+            <a><img src="{{ asset('siteimg/sponsors/sponsors-2023/sponsor5.jpg') }}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
         <h3>Bronze Sponsors</h3>
       </div>
     
