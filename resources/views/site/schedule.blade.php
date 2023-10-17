@@ -5,41 +5,44 @@
       </div>
 
       <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+        {{-- <li class="nav-item m-1">
+          <a class="nav-link " href="#day-1" role="tab" data-bs-toggle="tab">Day</a>
+        </li> --}}
         <li class="nav-item m-1">
-          <a class="nav-link " href="#day-1" role="tab" data-bs-toggle="tab">Monday</a>
+          <a class="nav-link " href="#day-2" role="tab" data-bs-toggle="tab">Youth Day</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link active" href="#day-2" role="tab" data-bs-toggle="tab">Tuesday</a>
+          <a class="nav-link active" href="#day-3" role="tab" data-bs-toggle="tab">DAY 1</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link " href="#day-3" role="tab" data-bs-toggle="tab">Wednesday</a>
+          <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">DAY 2</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">Thursday</a>
-        </li>
-        <li class="nav-item m-1">
-          <a class="nav-link" href="#day-5" role="tab" data-bs-toggle="tab">Friday</a>
+          <a class="nav-link" href="#day-5" role="tab" data-bs-toggle="tab">DAY 3</a>
         </li>
       </ul>
 
       <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <!-- Schdule Day 1 -->
-        <div role="tabpanel show" class="col-lg-9 tab-pane " id="day-1">
+        {{-- <div role="tabpanel show" class="col-lg-9 tab-pane " id="day-1">
             <div class="row schedule-item">
               <img src="{{asset('siteimg/timetable/day1-2.jpg')}}" class="img-fluid" alt="">
               <img src="{{asset('siteimg/timetable/day1-3.jpg')}}" class="img-fluid" alt="">
             </div>              
-        </div>
+        </div> --}}
          <!-- Schdule Day 2 -->
-         <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
+         <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
           <div class="row schedule-item">
             <img src="{{asset('siteimg/timetable/day21.jpg')}}" class="img-fluid" alt="">
             <img src="{{asset('siteimg/timetable/day22.jpg')}}" class="img-fluid" alt="">
           </div>     
         </div>
         <!-- Schdule Day 3 -->
-        <div role="tabpanel" class="col-lg-9 tab-pane" id="day-3">
+        <div role="tabpanel" class="col-lg-9 tab-pane show active" id="day-3">
           <div class="row schedule-item">
+            <img src="{{asset('siteimg/timetable/opening.jpg')}}" class="img-fluid" alt="">
+          </div>   
+          {{-- <div class="row schedule-item">
             <h4>DAY 1 OF MAIN PROGRAMME</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
@@ -126,7 +129,7 @@
                   </ul></p>
             </div>
             <h4>17:00 CLOSING OF THE FIRST DAY</h4>
-          </div>
+          </div> --}}
         </div>
         <!-- Schdule Day 4 -->
         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-4">
