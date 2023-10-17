@@ -20,7 +20,7 @@ class GuestController extends Controller
         $validator = Validator::make($request->all(),[
             'lastName' => ['required','min:3', 'max:255'],
             'firstName' => ['required','min:3', 'max:255'],
-            'email' => ['required','email','max:255','unique:guests,email'],
+            'email' => ['required','email','max:255'],
             'phoneNumber' => ['required'],
             'gender' => ['required'],
             'institution' => [''],

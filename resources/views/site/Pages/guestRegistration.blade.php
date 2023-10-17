@@ -58,9 +58,9 @@
                                                  @enderror
                                         </div>
                                         <div class="input_field radio_option">
-                                          <input type="radio" name="gender" id="rd1">
+                                          <input type="radio" name="gender" value="M" id="rd1">
                                           <label for="rd1">Male</label>
-                                          <input type="radio" name="gender" id="rd2">
+                                          <input type="radio" name="gender" value="F" id="rd2">
                                           <label for="rd2">Female</label>
                                           @error('gender')
                                           <div class="alert alert-danger">{{ $message }}</div>

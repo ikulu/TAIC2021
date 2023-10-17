@@ -6,10 +6,10 @@
 
       <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
         <li class="nav-item m-1">
-          <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Monday</a>
+          <a class="nav-link " href="#day-1" role="tab" data-bs-toggle="tab">Monday</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Tuesday</a>
+          <a class="nav-link active" href="#day-2" role="tab" data-bs-toggle="tab">Tuesday</a>
         </li>
         <li class="nav-item m-1">
           <a class="nav-link " href="#day-3" role="tab" data-bs-toggle="tab">Wednesday</a>
@@ -24,14 +24,14 @@
 
       <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <!-- Schdule Day 1 -->
-        <div role="tabpanel show" class="col-lg-9 tab-pane fade show active" id="day-1">
+        <div role="tabpanel show" class="col-lg-9 tab-pane " id="day-1">
             <div class="row schedule-item">
               <img src="{{asset('siteimg/timetable/day1-2.jpg')}}" class="img-fluid" alt="">
               <img src="{{asset('siteimg/timetable/day1-3.jpg')}}" class="img-fluid" alt="">
             </div>              
         </div>
          <!-- Schdule Day 2 -->
-         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-2">
+         <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
           <div class="row schedule-item">
             <h4>YOUTH IN ICT DAY</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>

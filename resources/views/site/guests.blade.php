@@ -4,7 +4,7 @@
         <h2>Guest Of Honour</h2>
       </div>
 
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6"></div>
         <div class="col-lg-3 col-md-6">
           <div style="text-align:center" class="speaker" data-aos="fade-up" data-aos-delay="300">
@@ -16,6 +16,23 @@
             </div>
           </div>
         </div>
+        {{-- <div class="col-lg-3 col-md-6">
+          <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{asset('siteimg/speakers/2023/guestOfHonor1.jpg')}}" alt='' class='img-fluid'>
+          <div class='details'>
+            <h6 style="font-weight:700">
+              <a href='https://www.huawei.com/en' target="_blank">Hon. Nape Nnauye</a>
+            </h6>
+            <p>Minister for Information, Communication, and Information Technology</p>
+            <div class='social'>
+              <a href='#'><i class='bi bi-twitter'></i></a>
+              <a href='#'><i class='bi bi-facebook'></i></a>
+              <a href='#'><i class='bi bi-instagram'></i></a>
+              <a href='#'><i class='bi bi-linkedin'></i></a>
+            </div>
+          </div>
+          </div>
+        </div> --}}
         <div class="col-lg-4 col-md-6"></div>
       </div>
     </div>
@@ -97,8 +114,8 @@
             <a href='#'><i class='bi bi-linkedin'></i></a>
           </div>
         </div>
+        </div>
       </div>
-    </div>
           {{-- End Speaker  --}}
           {{-- <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">

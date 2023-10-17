@@ -11,8 +11,8 @@
          {{$eventYear}}
       </p>
       {{-- Counter --}}
-      <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
-      id="demo"></p>
+      {{-- <p style="text-align: center;font-size:1.5rem;margin-top: 0px;"
+      id="demo"></p> --}}
       
       <div class="btns">
         <div class="">
