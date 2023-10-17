@@ -33,103 +33,10 @@
          <!-- Schdule Day 2 -->
          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
           <div class="row schedule-item">
-            <h4>YOUTH IN ICT DAY</h4>
-            <div class="col-md-2"><time>07:00 – 08:30</time></div>
-            <div class="col-md-10">
-              <h4>REGISTRATION AND EXHIBITIONS <span></span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>08:30 – 09:30 </time></div>
-            <div class="col-md-10">
-              <h4>Guest of Honour arrival and Visit exhibitions<span></span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>09:30 – 10:10 </time></div>
-            <div class="col-md-10">
-              <h4>Introductions, sponsors speech and welcoming remarks<span></span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>10:10 – 10:40 </time></div>
-            <div class="col-md-10">
-              <h4>Opening Speech - Guest of Honour<span></span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>11:00 – 11:30</time></div>
-            <div class="col-md-10">
-              <h4>KEYNOTE LECTURE:
-                <span>
-                  “Emerging Technologies in Digital Transformation”
-                </span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>11:30 – 12:15</time></div>
-            <div class="col-md-10">
-              <h4>PANEL DISCUSSION:
-                <span>
-                  “Unleashing emerging technologies in the digital transformation for job creation and socio-
-                  economic development.”
-                </span>
-              </h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>12:15 – 12:35</time></div>
-            <div class="col-md-10">
-              <h4>FIRESIDE CHAT:
-                <span>
-                  “The cybersecurity threat demographics of Africa”
-                </span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>12:35 – 13:05</time></div>
-            <div class="col-md-10">
-              <h4>DIGITAL AGRICULTURE:
-                <span>
-                  The session will discuss about application of the following technologies in the agriculture sector:
-                </span>
-              </h4>
-              <p> 
-                <ul>
-              <li>Internet of Things</li>  
-              <li>Big Data Analytics</li>  
-              <li>Artificial Intelligence</li>  
-              <li>Metaverse</li>  
-              <li>Robotics</li>  
-              </ul> </p>
-            </div>
-            <h4>13:05 – 14:30 LUNCH BREAK</h4>
-
-            <div class="col-md-2"><time>14:30 – 15:30</time></div>
-            <div class="col-md-10">
-              <h4>FUNDING OPPORTUNITIES FOR STARTUPS IN TANZANIA
-                <span>The session will discuss about:</span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>14:45 – 15:30</time></div>
-            <div class="col-md-10">
-              <h4>INVESTMENT ECOSYSTEM FOR WOMEN-LED STARTUPS IN AFRICA
-                <span>“This session will discuss key investment strategies to build robust
-                  and resilient women-led startup ecosystem for sustainable
-                  economic growth”</span></h4>
-                  <p> 
-                    <ul>
-                  <li>Crowd funding framework of Tanzania</li>  
-                  <li>Angel and Venture Capitalist Funds</li>  
-                  <li>Early Seed Funding</li> 
-                  </ul> </p>
-            </div>
-            <div class="col-md-2"><time>15:30 – 17:00</time></div>
-            <div class="col-md-10">
-              <h4>PROMOTION OF YOUTH-LED ICT STARTUPS
-                <span>
-                  This session will discuss how to promote youth-led ICT startups
-                  so that they will scale to the level that they will cross border and
-                  compete globally
-                </span></h4>
-              <p>~</p>
-            </div>
-            <h4>17:00 CLOSING OF THE YOUTH IN ICT DAY</h4>
-          </div>
-      </div>
+            <img src="{{asset('siteimg/timetable/day21.jpg')}}" class="img-fluid" alt="">
+            <img src="{{asset('siteimg/timetable/day22.jpg')}}" class="img-fluid" alt="">
+          </div>     
+        </div>
         <!-- Schdule Day 3 -->
         <div role="tabpanel" class="col-lg-9 tab-pane" id="day-3">
           <div class="row schedule-item">
