@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Guest;
 use App\Models\Region;
+use App\Models\YouthDay;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -29,7 +30,7 @@ class GuestController extends Controller
             if ($validator->fails()) {
                 return redirect()->back()->withErrors($validator);
             }
-            $latest = Guest::latest()->first();
+            $latest = YouthDay::latest()->first();
             $tokenInit = 'TAIC-00';
             $guestToken = '';
             if( $latest != null ){
@@ -41,19 +42,20 @@ class GuestController extends Controller
             $data = $validator->validated();
             $arrayToken = ["guestToken"=>$guestToken];
             $data = array_merge($data,$arrayToken);
-            Guest::create($data);
+            YouthDay::create($data);
             return redirect()->route('guestResponse');
     }
     public function guestResponse(){
-        $newGuest = Guest::latest()->first();
+        $newGuest = YouthDay::latest()->first();
         $PageTitle = "Welcome to TAIC-2023";
         return view('site.Pages.guestResponse',
         compact(['newGuest','PageTitle']));
     }
     public function guestData(){
         $registeredGuests = Guest::latest()->get();
+        $registeredGuests2 = YouthDay::latest()->get();
         $PageTitle = "Participant list TAIC-2023";
         return view('site.Pages.guestTable',
-        compact(['registeredGuests','PageTitle']));
+        compact(['registeredGuests2','registeredGuests','PageTitle']));
     }
 }
