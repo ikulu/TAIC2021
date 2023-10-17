@@ -18,6 +18,16 @@
                             <th onclick="sortTable(4)">Gender</th>
                             <th onclick="sortTable(5)">Institution</th>
                           </tr>
+                          @foreach ( $registeredGuests2 as $guest)
+                          <tr>
+                            <td>{{$guest->guestToken}}</td>
+                            <td class="lalign">{{$guest->firstName}} {{$guest->lastName}}</td>
+                            <td>{{$guest->email}}</td>
+                            <td>{{$guest->phoneNumber}}</td>
+                            <td>{{$guest->gender}}</td>
+                            <td>{{$guest->institution}}</td>
+                          </tr>
+                          @endforeach
                           @foreach ( $registeredGuests as $guest)
                           <tr>
                             <td>{{$guest->guestToken}}</td>
