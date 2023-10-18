@@ -372,12 +372,22 @@
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
             <div class="col-md-10">
               <h4>REGISTRATION<span></span></h4>
-              <p>~</p>
+             <hr>
             </div>
             <div class="col-md-2"><time>08:30 – 09:30 </time></div>
             <div class="col-md-10">
               <h4>AI AND METAVERSE FOR DEVELOPMENT<span>This session will discuss:</span></h4>
-              <p><span>“The Role of AI and Metaverse in Socio-Economic Development”</span></p>
+              <h4><span>“The Role of AI and Metaverse in Socio-Economic Development”</span></h4>
+              <p><span>Presenter</span></p>
+                <p>
+                  <ul>
+                    <li>Zephania Reuben- Artificial Intelligence Powered Innovation</li>
+                    <li>Kristof De Spiegeleer – ThreeFold</li>
+                    <li>Mr. Desmond Mushi - Meta</li>
+                  </ul>
+                </p>
+              <p><span>Moderator: </span><b>Dr. George Mulamula</b></p>
+              <hr>
             </div>
             <div class="col-md-2"><time>09:30 – 10:30</time></div>
             <div class="col-md-10">
@@ -385,54 +395,74 @@
                 This panel will discuss the status and challenges of Fintech startups as well as regulatory sandbox in
                 Tanzania
                 </span></h4>
-              <p>~</p>
+                <p><span>Presenter</span></p>
+                <p>
+                  <ul>
+                    <li>Andrew Mahiga- Commercial Specialist, US Commercial Service</li>
+                    <li>Jacqueline Nnunduma  - National Microfinance Bank (NMB)</li>
+                    <li>Kenedy Komba – Bank of Tanzania</li>
+                  </ul>
+                </p>
+              <p><span>Moderator: </span><b>Ms. Khalila Mbowe</b></p>
+              <hr />
             </div>
             <h4>10:30 – 11:00 TEA BREAK</h4>
+            <hr>
             <div class="col-md-2"><time>11:00 – 12:00</time></div>
             <div class="col-md-10">
               <h4>FUNDING STARTUPS IN THE DIGITAL ECONOMY:
                 <span>
                   This panel will discuss funding options for ICT Startups in Africa and the challenges of the funding.
                 </span></h4>
-              <p>~</p>
+              <p><span>Speakers</span></p>
+              <p>
+                <ul>
+                  <li>Capital Markets and Securities Authority (CSMA), Crowdfunding as an alternative source of funding for startups.</li>
+                  <li>Andrew Mahiga - Commercial Specialist, US Commercial Service</li>
+                  <li>Mr Rodrique Msechu – Serengeti Business Angels Network</li>
+                </ul>
+              </p>
+              <p><span>Moderator: </span><b>Dr. Nkundwe Mwasaga</b></p>
+              <hr>
             </div>
-            <h4>12:00 – 13:00 LUNCH BREAK</h4>
+            <h4>12:00 – 13:15 LUNCH BREAK</h4>
+            <hr>
+            <h4>CLOSING CELEMONY</h4>
+            <hr>
 
-            <div class="col-md-2"><time>14:30 – 15:30</time></div>
+            <div class="col-md-2"><time>13:15 – 14:00</time></div>
             <div class="col-md-10">
-              <h4>FUNDING OPPORTUNITIES FOR STARTUPS IN TANZANIA
-                <span>The session will discuss about:</span></h4>
-              <p>~</p>
-            </div>
-            <div class="col-md-2"><time>14:30 – 15:30</time></div>
-            <div class="col-md-10">
-              <h4>DIGITAL SKILLS IN AI ERA
+              <h4>
                 <span>
-                  The session will discuss how all Tanzania will possess digital
-                  skills to design and exploit the available AI tools for social
-                  economic development.
-                </span></h4>
-                <p>~</p>
+                  Guest of Honour arrival and Visit exhibitions
+                </span>
+              </h4>
+              <hr>
             </div>
-            <div class="col-md-2"><time>14:30 – 15:30</time></div>
+            <div class="col-md-2"><time>14:00 – 14:45</time></div>
             <div class="col-md-10">
-              <h4>FUNDING OPPORTUNITIES FOR STARTUPS IN TANZANIA
-                <span>The session will discuss about:</span></h4>
-            </div>
-            <div class="col-md-2"><time>15:30 – 17:30</time></div>
-            <div class="col-md-10">
-              <h4>SETTING GOLDEN STANDARDS FOR DIGITAL SECURITY AND TRUST
+              <h4>
                 <span>
-                  This panel will discuss how to
-                </span></h4>
-                  <p> 
-                    <ul>
-                  <li>Bridge the gap of cybersecurity skills</li>  
-                  <li>Cope with global cybersecurity demand for the energy sector</li>  
-                  <li>Mitigate cybersecurity risks in telecommunication infrustructure</li> 
-                  <li>Enhance consumer protection in AI era</li> 
-                  <li>Strengthen data protection in in AI era</li> 
-                  </ul></p>
+                  Guest of Honour arrival and Visit exhibitions
+                </span>
+              </h4>
+              <hr>
+            </div>
+            <div class="col-md-2"><time>14:45 – 15:15</time></div>
+            <div class="col-md-10">
+              <h4>
+                <span>
+                  ICT Startups Award
+                </span>
+              </h4>
+            </div>
+            <div class="col-md-2"><time>15:15 – 16:14</time></div>
+            <div class="col-md-10">
+              <h4>
+                <span>
+                  Closing Speech - Guest of Honour
+                </span>
+              </h4>
             </div>
             <h4>17:00 MAIN PROGRAMME CLOSING  DAY</h4>
           </div>
