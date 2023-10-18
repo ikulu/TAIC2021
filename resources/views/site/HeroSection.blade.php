@@ -21,7 +21,8 @@
         </div>
         <div class="">
           <a href="http://registertaic.ictc.go.tz" target="_blank" class="about-btn" style="font-size:.8rem">Register Main Event</a>
-          <a href="{{route('guest')}}"class="about-btn" style="font-size:.8rem">Register Youth's Day</a>
+          {{-- <a href="{{route('guest')}}"class="about-btn" style="font-size:.8rem">Register Youth's Day</a> --}}
+          <a href="#schedule"class="about-btn" style="font-size:.8rem">Event Timetable</a>
         </div>
       </div>
     </div>
