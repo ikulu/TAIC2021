@@ -32,6 +32,7 @@ Route::get('/women-youth-day-success',[GuestController::class,'guestResponse'])-
 Route::post('/register-women-youth-day',[GuestController::class,'register'])->name('registerGuest');
 Route::get('/system-women-youth-day-list',[GuestController::class,'guestData'])->name('registeredGuest');
 
+Route::get('/print-receipt',[GuestController::class,'downloadReceipt'])->name('downloadReceipt');
 
 
 require __DIR__.'/auth.php';

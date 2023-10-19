@@ -58,4 +58,13 @@ class GuestController extends Controller
         return view('site.Pages.guestTable',
         compact(['registeredGuests2','registeredGuests','PageTitle']));
     }
+    public function downloadReceipt(){
+        $urlIprs = 'https://iprs.ictc.go.tz/index.php/print_receipt2/';
+        $PageTitle = "Print receipt TAIC-2023";
+        return view('site.Pages.printReceipt',
+        compact(['PageTitle','urlIprs']));
+    }
+    public function getReceipt($get){
+        return $get;
+    }
 }
