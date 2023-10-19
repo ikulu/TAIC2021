@@ -47,7 +47,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li> --}}
-          <li><a class="nav-link " href="{{route('exhibiting')}}">Get Receipt</a></li>        
+          <li><a class="nav-link " href="{{route('downloadReceipt')}}">Get Receipt</a></li>        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
