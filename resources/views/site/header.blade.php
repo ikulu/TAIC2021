@@ -25,7 +25,7 @@
           <li><a class="nav-link " href="{{route('tours')}}">Tours</a></li>
           {{-- <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li> --}}
           {{-- <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li> --}}
-          <li><a class="nav-link scrollto" 
+          {{-- <li><a class="nav-link scrollto" 
             href="https://aipc.org/member/julius-nyerere-international-convention-centre-jnicc/" target="_blank">Venue</a></li>
           <li class="dropdown"><a href="#"><span>TAIC Events</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -46,7 +46,8 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li>
+          <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li> --}}
+          <li><a class="nav-link " href="{{route('exhibiting')}}">Get Receipt</a></li>        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

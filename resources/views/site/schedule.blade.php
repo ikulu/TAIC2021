@@ -12,13 +12,13 @@
           <a class="nav-link " href="#day-2" role="tab" data-bs-toggle="tab">Youth Day</a>
         </li> --}}
         <li class="nav-item m-1">
-          <a class="nav-link active" href="#day-3" role="tab" data-bs-toggle="tab">DAY 1</a>
+          <a class="nav-link " href="#day-3" role="tab" data-bs-toggle="tab">DAY 1</a>
         </li>
         <li class="nav-item m-1">
           <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">DAY 2</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" href="#day-5" role="tab" data-bs-toggle="tab">DAY 3</a>
+          <a class="nav-link active" href="#day-5" role="tab" data-bs-toggle="tab">DAY 3</a>
         </li>
       </ul>
 
@@ -38,7 +38,7 @@
           </div>     
         </div> --}}
         <!-- Schdule Day 1-->
-        <div role="tabpanel" class="col-lg-9 tab-pane show active" id="day-3">
+        <div role="tabpanel" class="col-lg-9 tab-pane " id="day-3">
           {{-- <div class="row schedule-item">
             <img src="{{asset('siteimg/timetable/opening.jpg')}}" class="img-fluid" alt="">
           </div>    --}}
@@ -366,7 +366,7 @@
           </div>
         </div>
         <!-- Schdule Day 3 -->
-        <div role="tabpanel" class="col-lg-9 tab-pane" id="day-5">
+        <div role="tabpanel" class="col-lg-9 tab-pane show active" id="day-5">
           <div class="row schedule-item">
             <h4>DAY 3 OF MAIN PROGRAMME</h4>
             <div class="col-md-2"><time>07:00 – 08:30</time></div>
