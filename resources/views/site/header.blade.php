@@ -34,6 +34,12 @@
               <li class="dropdown">
                 <a href="https://drive.google.com/drive/folders/16jloaMsqZcUfOs46zJyIG7VS1HCtfsKe?usp=share_link" target="_blank"><span>General</span></a>
               </li>
+              <li class="dropdown">
+                <a href="https://infocusstudiotz.client-gallery.com/gallery/7th-taic-2023-day-two" target="_blank"><span>DAY 2 photo</span></a>
+              </li>
+              <li class="dropdown">
+                <a href="https://infocusstudiotz.client-gallery.com/gallery/7th-taic-2023-day-3" target="_blank"><span>DAY 3 photo</span></a>
+              </li>
             </ul>
           </li>
           {{-- <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li> --}}
