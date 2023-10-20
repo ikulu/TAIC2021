@@ -29,7 +29,7 @@
                 <a href="https://infocusstudiotz.client-gallery.com/gallery/women-and-youth-in-ict" target="_blank"><span>Women's in ICT</span></a>
               </li>
               <li class="dropdown">
-                <a href="https://infocusstudiotz.client-gallery.com/gallery/7th-taic-2023-official-opening" target="_blank"><span>Official Opening</span></a>
+                <a href="https://infocusstudiotz.client-gallery.com/gallery/7th-taic-2023-official-opening" target="_blank"><span>TAIC photo</span></a>
               </li>
               <li class="dropdown">
                 <a href="https://drive.google.com/drive/folders/16jloaMsqZcUfOs46zJyIG7VS1HCtfsKe?usp=share_link" target="_blank"><span>General</span></a>
