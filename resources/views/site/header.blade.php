@@ -67,6 +67,7 @@
           </li>
           <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li> --}}
           <li><a class="nav-link " href="{{route('downloadReceipt')}}">Get Receipt</a></li>        
+          <li><a class="nav-link " target="_blank" href="https://drive.google.com/drive/folders/1yfDXO1IVc5rTWrn5FJOvwG9zQle2qOuj">Presentations</a></li>        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
