@@ -67,12 +67,12 @@
         }
         .ictc-logo{
             position:relative;
-            left: 560px;
+            left: 500px;
             bottom: 60px;
         } 
         .signature{
             position:relative;
-            left: 640px;
+            left: 600px;
         }
         .content-center {
 
@@ -136,7 +136,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="logo">
-                                <img src="{{asset('siteimg/nembo.png')}}" alt="TZ-logo" srcset="">
+                                <img src="{{asset('siteimg/nembo.png')}}" alt="TZ-logo" srcset="">  
                             </div>
                         </div>
                         <div class="col">
