@@ -10,7 +10,7 @@
             
         }
         .content{
-            width: 88%;
+            width: 78%;
             height: 820px;
             padding: 2.4rem;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -67,12 +67,12 @@
         }
         .ictc-logo{
             position:relative;
-            left: 500px;
+            left: 440px;
             bottom: 60px;
         } 
         .signature{
             position:relative;
-            left: 600px;
+            left: 580px;
         }
         .content-center {
 
