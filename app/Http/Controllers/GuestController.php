@@ -67,7 +67,9 @@ class GuestController extends Controller
         compact(['PageTitle','urlIprs']));
     }
     public function getCertificate(){
-        $pdf =Pdf::loadView('site.Pages.certificate', ['name' =>'Jasson Ndanguzi'])->setPaper('a4', 'landscape');
-        return $pdf->download('certificate.pdf');
+        $participantName = 'Jasson Ndanguzi';
+        $taicYear = '2023';
+        $pdf =Pdf::loadView('site.Pages.certificate', ['name' => $participantName])->setPaper('a4', 'landscape');
+        return $pdf->download($participantName."-TAIC-".$taicYear.'.pdf');
     }
 }

@@ -46,7 +46,7 @@
             left:360px;
         }
         .heading {
-            font-family:Tahoma, sans-serif;
+            font-family:Verdana, sans-serif;
             font-weight: 600;
             font-size: 20px;
             margin: 1px 1px;
