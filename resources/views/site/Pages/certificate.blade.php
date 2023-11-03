@@ -76,7 +76,7 @@
         .content-center h1 {
             color:#00A3DE;
             font-size: 36pt;
-            font-family:Verdana, sans-serif; font-style: normal;
+            font-family:Verdana, sans-serif;
         }
         .normal{
             color: #6D6E71;
