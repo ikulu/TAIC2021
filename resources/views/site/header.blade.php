@@ -10,6 +10,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="{{route('landing')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
+          {{-- <li><a class="nav-link scrollto" href="{{route('certificate')}}">Cert</a></li> --}}
           <li class="dropdown"><a href="#"><span>Sponsorships</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown">

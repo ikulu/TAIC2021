@@ -5,6 +5,8 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SpeakerController;
 use Illuminate\Support\Facades\Route;
+
+
 # To push changes 
 // https://iprs.ictc.go.tz/index.php/git_pull_taic
 Route::get('/',[HomeController::class,'index'])->name('landing');
@@ -33,8 +35,6 @@ Route::post('/register-women-youth-day',[GuestController::class,'register'])->na
 Route::get('/system-women-youth-day-list',[GuestController::class,'guestData'])->name('registeredGuest');
 
 Route::get('/print-receipt',[GuestController::class,'downloadReceipt'])->name('downloadReceipt');
-Route::get('/cert',function (){
-   return view('site/Pages/certificate');
-});
+Route::get('/cert',[GuestController::class, 'getCertificate'])->name('certificate');
 
 require __DIR__.'/auth.php';

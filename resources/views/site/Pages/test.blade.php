@@ -154,7 +154,7 @@
             <div class="content-center">
                 <h1>CERTIFICATE OF ATTENDANCE</h1>
                 <p class="normal">is awarded to </p>
-                <p class="attendeeName">{{$name}}</p>
+                <p class="attendeeName">Tumain Gamba</p>
                 <p class="normal">with 15 Professional Development Hours (PHD) for active participation to the</p>
                 <p class="greener">7th Tanzania Annual ICT Conference 2023 (TAIC-2023)</p>
                 <p class="normal">held at the</p>

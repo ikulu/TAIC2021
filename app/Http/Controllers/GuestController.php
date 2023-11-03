@@ -7,6 +7,8 @@ use App\Models\Region;
 use App\Models\YouthDay;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 class GuestController extends Controller
 {
@@ -64,7 +66,8 @@ class GuestController extends Controller
         return view('site.Pages.printReceipt',
         compact(['PageTitle','urlIprs']));
     }
-    public function getReceipt($get){
-        return $get;
+    public function getCertificate(){
+        $pdf =Pdf::loadView('site.Pages.certificate', ['name' =>'Jasson Ndanguzi'])->setPaper('a4', 'landscape');
+        return $pdf->download('certificate.pdf');
     }
 }
