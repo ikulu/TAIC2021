@@ -35,6 +35,8 @@ Route::post('/register-women-youth-day',[GuestController::class,'register'])->na
 Route::get('/system-women-youth-day-list',[GuestController::class,'guestData'])->name('registeredGuest');
 
 Route::get('/print-receipt',[GuestController::class,'downloadReceipt'])->name('downloadReceipt');
-Route::get('/participation-certificate',[GuestController::class, 'getCertificate'])->name('certificate');
 
+Route::get('/conference-certificate',[GuestController::class,'conferenceCertificate'])->name('conferenceCertificate');
+Route::post('/participant-certificate',[GuestController::class,'participantQuery'])->name('participantQuery');
+Route::get('/participation-certificate',[GuestController::class, 'getCertificate'])->name('certificate');
 require __DIR__.'/auth.php';

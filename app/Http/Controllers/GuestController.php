@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Guest;
+use App\Models\Participant;
 use App\Models\Region;
 use App\Models\YouthDay;
 use Illuminate\Http\Request;
@@ -66,10 +67,34 @@ class GuestController extends Controller
         return view('site.Pages.printReceipt',
         compact(['PageTitle','urlIprs']));
     }
-    public function getCertificate(){
-        $participantName = 'Jasson Ndanguzi';
+    public function conferenceCertificate(){
+        $urlIprs = 'https://iprs.ictc.go.tz/index.php/print_receipt2/';
+        $PageTitle = "TAIC Certificate";
+        return view('site.Pages.conferenceCertificate',
+        compact(['PageTitle','urlIprs']));
+    }
+    public function participantQuery(Request $request){
+        $validator = Validator::make($request->all(),[
+            'regNo' => ['required','min:3', 'max:255']]);
+            // Validation Failure
+            if ($validator->fails()) {
+                return redirect()->back()->withErrors($validator);
+            }
+         $regNo = $validator->validate()['regNo'];
+         $data = Participant::where('regNo', $regNo)->first();
+         if($data === null){
+            return redirect()->back();
+         }
+        $participantName = $data['name'];
         $taicYear = '2023';
         $pdf =Pdf::loadView('site.Pages.certificate',['name' => $participantName])->setPaper('a4', 'landscape');
         return $pdf->download($participantName."-TAIC-".$taicYear.'.pdf');
     }
+    // public function getCertificate(){
+    //     $participantName = 'Jasson Ndanguzi';
+    //     $taicYear = '2023';
+    //     // $pdf =Pdf::loadView('site.Pages.certificate',['name' => $participantName])->setPaper('a4', 'landscape');
+    //     // return $pdf->download($participantName."-TAIC-".$taicYear.'.pdf');
+    //     return view('site.Pages.certificate',['name' => $participantName]);
+    // }
 }

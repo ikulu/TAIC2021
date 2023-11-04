@@ -10,7 +10,6 @@
         <ul>
           <li><a class="nav-link scrollto active" href="{{route('landing')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          {{-- <li><a class="nav-link scrollto" href="{{route('certificate')}}">Cert</a></li> --}}
           <li class="dropdown"><a href="#"><span>Sponsorships</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown">
@@ -67,7 +66,8 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="https://immigration.go.tz/index.php/immigration-services/visa-information">Apply Visa</a></li> --}}
-          <li><a class="nav-link " href="{{route('downloadReceipt')}}">Get Receipt</a></li>        
+          <li><a class="nav-link " href="{{route('downloadReceipt')}}">Get Receipt</a></li>   
+          <li><a class="nav-link scrollto" href="{{route('conferenceCertificate')}}">Certificate</a></li>     
           <li><a class="nav-link " target="_blank" href="https://drive.google.com/drive/folders/1yfDXO1IVc5rTWrn5FJOvwG9zQle2qOuj">Presentations</a></li>        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

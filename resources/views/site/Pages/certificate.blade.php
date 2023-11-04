@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test Certificate</title>
+    <title>Participation Certificate</title>
     <style>
         body{
-            /* background-image: url({{public_path('/public/siteimg/logo.png')}})
-            BAC */
-            /* background-color: #cfadad59; */
+            background-image: url({{URL::asset('siteimg/background.jpg')}});
+            background-repeat: no-repeat;
         }
         .main{
-            background-color: #f7f9f9ce;
+            background-color: #f7f9f9f3;
             height: 595px;
             margin: 1.4rem auto;
             padding: 1.4rem;
+            border-radius: .6rem;
+            box-shadow: #00000059 0px 5px 15px;
         }
         .content{
-            box-shadow: #00000059 0px 5px 15px;
             margin: 1.2rem;
             padding: .8rem;
+
         }
         .row{
             display:flex;
@@ -97,6 +98,7 @@
             font-size: 22pt;
             font-weight: 600;
             margin: 1px 1px;
+            text-transform: uppercase;
         }
         .name{
             color: #00A3DE;
@@ -110,9 +112,13 @@
         }
         .signature{
             position: relative;
-            top: 6.6rem;
+            top: 5.2rem;
             left: 600px;
         } 
+        .sign img{
+            width: 90px;
+            height: 40px;
+        }
         .taic-logo{
             position: relative;
             top: 16rem;
@@ -170,7 +176,7 @@
                 <div class="col">
                     <div class="signature">
                         <div class="sign">
-                            <img src="{{asset('siteimg/')}}" alt="signature">                            
+                            <img src="{{public_path('siteimg/dg-signature.png')}}" alt="signature">                            
                         </div>
                         <hr />
                         <p class="name">Dr. N.M Mwasaga</p>
