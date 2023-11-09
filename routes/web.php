@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 
 # To push changes 
 // https://iprs.ictc.go.tz/index.php/git_pull_taic
+//php artisan db:seed --class=ParticipantSeeder
+
 Route::get('/',[HomeController::class,'index'])->name('landing');
 Route::get('/local-sponsorship',[HomeController::class,'localsponsorship'])->name('localsponsorship');
 Route::get('/international-sponsorship',[HomeController::class,'foreignsponsorship'])->name('foreignsponsorship');
@@ -39,4 +41,6 @@ Route::get('/print-receipt',[GuestController::class,'downloadReceipt'])->name('d
 Route::get('/conference-certificate',[GuestController::class,'conferenceCertificate'])->name('conferenceCertificate');
 Route::post('/participant-certificate',[GuestController::class,'participantQuery'])->name('participantQuery');
 Route::get('/participation-certificate',[GuestController::class, 'getCertificate'])->name('certificate');
+
 require __DIR__.'/auth.php';
+
