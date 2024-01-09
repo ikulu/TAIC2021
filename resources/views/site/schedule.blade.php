@@ -256,7 +256,7 @@
                   The session will discuss the e-government and emerging technologies nexus.
                 </span></h4>
                 <p><span>Speaker: </span><b>Ms. Sultana Seif – Manager of Standards and Compliance in eGA</b></p>
-                <p><span>Moderator: </span><b>Dr. George Mulamula</b></p>
+Clemence@2024                <p><span>Moderator: </span><b>Dr. George Mulamula</b></p>
                 <hr>
               </div>
             <div class="col-md-2"><time>12:30 – 13:15</time></div>
@@ -398,7 +398,6 @@
                 <p><span>Presenter</span></p>
                 <p>
                   <ul>
-                    <li>Andrew Mahiga- Commercial Specialist, US Commercial Service</li>
                     <li>Jacqueline Nnunduma  - National Microfinance Bank (NMB)</li>
                     <li>Kenedy Komba – Bank of Tanzania</li>
                   </ul>
@@ -418,7 +417,6 @@
               <p>
                 <ul>
                   <li>Capital Markets and Securities Authority (CSMA), Crowdfunding as an alternative source of funding for startups.</li>
-                  <li>Andrew Mahiga - Commercial Specialist, US Commercial Service</li>
                   <li>Mr Rodrique Msechu – Serengeti Business Angels Network</li>
                 </ul>
               </p>
