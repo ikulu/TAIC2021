@@ -39,6 +39,7 @@ Route::get('/system-women-youth-day-list',[GuestController::class,'guestData'])-
 Route::get('/print-receipt',[GuestController::class,'downloadReceipt'])->name('downloadReceipt');
 
 Route::get('/conference-certificate',[GuestController::class,'conferenceCertificate'])->name('conferenceCertificate');
+Route::get('/cybersecurity-forum-certificate/{slug}',[GuestController::class,'CyberForumCertificate'])->name('CyberForumCertificate');
 Route::post('/participant-certificate',[GuestController::class,'participantQuery'])->name('participantQuery');
 Route::get('/participation-certificate',[GuestController::class, 'getCertificate'])->name('certificate');
 

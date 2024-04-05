@@ -90,6 +90,18 @@ class GuestController extends Controller
         $pdf =Pdf::loadView('site.Pages.certificate',['name' => $participantName])->setPaper('a4', 'landscape');
         return $pdf->download($participantName."-TAIC-".$taicYear.'.pdf');
     }
+    public function CyberForumCertificate($slug){
+        $eventDate = "04th - 05th April 2024";
+        $venue = "Gran Melia - Arusha";
+        $eventName = '3rd Tanzania Cybersecurity Forum';
+        $pdf =Pdf::loadView('site.Pages.certificateCyberForum',
+        [   'venue' => $venue,
+            'eventDate' => $eventDate,
+            'eventName' => $eventName,
+            'participantName' => $slug])
+         ->setPaper('a4', 'landscape');
+        return $pdf->download($slug."-CyberForum".'.pdf');
+    }
     // public function getCertificate(){
     //     $participantName = 'Jasson Ndanguzi';
     //     $taicYear = '2023';
