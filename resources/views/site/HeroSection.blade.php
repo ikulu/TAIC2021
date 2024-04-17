@@ -4,7 +4,7 @@
         <p style="font-size:1.6rem;color:rgb(107, 221, 244)">"{{$theme}}."</p>
       <p class="mb-1 pb-0">{{$conferenceVenue}}</p>
       <p class="mb-1 pb-0" style=" color:rgb(95, 245, 95);">
-        {{$presentedFromdate}}<sup style="color:white">th</sup> 
+        {{$presentedFromdate}}<sup style="color:white">st</sup> 
         <span style="color:white;">-</span>
          {{$presentedTodate}}<sup style="color:white">th</sup>
          {{$presentedMonthDate}} 

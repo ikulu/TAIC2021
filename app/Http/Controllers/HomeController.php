@@ -17,8 +17,8 @@ class HomeController extends Controller
      digital transformation for job creation and
        socio-economic development';
 
-    $fromdate = '2023-10-16';
-    $todate = '2023-10-20';
+    $fromdate = '2024-10-21';
+    $todate = '2024-10-25';
     $conferenceVenue = 'Julius Nyerere International Convention Centre';
     $fromdate = date_create($fromdate);
     $todate = date_create($todate);
